@@ -1,0 +1,70 @@
+
+<div ><table width="100%" ><tr ><td width="50%"><font style="width:100px;font-size:24px;">
+<a class="nav-a" style="color: #84563e">场地价格名称设置</a></font></td><td width="50%" align="right">
+<span><a style="display:none;" id="j-delete" class="btn" href="javascript:;" onclick="we.dele(we.checkval('.check-item input:checked'), deleteUrl);"><i class="fa fa-trash-o"></i>批刪除</a>
+<a class="btn" href="/mobile_kitchen/index.php?r=testPriceinfo/create"><i class="fa fa-plus"></i>添加</a>
+<a class="btn" href="/mobile_kitchen/index.php?r=testPriceinfo/index"><i class="fa fa-refresh"></i>刷新</a>
+</span></td></tr></table>
+</div><!--box-title end--><div class="box-content">
+<div >
+
+<form action="/mobile_kitchen/index.php?r=testPriceinfo/Index" method="get"><p>
+<input type="hidden" name="r" value="testPriceinfo/Index">
+<label style="margin-right:10px;">
+<span>关键字：</span>
+<input style="width:100px;height=25px;" class="input-text" name="keywords" value="">
+ </label>
+
+<label style="margin-right:25px;"><span>类型：</span><select name="type" id="type" ><option value="">请选择</option><option value="普通场地">普通场地</option><option value="贵宾场地">贵宾场地</option><option value="专业场地">专业场地</option><option value="多功能场地">多功能场地</option><option value="娱乐场地">娱乐场地</option><option value="教练">教练</option><option value="裁判">裁判</option><option value="助理裁判">助理裁判</option></select></label>
+<label style="margin-right:25px;"><span>时间策略：</span><select name="policy" id="policy" ><option value="">请选择</option><option value="6">两小时策略</option><option value="4">一小时策略新版</option></select></label><button class="btn btn-brown" style="color: #fff;
+   border-color: #84563e; background-color: #84563e;" type="submit">查询</button><input type="hidden" name="submitType" id="submitType" value="3">
+</p></form>
+</div><!--box-search end-->
+<div class="box-table">
+<table class="list" >
+<tr class="table-title"><th class="check">
+<input id="j-checkall" class="input-check" type="checkbox"></th>
+<th  align="center" >编码</th><th  align="center" >策略名称</th><th  align="center" >服务类型</th><th  align="center" >时间名称</th><th  align="center" >社区名称</th><th  align="center" >在使用</th><th  align="center" >备注</th>
+<th>操作</th>
+</tr><tbody id="tbody1"><tr>
+<td class="check check-item"><input class="input-check" type="checkbox" value="242"></td>
+<td >1</td><td >冬日大酬宾</td><td >普通场地,贵宾场地,专业场地,多功能场地</td><td >一小时策略新版</td><td >华体通得闲体育服务</td><td >是</td><td ></td>
+<td>
+
+<a class="btn" href="/mobile_kitchen/index.php?r=testPriceinfo/update&id=242"
+ title="编辑"><i class="fa fa-edit"></i></a>
+<a class="btn" href="/mobile_kitchen/index.php?r=testPriceinfo/detail&id=242"
+ title="详细设置"><i class="fa fa-edit"></i><label id="title_detail">详细设置</label></a>
+<a class="btn" href="/mobile_kitchen/index.php?r=testPriceinfo/showDetail&id=242"
+ title="详细"><i class="fa fa-edit"></i><label id="title_showDetail">详细</label></a>
+<a class="btn" href="javascript:;" onclick="we.dele('242'
+, deleteUrl);" title="删除"><i class="fa fa-trash-o"></i></a></td><script> var deleteUrl ="/mobile_kitchen/index.php?r=testPriceinfo/delete&id=ID";</script></tr> <tr style="background: #eee">
+<td class="check check-item"><input class="input-check" type="checkbox" value="341"></td>
+<td >2</td><td >夏日大促</td><td >普通场地</td><td >两小时策略</td><td >华体通得闲体育服务</td><td >是</td><td ></td>
+<td>
+
+<a class="btn" href="/mobile_kitchen/index.php?r=testPriceinfo/update&id=341"
+ title="编辑"><i class="fa fa-edit"></i></a>
+<a class="btn" href="/mobile_kitchen/index.php?r=testPriceinfo/detail&id=341"
+ title="详细设置"><i class="fa fa-edit"></i><label id="title_detail">详细设置</label></a>
+<a class="btn" href="/mobile_kitchen/index.php?r=testPriceinfo/showDetail&id=341"
+ title="详细"><i class="fa fa-edit"></i><label id="title_showDetail">详细</label></a>
+<a class="btn" href="javascript:;" onclick="we.dele('341'
+, deleteUrl);" title="删除"><i class="fa fa-trash-o"></i></a></td></tr><tbody></table>
+</div><!--box-table end--><div class="box-page c" id="page1"></div><script>
+    function changPage(Psize,purl,pid,pname,pcmd){ 
+    $.ajax({
+        type: 'post', url: purl,
+        data: { pageSize: Psize, keyid:pid,keyname:pname,keycmd: pcmd},
+        dataType: 'json',
+        success: function(data) {
+           console.log(data);
+          document.getElementById('tbody1').innerHTML =data['html'];
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest);
+        }
+    });
+  }
+//  changPage(15,'/mobile_kitchen/index.php?r=testPriceinfo/indexData','id','code,name,service_set,policy_name,clubname,usermark:YN,memo','编辑:update,详细设置:detail::详细设置,详细:showDetail::详细,删除');
+ </script></div>

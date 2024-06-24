@@ -1,0 +1,22 @@
+2024/02/29 22:06:22 [error] [php] move_uploaded_file(/uploads/indexIcon/65e08f5e2ce038.43533109.png): failed to open stream: No such file or directory (E:\wamp\www\sports\admin\controllers\gridIconController.php:35)
+Stack trace:
+#0 E:\wamp\www\sports\framework\web\actions\CInlineAction.php(49): gridIconController->actionUpdate()
+#1 E:\wamp\www\sports\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 E:\wamp\www\sports\framework\web\CController.php(286): gridIconController->runAction()
+#3 E:\wamp\www\sports\framework\web\CController.php(265): gridIconController->runActionWithFilters()
+#4 E:\wamp\www\sports\framework\web\CWebApplication.php(282): gridIconController->run()
+#5 E:\wamp\www\sports\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 E:\wamp\www\sports\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 E:\wamp\www\sports\index.php(35): CWebApplication->run()
+REQUEST_URI=/sports/index.php?r=gridIcon/Update
+2024/02/29 23:39:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "TurnToHavePayOrder" 动作.' in E:\wamp\www\sports\framework\web\CController.php:486
+Stack trace:
+#0 E:\wamp\www\sports\framework\web\CController.php(270): CController->missingAction('TurnToHavePayOr...')
+#1 E:\wamp\www\sports\framework\web\CWebApplication.php(282): CController->run('TurnToHavePayOr...')
+#2 E:\wamp\www\sports\framework\web\CWebApplication.php(141): CWebApplication->runController('testShoppingInf...')
+#3 E:\wamp\www\sports\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\wamp\www\sports\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/sports/index.php?r=testShoppingInfo/TurnToHavePayOrder&orderId=149
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---

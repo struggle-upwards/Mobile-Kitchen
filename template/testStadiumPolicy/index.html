@@ -1,0 +1,69 @@
+
+<div ><table width="100%" ><tr ><td width="50%"><font style="width:100px;font-size:24px;">
+<a class="nav-a" style="color: #84563e">场馆可预订时间管理</a></font></td><td width="50%" align="right">
+<span><a style="display:none;" id="j-delete" class="btn" href="javascript:;" onclick="we.dele(we.checkval('.check-item input:checked'), deleteUrl);"><i class="fa fa-trash-o"></i>批刪除</a>
+<a class="btn" href="/mobile_kitchen/index.php?r=testStadiumPolicy/create"><i class="fa fa-plus"></i>添加</a>
+<a class="btn" href="/mobile_kitchen/index.php?r=testStadiumPolicy/index"><i class="fa fa-refresh"></i>刷新</a>
+</span></td></tr></table>
+</div><!--box-title end--><div class="box-content">
+<div >
+
+<form action="/mobile_kitchen/index.php?r=testStadiumPolicy/index" method="get"><p>
+<input type="hidden" name="r" value="testStadiumPolicy/index">
+<label style="margin-right:10px;">
+<span>关键字：</span>
+<input style="width:100px;height=25px;" class="input-text" name="keywords" value="">
+ </label>
+
+<label style="margin-right:25px;"><span>场馆名称：</span><select name="stadium" id="stadium" ><option value="">请选择</option><option value="56">天体羽毛球馆</option><option value="57">天体篮球馆</option></select></label><button class="btn btn-brown" style="color: #fff;
+   border-color: #84563e; background-color: #84563e;" type="submit">查询</button><input type="hidden" name="submitType" id="submitType" value="3">
+</p></form>
+</div><!--box-search end-->
+<div class="box-table">
+<table class="list" >
+<tr class="table-title"><th class="check">
+<input id="j-checkall" class="input-check" type="checkbox"></th>
+<th  align="center" >放场单号</th><th  align="center" >场馆名称</th><th  align="center" >场地</th><th  align="center" >价格名称</th><th  align="center" >放号日期</th><th  align="center" >上线显示时间</th><th  align="center" >销售时间</th><th  align="center" >社区名称</th>
+<th>操作</th>
+</tr><tbody id="tbody1"><tr>
+<td class="check check-item"><input class="input-check" type="checkbox" value="185784"></td>
+<td >2024020102</td><td >天体羽毛球馆</td><td >羽毛球场1号场,羽毛球场2号场,羽毛球场3号场,羽毛球场4号场,羽毛球场5号场</td><td >冬日大酬宾</td><td >2024-02-11<br>2024-02-20</td><td >2024-02-01<br>2024-02-01</td><td ><br>提前7天</td><td >GF官方机构</td>
+<td>
+
+<a class="btn" href="/mobile_kitchen/index.php?r=testStadiumPolicy/update&id=185784"
+ title="编辑"><i class="fa fa-edit"></i></a>
+<a class="btn" href="/mobile_kitchen/index.php?r=testStadiumPolicy/detail&id=185784"
+ title="详细设置"><i class="fa fa-edit"></i><label id="title_detail">详细设置</label></a>
+<a class="btn" href="/mobile_kitchen/index.php?r=testStadiumPolicy/showDetail&id=185784"
+ title="详细"><i class="fa fa-edit"></i><label id="title_showDetail">详细</label></a>
+<a class="btn" href="javascript:;" onclick="we.dele('185784'
+, deleteUrl);" title="删除"><i class="fa fa-trash-o"></i></a></td><script> var deleteUrl ="/mobile_kitchen/index.php?r=testStadiumPolicy/delete&id=ID";</script></tr> <tr style="background: #eee">
+<td class="check check-item"><input class="input-check" type="checkbox" value="185782"></td>
+<td >2024020101</td><td >天体羽毛球馆</td><td >羽毛球场1号场,羽毛球场2号场,羽毛球场3号场,羽毛球场4号场,羽毛球场5号场</td><td >冬日大酬宾</td><td >2024-02-01<br>2024-02-10</td><td >2024-02-01<br>2024-02-01</td><td ><br>提前7天</td><td >GF官方机构</td>
+<td>
+
+<a class="btn" href="/mobile_kitchen/index.php?r=testStadiumPolicy/update&id=185782"
+ title="编辑"><i class="fa fa-edit"></i></a>
+<a class="btn" href="/mobile_kitchen/index.php?r=testStadiumPolicy/detail&id=185782"
+ title="详细设置"><i class="fa fa-edit"></i><label id="title_detail">详细设置</label></a>
+<a class="btn" href="/mobile_kitchen/index.php?r=testStadiumPolicy/showDetail&id=185782"
+ title="详细"><i class="fa fa-edit"></i><label id="title_showDetail">详细</label></a>
+<a class="btn" href="javascript:;" onclick="we.dele('185782'
+, deleteUrl);" title="删除"><i class="fa fa-trash-o"></i></a></td></tr><tbody></table>
+</div><!--box-table end--><div class="box-page c" id="page1"></div><script>
+    function changPage(Psize,purl,pid,pname,pcmd){ 
+    $.ajax({
+        type: 'post', url: purl,
+        data: { pageSize: Psize, keyid:pid,keyname:pname,keycmd: pcmd},
+        dataType: 'json',
+        success: function(data) {
+           console.log(data);
+          document.getElementById('tbody1').innerHTML =data['html'];
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest);
+        }
+    });
+  }
+//  changPage(15,'/mobile_kitchen/index.php?r=testStadiumPolicy/indexData','id','stadium_no,stadium_name,place,policy_name,start_days,up_times,sell_times,clubname','编辑:update,详细设置:detail::详细设置,详细:showDetail::详细,删除');
+ </script></div>

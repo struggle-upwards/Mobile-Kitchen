@@ -1,0 +1,175 @@
+2024/05/16 00:03:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "wxgetdishdetail" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('wxgetdishdetail')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxgetdishdetail')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('dishDetail/wxge...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=dishDetail/wxgetdishdetail&id=33
+---
+2024/05/16 00:03:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "wxgetdishdetail" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('wxgetdishdetail')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxgetdishdetail')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('dishDetail/wxge...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=dishDetail/wxgetdishdetail&id=3
+---
+2024/05/16 00:03:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "wxgetdishdetail" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('wxgetdishdetail')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxgetdishdetail')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('dishDetail/wxge...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=dishDetail/wxgetdishdetail
+---
+2024/05/16 00:03:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "wxgetdishdetail=" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('wxgetdishdetail...')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxgetdishdetail...')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('dishDetail/wxge...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=dishDetail/wxgetdishdetail=
+---
+2024/05/16 00:03:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "wxgetdishdetail?id=2" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('wxgetdishdetail...')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxgetdishdetail...')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('dishDetail/wxge...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=dishDetail/wxgetdishdetail?id=2
+---
+2024/05/16 00:03:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "wxgetdishdetail?id=" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('wxgetdishdetail...')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxgetdishdetail...')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('dishDetail/wxge...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=dishDetail/wxgetdishdetail?id=
+---
+2024/05/16 00:03:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "wxGetMeallist?id=13" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('wxGetMeallist?i...')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxGetMeallist?i...')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('mealData/wxGetM...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=mealData/wxGetMeallist?id=13
+---
+2024/05/16 00:03:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "wxGetMeallist=13" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('wxGetMeallist=1...')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxGetMeallist=1...')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('mealData/wxGetM...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=mealData/wxGetMeallist=13
+---
+2024/05/16 00:03:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "wxgetdishdetail?meal_id=13" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('wxgetdishdetail...')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxgetdishdetail...')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('mealData/wxgetd...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=mealData/wxgetdishdetail?meal_id=13
+---
+2024/05/16 00:03:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "wxgetdishdetail?id=13" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('wxgetdishdetail...')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxgetdishdetail...')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('mealData/wxgetd...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=mealData/wxgetdishdetail?id=13
+---
+2024/05/16 00:03:59 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:284)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=mealData/wxgetdishdetail
+2024/05/16 00:03:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "wxgetdishdetail?id=13" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('wxgetdishdetail...')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxgetdishdetail...')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('mealData/wxgetd...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=mealData/wxgetdishdetail?id=13
+---
+2024/05/16 00:26:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "wxgetdishdetail?id=13" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('wxgetdishdetail...')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxgetdishdetail...')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('mealData/wxgetd...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=mealData/wxgetdishdetail?id=13
+---
+2024/05/16 00:26:49 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:284)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=mealData/wxgetdishdetail&id=13
+2024/05/16 00:27:05 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:284)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=mealData/wxgetdishdetail&id=13
+2024/05/16 00:30:59 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:284)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=mealData/wxgetdishdetail&id=13
+2024/05/16 00:31:01 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:284)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=mealData/wxgetdishdetail&id=13

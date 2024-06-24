@@ -1,0 +1,1119 @@
+2024/05/04 17:47:44 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `club_member` `t` WHERE id= LIMIT 1.
+2024/05/04 17:47:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('id=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubMemberListController.php(437): BaseModel->find('id=')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): ClubMemberListController->actionPassInvite()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('passInvite')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubMemberList/...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=clubMemberList/passInvite
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=clubMemberList/update&id=16002&member_gfid=28308&index=4
+---
+2024/05/04 17:48:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "GfPartnerMemberApply1/upExcel"。' in D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfPartnerMember...')
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfPartnerMemberApply1/upExcel
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=index/menu&type=D
+---
+2024/05/04 17:49:11 [error] [exception.CException] exception 'CException' with message 'GfIdelUserAllNumber and its behaviors do not have a method or closure named "updataAll".' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(229): CComponent->__call('updataAll', Array)
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(404): CActiveRecord->__call('updataAll', Array)
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(404): GfIdelUserAllNumber->updataAll(Array, 'account=888823')
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(250): GfUser1Controller->saveData(Object(GfUser1), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfUser1Controller->actionCreate()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfuser1/create')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfuser1/create&passed=136
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfuser1/create&passed=136
+---
+2024/05/04 18:33:54 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.openid" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('openid', '19864350001')
+#1 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(431): CActiveRecord->__set('openid', '19864350001')
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(849): GfUser1->newWxUser('19864350001', '111', '111')
+#3 [internal function]: GfUser1Controller->actionwxSign('19864350001', '111', '111')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350001&pass=111&name=111
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 18:34:49 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.openid" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('openid', '19864350001')
+#1 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(431): CActiveRecord->__set('openid', '19864350001')
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->newWxUser('19864350001', '111', '111')
+#3 [internal function]: GfUser1Controller->actionwxSign('19864350001', '111', '111')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350001&pass=111&name=111
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 18:35:13 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.openid" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('openid', '19864350001')
+#1 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(431): CActiveRecord->__set('openid', '19864350001')
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->newWxUser('19864350001', '111', '111')
+#3 [internal function]: GfUser1Controller->actionwxSign('19864350001', '111', '111')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350001&pass=111&name=111
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 18:35:47 [error] [php] Undefined index: phone_info (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:425)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign()
+#1 unknown(0): GfUser1Controller->actionwxSign()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350001&pass=111&name=111
+2024/05/04 18:37:11 [error] [php] Undefined index: phone_info (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:425)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign()
+#1 unknown(0): GfUser1Controller->actionwxSign()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350001&pass=111&name=111
+2024/05/04 18:39:33 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_user_1` `t` WHERE security_phone= LIMIT 1.
+2024/05/04 18:39:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('security_phone=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(573): BaseModel->find('security_phone=')
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('19864350001', '111', '111')
+#6 [internal function]: GfUser1Controller->actionwxSign('19864350001', '111', '111')
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#14 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#16 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350001&pass=111&name=111
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 18:42:32 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_user_1` `t` WHERE security_phone= LIMIT 1.
+2024/05/04 18:42:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('security_phone=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(574): BaseModel->find('security_phone=')
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('19864350001', '111', '111')
+#6 [internal function]: GfUser1Controller->actionwxSign('19864350001', '111', '111')
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#14 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#16 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350001&pass=111&name=111
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 19:09:57 [error] [php] Undefined variable: phone (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:581)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350003&pass=1&name=1
+2024/05/04 19:10:23 [error] [php] Undefined variable: phone (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:581)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350003&pass=1&name=1
+2024/05/04 19:11:03 [error] [php] Undefined variable: phone (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:581)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350003&pass=1&name=1
+2024/05/04 19:11:32 [error] [php] Undefined variable: phone (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:582)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350003&pass=1&name=1
+2024/05/04 19:12:52 [error] [php] Use of undefined constant GfUser1 - assumed 'GfUser1' (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:567)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350003&pass=1&name=1
+2024/05/04 19:13:14 [error] [php] Use of undefined constant GfUser1 - assumed 'GfUser1' (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:567)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350003&pass=1&name=1
+2024/05/04 19:14:45 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.model" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('model')
+#1 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(567): CActiveRecord->__get('model')
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('19864350003', '1', '1')
+#3 [internal function]: GfUser1Controller->actionwxSign('19864350003', '1', '1')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350003&pass=1&name=1
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 19:15:00 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.model" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('model')
+#1 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(567): CActiveRecord->__get('model')
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('19864350003', '1', '1')
+#3 [internal function]: GfUser1Controller->actionwxSign('19864350003', '1', '1')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350003&pass=1&name=1
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 19:15:13 [error] [php] Undefined variable: phone (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:582)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350003&pass=1&name=1
+2024/05/04 19:16:20 [error] [php] Undefined variable: phone (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:582)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350003&pass=1&name=1
+2024/05/04 19:17:57 [error] [php] Creating default object from empty value (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:582)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350003&pass=1&name=1
+2024/05/04 19:18:09 [error] [php] Creating default object from empty value (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:582)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350003&pass=1&name=1
+2024/05/04 19:18:41 [error] [php] Undefined variable: phone (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:584)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350003&pass=1&name=1
+2024/05/04 19:19:40 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.roleCode" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('roleCode')
+#1 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(403): CActiveRecord->__get('roleCode')
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(852): GfUser1->getWxInfo()
+#3 [internal function]: GfUser1Controller->actionwxSign('19864350003', '1', '1')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350003&pass=1&name=1
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 19:32:03 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '' à la ligne 1. The SQL statement executed was: DELETE FROM `gf_idel_user` WHERE non_account=.
+2024/05/04 19:32:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1835): CDbCommand->execute()
+#1 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(610): CActiveRecord->deleteAll('non_account=')
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('19864350004', '1', '1')
+#3 [internal function]: GfUser1Controller->actionwxSign('19864350004', '1', '1')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350004&pass=1&name=1
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 19:37:04 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.EMALL" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('EMALL', 888825)
+#1 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(594): CActiveRecord->__set('EMALL', 888825)
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('19864350008', '1', '1')
+#3 [internal function]: GfUser1Controller->actionwxSign('19864350008', '1', '1')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350008&pass=1&name=1
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 20:31:27 [error] [php] Undefined variable: GF_ID (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:563)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350009&pass=123456&name=zxces
+2024/05/04 20:31:43 [error] [php] Undefined variable: GF_ID (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:563)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350009&pass=123456&name=zxces
+2024/05/04 20:42:07 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.phoneused" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('phoneused', true)
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(607): CActiveRecord->__set('phoneused', true)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(617): CModel->offsetSet('phoneused', true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('19864350010', '123', '123')
+#4 [internal function]: GfUser1Controller->actionwxSign('19864350010', '123', '123')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350010&pass=123&name=123
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 20:42:20 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.phoneused" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('phoneused', true)
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(607): CActiveRecord->__set('phoneused', true)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(617): CModel->offsetSet('phoneused', true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('19864350010', '123', '123')
+#4 [internal function]: GfUser1Controller->actionwxSign('19864350010', '123', '123')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350010&pass=123&name=123
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 20:42:26 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.phoneused" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('phoneused', true)
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(607): CActiveRecord->__set('phoneused', true)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(617): CModel->offsetSet('phoneused', true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('19864350010', '123', '123')
+#4 [internal function]: GfUser1Controller->actionwxSign('19864350010', '123', '123')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350010&pass=123&name=123
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 20:42:29 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.phoneused" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('phoneused', true)
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(607): CActiveRecord->__set('phoneused', true)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(617): CModel->offsetSet('phoneused', true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('19864350010', '123', '123')
+#4 [internal function]: GfUser1Controller->actionwxSign('19864350010', '123', '123')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350010&pass=123&name=123
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 20:44:39 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.phoneused" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('phoneused', true)
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(607): CActiveRecord->__set('phoneused', true)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(617): CModel->offsetSet('phoneused', true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('19864350011', '123456', 'jack')
+#4 [internal function]: GfUser1Controller->actionwxSign('19864350011', '123456', 'jack')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350011&pass=123456&name=jack
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 20:44:55 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.phoneused" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('phoneused', true)
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(607): CActiveRecord->__set('phoneused', true)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(617): CModel->offsetSet('phoneused', true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('19864350011', '123456', 'jack')
+#4 [internal function]: GfUser1Controller->actionwxSign('19864350011', '123456', 'jack')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350011&pass=123456&name=jack
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 20:44:59 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.phoneused" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('phoneused', true)
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(607): CActiveRecord->__set('phoneused', true)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(617): CModel->offsetSet('phoneused', true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('19864350011', '123456', 'jack')
+#4 [internal function]: GfUser1Controller->actionwxSign('19864350011', '123456', 'jack')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350011&pass=123456&name=jack
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 20:45:26 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.phoneused" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('phoneused', true)
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(607): CActiveRecord->__set('phoneused', true)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(617): CModel->offsetSet('phoneused', true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('19864350011', '123456', 'jackk')
+#4 [internal function]: GfUser1Controller->actionwxSign('19864350011', '123456', 'jackk')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350011&pass=123456&name=jackk
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 20:50:49 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.phoneused" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('phoneused')
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('phoneused')
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(858): CModel->offsetGet('phoneused')
+#3 [internal function]: GfUser1Controller->actionwxSign('123', '123', '123')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=123&pass=123&name=123
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 20:51:42 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.phoneused" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('phoneused', true)
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(607): CActiveRecord->__set('phoneused', true)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(618): CModel->offsetSet('phoneused', true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('123', '123', '123')
+#4 [internal function]: GfUser1Controller->actionwxSign('123', '123', '123')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=123&pass=123&name=123
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 20:51:45 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.phoneused" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('phoneused', true)
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(607): CActiveRecord->__set('phoneused', true)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(618): CModel->offsetSet('phoneused', true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('123', '123', '123')
+#4 [internal function]: GfUser1Controller->actionwxSign('123', '123', '123')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=123&pass=123&name=123
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 20:59:19 [error] [php] Object of class GfUser1 could not be converted to string (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php:851)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=123&pass=123&name=123
+2024/05/04 21:00:29 [error] [php] Use of undefined constant isNewRecord - assumed 'isNewRecord' (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php:851)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=123&pass=123&name=123
+2024/05/04 21:06:29 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.phoneused" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('phoneused')
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('phoneused')
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(851): CModel->offsetGet('phoneused')
+#3 [internal function]: GfUser1Controller->actionwxSign('123452', '123', '123')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=123452&pass=123&name=123
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 21:07:17 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.phoneused" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('phoneused', 0)
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(607): CActiveRecord->__set('phoneused', 0)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(588): CModel->offsetSet('phoneused', 0)
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('123452', '123', '123')
+#4 [internal function]: GfUser1Controller->actionwxSign('123452', '123', '123')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=123452&pass=123&name=123
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 21:07:24 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.phoneused" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('phoneused', 0)
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(607): CActiveRecord->__set('phoneused', 0)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(588): CModel->offsetSet('phoneused', 0)
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('123452', '123', '123')
+#4 [internal function]: GfUser1Controller->actionwxSign('123452', '123', '123')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=123452&pass=123&name=123
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 21:09:05 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.phoneused" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('phoneused', 0)
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(607): CActiveRecord->__set('phoneused', 0)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(589): CModel->offsetSet('phoneused', 0)
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('123452', '123', '123')
+#4 [internal function]: GfUser1Controller->actionwxSign('123452', '123', '123')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=123452&pass=123&name=123
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 21:09:28 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.phoneused" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('phoneused', 0)
+#1 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(589): CActiveRecord->__set('phoneused', 0)
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('123452', '123', '123')
+#3 [internal function]: GfUser1Controller->actionwxSign('123452', '123', '123')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=123452&pass=123&name=123
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 21:10:25 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.phoneused" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('phoneused')
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('phoneused')
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(851): CModel->offsetGet('phoneused')
+#3 [internal function]: GfUser1Controller->actionwxSign('123452', '123', '123')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=123452&pass=123&name=123
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 21:10:39 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.phoneused" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('phoneused', 1)
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(607): CActiveRecord->__set('phoneused', 1)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(620): CModel->offsetSet('phoneused', 1)
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('123452', '123', '123')
+#4 [internal function]: GfUser1Controller->actionwxSign('123452', '123', '123')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=123452&pass=123&name=123
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 21:10:56 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.phoneused" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('phoneused')
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('phoneused')
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(859): CModel->offsetGet('phoneused')
+#3 [internal function]: GfUser1Controller->actionwxSign('123452', '123', 'test')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=123452&pass=123&name=test
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 21:11:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '28345' pour la clef 'PRIMARY'. The SQL statement executed was: INSERT INTO `gf_user_1` (`GF_ID`, `GF_ACCOUNT`, `GF_NAME`, `GF_PASS`, `GF_ACCOUNT_LEVEL_ID`, `pay_pass`, `PHONE`, `EMAIL`, `GF_REG_IP`, `gf_reg_address`, `gf_reg_client`, `client_device_code`, `client_device_uuid`, `REGTIME`, `TXADD`, `TXNAME`, `SEX`, `AGE`, `YEAR_`, `MONTH_`, `DAY_`, `FamilyHistory`, `COUNTRY`, `PROVINCE`, `CITY`, `CONSTELLATION`, `ZODIAC`, `BLOOD`, `JOB`, `LANGUAGE`, `GRQM`, `BYXX`, `guardian`, `guardian_contact_information`, `guardian_relationship`, `height`, `weight`, `INTEREST`, `mood_bigpic_url`, `getpasstime`, `SECURITYQUESTION`, `security_phone_country_code`, `security_phone`, `security_email`, `heart_time`, `ZSXM`, `IDNAME`, `idname_add_time`, `IDADD`, `CLIENTVER`, `real_country`, `real_country_name`, `native`, `nation`, `id_pic`, `id_card_type`, `id_card_type_name`, `id_card`, `id_card_pic`, `id_card_validity_start`, `id_card_validity_end`, `id_card_validity_end_none`, `realname_time`, `passed`, `passed_name`, `real_birthday`, `real_sex`, `real_sex_name`, `realname_entertime`, `club_id`, `health_date`, `health_state`, `medical_history`, `examination_report`, `CREDIT`, `ready_credit`, `beans`, `ready_beans`, `cb_uDate`, `GF_LOGMAIL`, `fens`, `wallet`, `coupons`, `if_open_project`, `if_del`, `user_state`, `user_state_name`, `LOCK_R`, `admin_id`, `admin_gfid`, `admin_gfname`, `fail_auth_reason`, `uDate`, `examine_time`, `achi_h_num`, `achi_h_ratio`, `achi_z_num`, `achi_z_ratio`, `achi_c_num`, `achi_c_ratio`, `lock_date_start`, `lock_date_end`, `occupation`, `work_unit`, `virtual_coin`, `virtual_coin_change_code`, `inviter_gfid`, `valid_date`, `end_valid_date`, `logon_way`, `logon_way_name`, `athlete_rank`, `short_name`, `recent_photo`, `insurance_pic`, `registration_area`, `registration_phone`, `health_report`, `agree_agreement`, `registration_id_card`, `user_type`, `apply_kitchen`, `apply_kitchen_status`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25, :yp26, :yp27, :yp28, :yp29, :yp30, :yp31, :yp32, :yp33, :yp34, :yp35, :yp36, :yp37, :yp38, :yp39, :yp40, :yp41, :yp42, :yp43, :yp44, :yp45, :yp46, :yp47, :yp48, :yp49, :yp50, :yp51, :yp52, :yp53, :yp54, :yp55, :yp56, :yp57, :yp58, :yp59, :yp60, :yp61, :yp62, :yp63, :yp64, :yp65, :yp66, :yp67, :yp68, :yp69, :yp70, :yp71, :yp72, :yp73, :yp74, :yp75, :yp76, :yp77, :yp78, :yp79, :yp80, :yp81, :yp82, :yp83, :yp84, :yp85, :yp86, :yp87, :yp88, :yp89, :yp90, :yp91, :yp92, :yp93, :yp94, :yp95, :yp96, :yp97, :yp98, :yp99, :yp100, :yp101, :yp102, :yp103, :yp104, :yp105, :yp106, :yp107, :yp108, :yp109, :yp110, :yp111, :yp112, :yp113, :yp114, :yp115, :yp116, :yp117, :yp118, :yp119, :yp120, :yp121, :yp122). Bound with :yp0=28345, :yp1='888817', :yp2='test', :yp3='123', :yp4=NULL, :yp5='', :yp6='123452', :yp7='', :yp8='', :yp9=NULL, :yp10=1, :yp11='', :yp12='', :yp13='2024-05-04 21:11:55', :yp14='', :yp15='', :yp16=0, :yp17=54, :yp18='', :yp19='', :yp20='', :yp21='', :yp22='', :yp23='', :yp24='', :yp25='', :yp26='', :yp27='', :yp28='', :yp29='', :yp30='这个人很懒，什么都没留下', :yp31='', :yp32='', :yp33='', :yp34='', :yp35='0', :yp36='0', :yp37='', :yp38='', :yp39=0, :yp40='', :yp41=86, :yp42='', :yp43='', :yp44=NULL, :yp45='', :yp46='', :yp47=NULL, :yp48='', :yp49=0, :yp50=NULL, :yp51=NULL, :yp52='', :yp53='', :yp54='', :yp55=NULL, :yp56=NULL, :yp57='', :yp58='', :yp59=NULL, :yp60=NULL, :yp61=0, :yp62=NULL, :yp63='136', :yp64='未认证', :yp65=NULL, :yp66=NULL, :yp67=NULL, :yp68='2024-05-04 21:11:55', :yp69=0, :yp70=NULL, :yp71=648, :yp72='', :yp73=0, :yp74='0', :yp75=0, :yp76=0, :yp77=0, :yp78=NULL, :yp79='', :yp80='0', :yp81='0.00', :yp82=0, :yp83=649, :yp84=510, :yp85=506, :yp86='正常', :yp87=NULL, :yp88=0, :yp89=0, :yp90='0', :yp91='', :yp92='2024-05-04 21:11:55', :yp93='2024-05-04 21:11:55', :yp94=0, :yp95='100%', :yp96=0, :yp97='0%', :yp98=0, :yp99='0%', :yp100=NULL, :yp101=NULL, :yp102='', :yp103='', :yp104=0, :yp105='', :yp106=NULL, :yp107=NULL, :yp108='长期', :yp109=1439, :yp110='微信注册', :yp111='', :yp112='', :yp113='', :yp114='', :yp115='', :yp116='', :yp117='', :yp118=648, :yp119='', :yp120=NULL, :yp121=NULL, :yp122=NULL.
+2024/05/04 21:11:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '28345' pour la clef 'PRIMARY'' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1084): CDbCommand->execute()
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(812): CActiveRecord->insert(NULL)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(621): CActiveRecord->save()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('123452', '123', 'test')
+#4 [internal function]: GfUser1Controller->actionwxSign('123452', '123', 'test')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=123452&pass=123&name=test
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 21:12:35 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '28345' pour la clef 'PRIMARY'. The SQL statement executed was: INSERT INTO `gf_user_1` (`GF_ID`, `GF_ACCOUNT`, `GF_NAME`, `GF_PASS`, `GF_ACCOUNT_LEVEL_ID`, `pay_pass`, `PHONE`, `EMAIL`, `GF_REG_IP`, `gf_reg_address`, `gf_reg_client`, `client_device_code`, `client_device_uuid`, `REGTIME`, `TXADD`, `TXNAME`, `SEX`, `AGE`, `YEAR_`, `MONTH_`, `DAY_`, `FamilyHistory`, `COUNTRY`, `PROVINCE`, `CITY`, `CONSTELLATION`, `ZODIAC`, `BLOOD`, `JOB`, `LANGUAGE`, `GRQM`, `BYXX`, `guardian`, `guardian_contact_information`, `guardian_relationship`, `height`, `weight`, `INTEREST`, `mood_bigpic_url`, `getpasstime`, `SECURITYQUESTION`, `security_phone_country_code`, `security_phone`, `security_email`, `heart_time`, `ZSXM`, `IDNAME`, `idname_add_time`, `IDADD`, `CLIENTVER`, `real_country`, `real_country_name`, `native`, `nation`, `id_pic`, `id_card_type`, `id_card_type_name`, `id_card`, `id_card_pic`, `id_card_validity_start`, `id_card_validity_end`, `id_card_validity_end_none`, `realname_time`, `passed`, `passed_name`, `real_birthday`, `real_sex`, `real_sex_name`, `realname_entertime`, `club_id`, `health_date`, `health_state`, `medical_history`, `examination_report`, `CREDIT`, `ready_credit`, `beans`, `ready_beans`, `cb_uDate`, `GF_LOGMAIL`, `fens`, `wallet`, `coupons`, `if_open_project`, `if_del`, `user_state`, `user_state_name`, `LOCK_R`, `admin_id`, `admin_gfid`, `admin_gfname`, `fail_auth_reason`, `uDate`, `examine_time`, `achi_h_num`, `achi_h_ratio`, `achi_z_num`, `achi_z_ratio`, `achi_c_num`, `achi_c_ratio`, `lock_date_start`, `lock_date_end`, `occupation`, `work_unit`, `virtual_coin`, `virtual_coin_change_code`, `inviter_gfid`, `valid_date`, `end_valid_date`, `logon_way`, `logon_way_name`, `athlete_rank`, `short_name`, `recent_photo`, `insurance_pic`, `registration_area`, `registration_phone`, `health_report`, `agree_agreement`, `registration_id_card`, `user_type`, `apply_kitchen`, `apply_kitchen_status`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25, :yp26, :yp27, :yp28, :yp29, :yp30, :yp31, :yp32, :yp33, :yp34, :yp35, :yp36, :yp37, :yp38, :yp39, :yp40, :yp41, :yp42, :yp43, :yp44, :yp45, :yp46, :yp47, :yp48, :yp49, :yp50, :yp51, :yp52, :yp53, :yp54, :yp55, :yp56, :yp57, :yp58, :yp59, :yp60, :yp61, :yp62, :yp63, :yp64, :yp65, :yp66, :yp67, :yp68, :yp69, :yp70, :yp71, :yp72, :yp73, :yp74, :yp75, :yp76, :yp77, :yp78, :yp79, :yp80, :yp81, :yp82, :yp83, :yp84, :yp85, :yp86, :yp87, :yp88, :yp89, :yp90, :yp91, :yp92, :yp93, :yp94, :yp95, :yp96, :yp97, :yp98, :yp99, :yp100, :yp101, :yp102, :yp103, :yp104, :yp105, :yp106, :yp107, :yp108, :yp109, :yp110, :yp111, :yp112, :yp113, :yp114, :yp115, :yp116, :yp117, :yp118, :yp119, :yp120, :yp121, :yp122). Bound with :yp0=28345, :yp1='888817', :yp2='test', :yp3='123', :yp4=NULL, :yp5='', :yp6='123452', :yp7='', :yp8='', :yp9=NULL, :yp10=1, :yp11='', :yp12='', :yp13='2024-05-04 21:12:35', :yp14='', :yp15='', :yp16=0, :yp17=54, :yp18='', :yp19='', :yp20='', :yp21='', :yp22='', :yp23='', :yp24='', :yp25='', :yp26='', :yp27='', :yp28='', :yp29='', :yp30='这个人很懒，什么都没留下', :yp31='', :yp32='', :yp33='', :yp34='', :yp35='0', :yp36='0', :yp37='', :yp38='', :yp39=0, :yp40='', :yp41=86, :yp42='', :yp43='', :yp44=NULL, :yp45='', :yp46='', :yp47=NULL, :yp48='', :yp49=0, :yp50=NULL, :yp51=NULL, :yp52='', :yp53='', :yp54='', :yp55=NULL, :yp56=NULL, :yp57='', :yp58='', :yp59=NULL, :yp60=NULL, :yp61=0, :yp62=NULL, :yp63='136', :yp64='未认证', :yp65=NULL, :yp66=NULL, :yp67=NULL, :yp68='2024-05-04 21:12:35', :yp69=0, :yp70=NULL, :yp71=648, :yp72='', :yp73=0, :yp74='0', :yp75=0, :yp76=0, :yp77=0, :yp78=NULL, :yp79='', :yp80='0', :yp81='0.00', :yp82=0, :yp83=649, :yp84=510, :yp85=506, :yp86='正常', :yp87=NULL, :yp88=0, :yp89=0, :yp90='0', :yp91='', :yp92='2024-05-04 21:12:35', :yp93='2024-05-04 21:12:35', :yp94=0, :yp95='100%', :yp96=0, :yp97='0%', :yp98=0, :yp99='0%', :yp100=NULL, :yp101=NULL, :yp102='', :yp103='', :yp104=0, :yp105='', :yp106=NULL, :yp107=NULL, :yp108='长期', :yp109=1439, :yp110='微信注册', :yp111='', :yp112='', :yp113='', :yp114='', :yp115='', :yp116='', :yp117='', :yp118=648, :yp119='', :yp120=NULL, :yp121=NULL, :yp122=NULL.
+2024/05/04 21:12:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '28345' pour la clef 'PRIMARY'' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1084): CDbCommand->execute()
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(812): CActiveRecord->insert(NULL)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(621): CActiveRecord->save()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('123452', '123', 'test')
+#4 [internal function]: GfUser1Controller->actionwxSign('123452', '123', 'test')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=123452&pass=123&name=test
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 21:12:44 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '28345' pour la clef 'PRIMARY'. The SQL statement executed was: INSERT INTO `gf_user_1` (`GF_ID`, `GF_ACCOUNT`, `GF_NAME`, `GF_PASS`, `GF_ACCOUNT_LEVEL_ID`, `pay_pass`, `PHONE`, `EMAIL`, `GF_REG_IP`, `gf_reg_address`, `gf_reg_client`, `client_device_code`, `client_device_uuid`, `REGTIME`, `TXADD`, `TXNAME`, `SEX`, `AGE`, `YEAR_`, `MONTH_`, `DAY_`, `FamilyHistory`, `COUNTRY`, `PROVINCE`, `CITY`, `CONSTELLATION`, `ZODIAC`, `BLOOD`, `JOB`, `LANGUAGE`, `GRQM`, `BYXX`, `guardian`, `guardian_contact_information`, `guardian_relationship`, `height`, `weight`, `INTEREST`, `mood_bigpic_url`, `getpasstime`, `SECURITYQUESTION`, `security_phone_country_code`, `security_phone`, `security_email`, `heart_time`, `ZSXM`, `IDNAME`, `idname_add_time`, `IDADD`, `CLIENTVER`, `real_country`, `real_country_name`, `native`, `nation`, `id_pic`, `id_card_type`, `id_card_type_name`, `id_card`, `id_card_pic`, `id_card_validity_start`, `id_card_validity_end`, `id_card_validity_end_none`, `realname_time`, `passed`, `passed_name`, `real_birthday`, `real_sex`, `real_sex_name`, `realname_entertime`, `club_id`, `health_date`, `health_state`, `medical_history`, `examination_report`, `CREDIT`, `ready_credit`, `beans`, `ready_beans`, `cb_uDate`, `GF_LOGMAIL`, `fens`, `wallet`, `coupons`, `if_open_project`, `if_del`, `user_state`, `user_state_name`, `LOCK_R`, `admin_id`, `admin_gfid`, `admin_gfname`, `fail_auth_reason`, `uDate`, `examine_time`, `achi_h_num`, `achi_h_ratio`, `achi_z_num`, `achi_z_ratio`, `achi_c_num`, `achi_c_ratio`, `lock_date_start`, `lock_date_end`, `occupation`, `work_unit`, `virtual_coin`, `virtual_coin_change_code`, `inviter_gfid`, `valid_date`, `end_valid_date`, `logon_way`, `logon_way_name`, `athlete_rank`, `short_name`, `recent_photo`, `insurance_pic`, `registration_area`, `registration_phone`, `health_report`, `agree_agreement`, `registration_id_card`, `user_type`, `apply_kitchen`, `apply_kitchen_status`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25, :yp26, :yp27, :yp28, :yp29, :yp30, :yp31, :yp32, :yp33, :yp34, :yp35, :yp36, :yp37, :yp38, :yp39, :yp40, :yp41, :yp42, :yp43, :yp44, :yp45, :yp46, :yp47, :yp48, :yp49, :yp50, :yp51, :yp52, :yp53, :yp54, :yp55, :yp56, :yp57, :yp58, :yp59, :yp60, :yp61, :yp62, :yp63, :yp64, :yp65, :yp66, :yp67, :yp68, :yp69, :yp70, :yp71, :yp72, :yp73, :yp74, :yp75, :yp76, :yp77, :yp78, :yp79, :yp80, :yp81, :yp82, :yp83, :yp84, :yp85, :yp86, :yp87, :yp88, :yp89, :yp90, :yp91, :yp92, :yp93, :yp94, :yp95, :yp96, :yp97, :yp98, :yp99, :yp100, :yp101, :yp102, :yp103, :yp104, :yp105, :yp106, :yp107, :yp108, :yp109, :yp110, :yp111, :yp112, :yp113, :yp114, :yp115, :yp116, :yp117, :yp118, :yp119, :yp120, :yp121, :yp122). Bound with :yp0=28345, :yp1='888817', :yp2='test', :yp3='123', :yp4=NULL, :yp5='', :yp6='123452', :yp7='', :yp8='', :yp9=NULL, :yp10=1, :yp11='', :yp12='', :yp13='2024-05-04 21:12:44', :yp14='', :yp15='', :yp16=0, :yp17=54, :yp18='', :yp19='', :yp20='', :yp21='', :yp22='', :yp23='', :yp24='', :yp25='', :yp26='', :yp27='', :yp28='', :yp29='', :yp30='这个人很懒，什么都没留下', :yp31='', :yp32='', :yp33='', :yp34='', :yp35='0', :yp36='0', :yp37='', :yp38='', :yp39=0, :yp40='', :yp41=86, :yp42='', :yp43='', :yp44=NULL, :yp45='', :yp46='', :yp47=NULL, :yp48='', :yp49=0, :yp50=NULL, :yp51=NULL, :yp52='', :yp53='', :yp54='', :yp55=NULL, :yp56=NULL, :yp57='', :yp58='', :yp59=NULL, :yp60=NULL, :yp61=0, :yp62=NULL, :yp63='136', :yp64='未认证', :yp65=NULL, :yp66=NULL, :yp67=NULL, :yp68='2024-05-04 21:12:44', :yp69=0, :yp70=NULL, :yp71=648, :yp72='', :yp73=0, :yp74='0', :yp75=0, :yp76=0, :yp77=0, :yp78=NULL, :yp79='', :yp80='0', :yp81='0.00', :yp82=0, :yp83=649, :yp84=510, :yp85=506, :yp86='正常', :yp87=NULL, :yp88=0, :yp89=0, :yp90='0', :yp91='', :yp92='2024-05-04 21:12:44', :yp93='2024-05-04 21:12:44', :yp94=0, :yp95='100%', :yp96=0, :yp97='0%', :yp98=0, :yp99='0%', :yp100=NULL, :yp101=NULL, :yp102='', :yp103='', :yp104=0, :yp105='', :yp106=NULL, :yp107=NULL, :yp108='长期', :yp109=1439, :yp110='微信注册', :yp111='', :yp112='', :yp113='', :yp114='', :yp115='', :yp116='', :yp117='', :yp118=648, :yp119='', :yp120=NULL, :yp121=NULL, :yp122=NULL.
+2024/05/04 21:12:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '28345' pour la clef 'PRIMARY'' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1084): CDbCommand->execute()
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(812): CActiveRecord->insert(NULL)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(621): CActiveRecord->save()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('123452', '123', 'test')
+#4 [internal function]: GfUser1Controller->actionwxSign('123452', '123', 'test')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=123452&pass=123&name=test
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 21:13:26 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.phoneused" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('phoneused')
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('phoneused')
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(859): CModel->offsetGet('phoneused')
+#3 [internal function]: GfUser1Controller->actionwxSign('123452', '123', 'test')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=123452&pass=123&name=test
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 21:15:53 [error] [php] Undefined variable: code (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php:862)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=1234522&pass=123&name=test
+2024/05/04 21:16:17 [error] [php] Undefined variable: code (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php:862)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=1234522&pass=123&name=test
+2024/05/04 21:18:21 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '1234522wdq' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `gf_user_1` `t` WHERE PHONE=1234522wdq LIMIT 1.
+2024/05/04 21:18:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '1234522wdq' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('PHONE=1234522wd...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(584): BaseModel->find('PHONE=1234522wd...')
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('1234522wdq', '123', 'test')
+#6 [internal function]: GfUser1Controller->actionwxSign('1234522wdq', '123', 'test')
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#14 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#16 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=1234522wdq&pass=123&name=test
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 21:18:39 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '28348' pour la clef 'PRIMARY'. The SQL statement executed was: INSERT INTO `gf_user_1` (`GF_ID`, `GF_ACCOUNT`, `GF_NAME`, `GF_PASS`, `GF_ACCOUNT_LEVEL_ID`, `pay_pass`, `PHONE`, `EMAIL`, `GF_REG_IP`, `gf_reg_address`, `gf_reg_client`, `client_device_code`, `client_device_uuid`, `REGTIME`, `TXADD`, `TXNAME`, `SEX`, `AGE`, `YEAR_`, `MONTH_`, `DAY_`, `FamilyHistory`, `COUNTRY`, `PROVINCE`, `CITY`, `CONSTELLATION`, `ZODIAC`, `BLOOD`, `JOB`, `LANGUAGE`, `GRQM`, `BYXX`, `guardian`, `guardian_contact_information`, `guardian_relationship`, `height`, `weight`, `INTEREST`, `mood_bigpic_url`, `getpasstime`, `SECURITYQUESTION`, `security_phone_country_code`, `security_phone`, `security_email`, `heart_time`, `ZSXM`, `IDNAME`, `idname_add_time`, `IDADD`, `CLIENTVER`, `real_country`, `real_country_name`, `native`, `nation`, `id_pic`, `id_card_type`, `id_card_type_name`, `id_card`, `id_card_pic`, `id_card_validity_start`, `id_card_validity_end`, `id_card_validity_end_none`, `realname_time`, `passed`, `passed_name`, `real_birthday`, `real_sex`, `real_sex_name`, `realname_entertime`, `club_id`, `health_date`, `health_state`, `medical_history`, `examination_report`, `CREDIT`, `ready_credit`, `beans`, `ready_beans`, `cb_uDate`, `GF_LOGMAIL`, `fens`, `wallet`, `coupons`, `if_open_project`, `if_del`, `user_state`, `user_state_name`, `LOCK_R`, `admin_id`, `admin_gfid`, `admin_gfname`, `fail_auth_reason`, `uDate`, `examine_time`, `achi_h_num`, `achi_h_ratio`, `achi_z_num`, `achi_z_ratio`, `achi_c_num`, `achi_c_ratio`, `lock_date_start`, `lock_date_end`, `occupation`, `work_unit`, `virtual_coin`, `virtual_coin_change_code`, `inviter_gfid`, `valid_date`, `end_valid_date`, `logon_way`, `logon_way_name`, `athlete_rank`, `short_name`, `recent_photo`, `insurance_pic`, `registration_area`, `registration_phone`, `health_report`, `agree_agreement`, `registration_id_card`, `user_type`, `apply_kitchen`, `apply_kitchen_status`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25, :yp26, :yp27, :yp28, :yp29, :yp30, :yp31, :yp32, :yp33, :yp34, :yp35, :yp36, :yp37, :yp38, :yp39, :yp40, :yp41, :yp42, :yp43, :yp44, :yp45, :yp46, :yp47, :yp48, :yp49, :yp50, :yp51, :yp52, :yp53, :yp54, :yp55, :yp56, :yp57, :yp58, :yp59, :yp60, :yp61, :yp62, :yp63, :yp64, :yp65, :yp66, :yp67, :yp68, :yp69, :yp70, :yp71, :yp72, :yp73, :yp74, :yp75, :yp76, :yp77, :yp78, :yp79, :yp80, :yp81, :yp82, :yp83, :yp84, :yp85, :yp86, :yp87, :yp88, :yp89, :yp90, :yp91, :yp92, :yp93, :yp94, :yp95, :yp96, :yp97, :yp98, :yp99, :yp100, :yp101, :yp102, :yp103, :yp104, :yp105, :yp106, :yp107, :yp108, :yp109, :yp110, :yp111, :yp112, :yp113, :yp114, :yp115, :yp116, :yp117, :yp118, :yp119, :yp120, :yp121, :yp122). Bound with :yp0=28348, :yp1='888838', :yp2='test', :yp3='123', :yp4=NULL, :yp5='', :yp6='1234123124124', :yp7='', :yp8='', :yp9=NULL, :yp10=1, :yp11='', :yp12='', :yp13='2024-05-04 21:18:39', :yp14='', :yp15='', :yp16=0, :yp17=54, :yp18='', :yp19='', :yp20='', :yp21='', :yp22='', :yp23='', :yp24='', :yp25='', :yp26='', :yp27='', :yp28='', :yp29='', :yp30='这个人很懒，什么都没留下', :yp31='', :yp32='', :yp33='', :yp34='', :yp35='0', :yp36='0', :yp37='', :yp38='', :yp39=0, :yp40='', :yp41=86, :yp42='', :yp43='', :yp44=NULL, :yp45='', :yp46='', :yp47=NULL, :yp48='', :yp49=0, :yp50=NULL, :yp51=NULL, :yp52='', :yp53='', :yp54='', :yp55=NULL, :yp56=NULL, :yp57='', :yp58='', :yp59=NULL, :yp60=NULL, :yp61=0, :yp62=NULL, :yp63='136', :yp64='未认证', :yp65=NULL, :yp66=NULL, :yp67=NULL, :yp68='2024-05-04 21:18:39', :yp69=0, :yp70=NULL, :yp71=648, :yp72='', :yp73=0, :yp74='0', :yp75=0, :yp76=0, :yp77=0, :yp78=NULL, :yp79='', :yp80='0', :yp81='0.00', :yp82=0, :yp83=649, :yp84=510, :yp85=506, :yp86='正常', :yp87=NULL, :yp88=0, :yp89=0, :yp90='0', :yp91='', :yp92='2024-05-04 21:18:39', :yp93='2024-05-04 21:18:39', :yp94=0, :yp95='100%', :yp96=0, :yp97='0%', :yp98=0, :yp99='0%', :yp100=NULL, :yp101=NULL, :yp102='', :yp103='', :yp104=0, :yp105='', :yp106=NULL, :yp107=NULL, :yp108='长期', :yp109=1439, :yp110='微信注册', :yp111='', :yp112='', :yp113='', :yp114='', :yp115='', :yp116='', :yp117='', :yp118=648, :yp119='', :yp120=NULL, :yp121=NULL, :yp122=NULL.
+2024/05/04 21:18:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '28348' pour la clef 'PRIMARY'' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1084): CDbCommand->execute()
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(812): CActiveRecord->insert(NULL)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(621): CActiveRecord->save()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('1234123124124', '123', 'test')
+#4 [internal function]: GfUser1Controller->actionwxSign('1234123124124', '123', 'test')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=1234123124124&pass=123&name=test
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 21:20:37 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '28348' pour la clef 'PRIMARY'. The SQL statement executed was: INSERT INTO `gf_user_1` (`GF_ID`, `GF_ACCOUNT`, `GF_NAME`, `GF_PASS`, `GF_ACCOUNT_LEVEL_ID`, `pay_pass`, `PHONE`, `EMAIL`, `GF_REG_IP`, `gf_reg_address`, `gf_reg_client`, `client_device_code`, `client_device_uuid`, `REGTIME`, `TXADD`, `TXNAME`, `SEX`, `AGE`, `YEAR_`, `MONTH_`, `DAY_`, `FamilyHistory`, `COUNTRY`, `PROVINCE`, `CITY`, `CONSTELLATION`, `ZODIAC`, `BLOOD`, `JOB`, `LANGUAGE`, `GRQM`, `BYXX`, `guardian`, `guardian_contact_information`, `guardian_relationship`, `height`, `weight`, `INTEREST`, `mood_bigpic_url`, `getpasstime`, `SECURITYQUESTION`, `security_phone_country_code`, `security_phone`, `security_email`, `heart_time`, `ZSXM`, `IDNAME`, `idname_add_time`, `IDADD`, `CLIENTVER`, `real_country`, `real_country_name`, `native`, `nation`, `id_pic`, `id_card_type`, `id_card_type_name`, `id_card`, `id_card_pic`, `id_card_validity_start`, `id_card_validity_end`, `id_card_validity_end_none`, `realname_time`, `passed`, `passed_name`, `real_birthday`, `real_sex`, `real_sex_name`, `realname_entertime`, `club_id`, `health_date`, `health_state`, `medical_history`, `examination_report`, `CREDIT`, `ready_credit`, `beans`, `ready_beans`, `cb_uDate`, `GF_LOGMAIL`, `fens`, `wallet`, `coupons`, `if_open_project`, `if_del`, `user_state`, `user_state_name`, `LOCK_R`, `admin_id`, `admin_gfid`, `admin_gfname`, `fail_auth_reason`, `uDate`, `examine_time`, `achi_h_num`, `achi_h_ratio`, `achi_z_num`, `achi_z_ratio`, `achi_c_num`, `achi_c_ratio`, `lock_date_start`, `lock_date_end`, `occupation`, `work_unit`, `virtual_coin`, `virtual_coin_change_code`, `inviter_gfid`, `valid_date`, `end_valid_date`, `logon_way`, `logon_way_name`, `athlete_rank`, `short_name`, `recent_photo`, `insurance_pic`, `registration_area`, `registration_phone`, `health_report`, `agree_agreement`, `registration_id_card`, `user_type`, `apply_kitchen`, `apply_kitchen_status`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25, :yp26, :yp27, :yp28, :yp29, :yp30, :yp31, :yp32, :yp33, :yp34, :yp35, :yp36, :yp37, :yp38, :yp39, :yp40, :yp41, :yp42, :yp43, :yp44, :yp45, :yp46, :yp47, :yp48, :yp49, :yp50, :yp51, :yp52, :yp53, :yp54, :yp55, :yp56, :yp57, :yp58, :yp59, :yp60, :yp61, :yp62, :yp63, :yp64, :yp65, :yp66, :yp67, :yp68, :yp69, :yp70, :yp71, :yp72, :yp73, :yp74, :yp75, :yp76, :yp77, :yp78, :yp79, :yp80, :yp81, :yp82, :yp83, :yp84, :yp85, :yp86, :yp87, :yp88, :yp89, :yp90, :yp91, :yp92, :yp93, :yp94, :yp95, :yp96, :yp97, :yp98, :yp99, :yp100, :yp101, :yp102, :yp103, :yp104, :yp105, :yp106, :yp107, :yp108, :yp109, :yp110, :yp111, :yp112, :yp113, :yp114, :yp115, :yp116, :yp117, :yp118, :yp119, :yp120, :yp121, :yp122). Bound with :yp0=28348, :yp1='888838', :yp2='test', :yp3='123', :yp4=NULL, :yp5='', :yp6='1234123124124', :yp7='', :yp8='', :yp9=NULL, :yp10=1, :yp11='', :yp12='', :yp13='2024-05-04 21:20:37', :yp14='', :yp15='', :yp16=0, :yp17=54, :yp18='', :yp19='', :yp20='', :yp21='', :yp22='', :yp23='', :yp24='', :yp25='', :yp26='', :yp27='', :yp28='', :yp29='', :yp30='这个人很懒，什么都没留下', :yp31='', :yp32='', :yp33='', :yp34='', :yp35='0', :yp36='0', :yp37='', :yp38='', :yp39=0, :yp40='', :yp41=86, :yp42='', :yp43='', :yp44=NULL, :yp45='', :yp46='', :yp47=NULL, :yp48='', :yp49=0, :yp50=NULL, :yp51=NULL, :yp52='', :yp53='', :yp54='', :yp55=NULL, :yp56=NULL, :yp57='', :yp58='', :yp59=NULL, :yp60=NULL, :yp61=0, :yp62=NULL, :yp63='136', :yp64='未认证', :yp65=NULL, :yp66=NULL, :yp67=NULL, :yp68='2024-05-04 21:20:37', :yp69=0, :yp70=NULL, :yp71=648, :yp72='', :yp73=0, :yp74='0', :yp75=0, :yp76=0, :yp77=0, :yp78=NULL, :yp79='', :yp80='0', :yp81='0.00', :yp82=0, :yp83=649, :yp84=510, :yp85=506, :yp86='正常', :yp87=NULL, :yp88=0, :yp89=0, :yp90='0', :yp91='', :yp92='2024-05-04 21:20:37', :yp93='2024-05-04 21:20:37', :yp94=0, :yp95='100%', :yp96=0, :yp97='0%', :yp98=0, :yp99='0%', :yp100=NULL, :yp101=NULL, :yp102='', :yp103='', :yp104=0, :yp105='', :yp106=NULL, :yp107=NULL, :yp108='长期', :yp109=1439, :yp110='微信注册', :yp111='', :yp112='', :yp113='', :yp114='', :yp115='', :yp116='', :yp117='', :yp118=648, :yp119='', :yp120=NULL, :yp121=NULL, :yp122=NULL.
+2024/05/04 21:20:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '28348' pour la clef 'PRIMARY'' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1084): CDbCommand->execute()
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(812): CActiveRecord->insert(NULL)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(621): CActiveRecord->save()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('1234123124124', '123', 'test')
+#4 [internal function]: GfUser1Controller->actionwxSign('1234123124124', '123', 'test')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=1234123124124&pass=123&name=test
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 21:20:44 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '28348' pour la clef 'PRIMARY'. The SQL statement executed was: INSERT INTO `gf_user_1` (`GF_ID`, `GF_ACCOUNT`, `GF_NAME`, `GF_PASS`, `GF_ACCOUNT_LEVEL_ID`, `pay_pass`, `PHONE`, `EMAIL`, `GF_REG_IP`, `gf_reg_address`, `gf_reg_client`, `client_device_code`, `client_device_uuid`, `REGTIME`, `TXADD`, `TXNAME`, `SEX`, `AGE`, `YEAR_`, `MONTH_`, `DAY_`, `FamilyHistory`, `COUNTRY`, `PROVINCE`, `CITY`, `CONSTELLATION`, `ZODIAC`, `BLOOD`, `JOB`, `LANGUAGE`, `GRQM`, `BYXX`, `guardian`, `guardian_contact_information`, `guardian_relationship`, `height`, `weight`, `INTEREST`, `mood_bigpic_url`, `getpasstime`, `SECURITYQUESTION`, `security_phone_country_code`, `security_phone`, `security_email`, `heart_time`, `ZSXM`, `IDNAME`, `idname_add_time`, `IDADD`, `CLIENTVER`, `real_country`, `real_country_name`, `native`, `nation`, `id_pic`, `id_card_type`, `id_card_type_name`, `id_card`, `id_card_pic`, `id_card_validity_start`, `id_card_validity_end`, `id_card_validity_end_none`, `realname_time`, `passed`, `passed_name`, `real_birthday`, `real_sex`, `real_sex_name`, `realname_entertime`, `club_id`, `health_date`, `health_state`, `medical_history`, `examination_report`, `CREDIT`, `ready_credit`, `beans`, `ready_beans`, `cb_uDate`, `GF_LOGMAIL`, `fens`, `wallet`, `coupons`, `if_open_project`, `if_del`, `user_state`, `user_state_name`, `LOCK_R`, `admin_id`, `admin_gfid`, `admin_gfname`, `fail_auth_reason`, `uDate`, `examine_time`, `achi_h_num`, `achi_h_ratio`, `achi_z_num`, `achi_z_ratio`, `achi_c_num`, `achi_c_ratio`, `lock_date_start`, `lock_date_end`, `occupation`, `work_unit`, `virtual_coin`, `virtual_coin_change_code`, `inviter_gfid`, `valid_date`, `end_valid_date`, `logon_way`, `logon_way_name`, `athlete_rank`, `short_name`, `recent_photo`, `insurance_pic`, `registration_area`, `registration_phone`, `health_report`, `agree_agreement`, `registration_id_card`, `user_type`, `apply_kitchen`, `apply_kitchen_status`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25, :yp26, :yp27, :yp28, :yp29, :yp30, :yp31, :yp32, :yp33, :yp34, :yp35, :yp36, :yp37, :yp38, :yp39, :yp40, :yp41, :yp42, :yp43, :yp44, :yp45, :yp46, :yp47, :yp48, :yp49, :yp50, :yp51, :yp52, :yp53, :yp54, :yp55, :yp56, :yp57, :yp58, :yp59, :yp60, :yp61, :yp62, :yp63, :yp64, :yp65, :yp66, :yp67, :yp68, :yp69, :yp70, :yp71, :yp72, :yp73, :yp74, :yp75, :yp76, :yp77, :yp78, :yp79, :yp80, :yp81, :yp82, :yp83, :yp84, :yp85, :yp86, :yp87, :yp88, :yp89, :yp90, :yp91, :yp92, :yp93, :yp94, :yp95, :yp96, :yp97, :yp98, :yp99, :yp100, :yp101, :yp102, :yp103, :yp104, :yp105, :yp106, :yp107, :yp108, :yp109, :yp110, :yp111, :yp112, :yp113, :yp114, :yp115, :yp116, :yp117, :yp118, :yp119, :yp120, :yp121, :yp122). Bound with :yp0=28348, :yp1='888838', :yp2='test', :yp3='123', :yp4=NULL, :yp5='', :yp6='1234123124124', :yp7='', :yp8='', :yp9=NULL, :yp10=1, :yp11='', :yp12='', :yp13='2024-05-04 21:20:44', :yp14='', :yp15='', :yp16=0, :yp17=54, :yp18='', :yp19='', :yp20='', :yp21='', :yp22='', :yp23='', :yp24='', :yp25='', :yp26='', :yp27='', :yp28='', :yp29='', :yp30='这个人很懒，什么都没留下', :yp31='', :yp32='', :yp33='', :yp34='', :yp35='0', :yp36='0', :yp37='', :yp38='', :yp39=0, :yp40='', :yp41=86, :yp42='', :yp43='', :yp44=NULL, :yp45='', :yp46='', :yp47=NULL, :yp48='', :yp49=0, :yp50=NULL, :yp51=NULL, :yp52='', :yp53='', :yp54='', :yp55=NULL, :yp56=NULL, :yp57='', :yp58='', :yp59=NULL, :yp60=NULL, :yp61=0, :yp62=NULL, :yp63='136', :yp64='未认证', :yp65=NULL, :yp66=NULL, :yp67=NULL, :yp68='2024-05-04 21:20:44', :yp69=0, :yp70=NULL, :yp71=648, :yp72='', :yp73=0, :yp74='0', :yp75=0, :yp76=0, :yp77=0, :yp78=NULL, :yp79='', :yp80='0', :yp81='0.00', :yp82=0, :yp83=649, :yp84=510, :yp85=506, :yp86='正常', :yp87=NULL, :yp88=0, :yp89=0, :yp90='0', :yp91='', :yp92='2024-05-04 21:20:44', :yp93='2024-05-04 21:20:44', :yp94=0, :yp95='100%', :yp96=0, :yp97='0%', :yp98=0, :yp99='0%', :yp100=NULL, :yp101=NULL, :yp102='', :yp103='', :yp104=0, :yp105='', :yp106=NULL, :yp107=NULL, :yp108='长期', :yp109=1439, :yp110='微信注册', :yp111='', :yp112='', :yp113='', :yp114='', :yp115='', :yp116='', :yp117='', :yp118=648, :yp119='', :yp120=NULL, :yp121=NULL, :yp122=NULL.
+2024/05/04 21:20:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '28348' pour la clef 'PRIMARY'' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1084): CDbCommand->execute()
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(812): CActiveRecord->insert(NULL)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(621): CActiveRecord->save()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('1234123124124', '123', 'test')
+#4 [internal function]: GfUser1Controller->actionwxSign('1234123124124', '123', 'test')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=1234123124124&pass=123&name=test
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 21:20:47 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '28348' pour la clef 'PRIMARY'. The SQL statement executed was: INSERT INTO `gf_user_1` (`GF_ID`, `GF_ACCOUNT`, `GF_NAME`, `GF_PASS`, `GF_ACCOUNT_LEVEL_ID`, `pay_pass`, `PHONE`, `EMAIL`, `GF_REG_IP`, `gf_reg_address`, `gf_reg_client`, `client_device_code`, `client_device_uuid`, `REGTIME`, `TXADD`, `TXNAME`, `SEX`, `AGE`, `YEAR_`, `MONTH_`, `DAY_`, `FamilyHistory`, `COUNTRY`, `PROVINCE`, `CITY`, `CONSTELLATION`, `ZODIAC`, `BLOOD`, `JOB`, `LANGUAGE`, `GRQM`, `BYXX`, `guardian`, `guardian_contact_information`, `guardian_relationship`, `height`, `weight`, `INTEREST`, `mood_bigpic_url`, `getpasstime`, `SECURITYQUESTION`, `security_phone_country_code`, `security_phone`, `security_email`, `heart_time`, `ZSXM`, `IDNAME`, `idname_add_time`, `IDADD`, `CLIENTVER`, `real_country`, `real_country_name`, `native`, `nation`, `id_pic`, `id_card_type`, `id_card_type_name`, `id_card`, `id_card_pic`, `id_card_validity_start`, `id_card_validity_end`, `id_card_validity_end_none`, `realname_time`, `passed`, `passed_name`, `real_birthday`, `real_sex`, `real_sex_name`, `realname_entertime`, `club_id`, `health_date`, `health_state`, `medical_history`, `examination_report`, `CREDIT`, `ready_credit`, `beans`, `ready_beans`, `cb_uDate`, `GF_LOGMAIL`, `fens`, `wallet`, `coupons`, `if_open_project`, `if_del`, `user_state`, `user_state_name`, `LOCK_R`, `admin_id`, `admin_gfid`, `admin_gfname`, `fail_auth_reason`, `uDate`, `examine_time`, `achi_h_num`, `achi_h_ratio`, `achi_z_num`, `achi_z_ratio`, `achi_c_num`, `achi_c_ratio`, `lock_date_start`, `lock_date_end`, `occupation`, `work_unit`, `virtual_coin`, `virtual_coin_change_code`, `inviter_gfid`, `valid_date`, `end_valid_date`, `logon_way`, `logon_way_name`, `athlete_rank`, `short_name`, `recent_photo`, `insurance_pic`, `registration_area`, `registration_phone`, `health_report`, `agree_agreement`, `registration_id_card`, `user_type`, `apply_kitchen`, `apply_kitchen_status`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25, :yp26, :yp27, :yp28, :yp29, :yp30, :yp31, :yp32, :yp33, :yp34, :yp35, :yp36, :yp37, :yp38, :yp39, :yp40, :yp41, :yp42, :yp43, :yp44, :yp45, :yp46, :yp47, :yp48, :yp49, :yp50, :yp51, :yp52, :yp53, :yp54, :yp55, :yp56, :yp57, :yp58, :yp59, :yp60, :yp61, :yp62, :yp63, :yp64, :yp65, :yp66, :yp67, :yp68, :yp69, :yp70, :yp71, :yp72, :yp73, :yp74, :yp75, :yp76, :yp77, :yp78, :yp79, :yp80, :yp81, :yp82, :yp83, :yp84, :yp85, :yp86, :yp87, :yp88, :yp89, :yp90, :yp91, :yp92, :yp93, :yp94, :yp95, :yp96, :yp97, :yp98, :yp99, :yp100, :yp101, :yp102, :yp103, :yp104, :yp105, :yp106, :yp107, :yp108, :yp109, :yp110, :yp111, :yp112, :yp113, :yp114, :yp115, :yp116, :yp117, :yp118, :yp119, :yp120, :yp121, :yp122). Bound with :yp0=28348, :yp1='888838', :yp2='test', :yp3='123', :yp4=NULL, :yp5='', :yp6='1234123124124', :yp7='', :yp8='', :yp9=NULL, :yp10=1, :yp11='', :yp12='', :yp13='2024-05-04 21:20:47', :yp14='', :yp15='', :yp16=0, :yp17=54, :yp18='', :yp19='', :yp20='', :yp21='', :yp22='', :yp23='', :yp24='', :yp25='', :yp26='', :yp27='', :yp28='', :yp29='', :yp30='这个人很懒，什么都没留下', :yp31='', :yp32='', :yp33='', :yp34='', :yp35='0', :yp36='0', :yp37='', :yp38='', :yp39=0, :yp40='', :yp41=86, :yp42='', :yp43='', :yp44=NULL, :yp45='', :yp46='', :yp47=NULL, :yp48='', :yp49=0, :yp50=NULL, :yp51=NULL, :yp52='', :yp53='', :yp54='', :yp55=NULL, :yp56=NULL, :yp57='', :yp58='', :yp59=NULL, :yp60=NULL, :yp61=0, :yp62=NULL, :yp63='136', :yp64='未认证', :yp65=NULL, :yp66=NULL, :yp67=NULL, :yp68='2024-05-04 21:20:47', :yp69=0, :yp70=NULL, :yp71=648, :yp72='', :yp73=0, :yp74='0', :yp75=0, :yp76=0, :yp77=0, :yp78=NULL, :yp79='', :yp80='0', :yp81='0.00', :yp82=0, :yp83=649, :yp84=510, :yp85=506, :yp86='正常', :yp87=NULL, :yp88=0, :yp89=0, :yp90='0', :yp91='', :yp92='2024-05-04 21:20:47', :yp93='2024-05-04 21:20:47', :yp94=0, :yp95='100%', :yp96=0, :yp97='0%', :yp98=0, :yp99='0%', :yp100=NULL, :yp101=NULL, :yp102='', :yp103='', :yp104=0, :yp105='', :yp106=NULL, :yp107=NULL, :yp108='长期', :yp109=1439, :yp110='微信注册', :yp111='', :yp112='', :yp113='', :yp114='', :yp115='', :yp116='', :yp117='', :yp118=648, :yp119='', :yp120=NULL, :yp121=NULL, :yp122=NULL.
+2024/05/04 21:20:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '28348' pour la clef 'PRIMARY'' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1084): CDbCommand->execute()
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(812): CActiveRecord->insert(NULL)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(621): CActiveRecord->save()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('1234123124124', '123', 'test')
+#4 [internal function]: GfUser1Controller->actionwxSign('1234123124124', '123', 'test')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=1234123124124&pass=123&name=test
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 21:20:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '28348' pour la clef 'PRIMARY'. The SQL statement executed was: INSERT INTO `gf_user_1` (`GF_ID`, `GF_ACCOUNT`, `GF_NAME`, `GF_PASS`, `GF_ACCOUNT_LEVEL_ID`, `pay_pass`, `PHONE`, `EMAIL`, `GF_REG_IP`, `gf_reg_address`, `gf_reg_client`, `client_device_code`, `client_device_uuid`, `REGTIME`, `TXADD`, `TXNAME`, `SEX`, `AGE`, `YEAR_`, `MONTH_`, `DAY_`, `FamilyHistory`, `COUNTRY`, `PROVINCE`, `CITY`, `CONSTELLATION`, `ZODIAC`, `BLOOD`, `JOB`, `LANGUAGE`, `GRQM`, `BYXX`, `guardian`, `guardian_contact_information`, `guardian_relationship`, `height`, `weight`, `INTEREST`, `mood_bigpic_url`, `getpasstime`, `SECURITYQUESTION`, `security_phone_country_code`, `security_phone`, `security_email`, `heart_time`, `ZSXM`, `IDNAME`, `idname_add_time`, `IDADD`, `CLIENTVER`, `real_country`, `real_country_name`, `native`, `nation`, `id_pic`, `id_card_type`, `id_card_type_name`, `id_card`, `id_card_pic`, `id_card_validity_start`, `id_card_validity_end`, `id_card_validity_end_none`, `realname_time`, `passed`, `passed_name`, `real_birthday`, `real_sex`, `real_sex_name`, `realname_entertime`, `club_id`, `health_date`, `health_state`, `medical_history`, `examination_report`, `CREDIT`, `ready_credit`, `beans`, `ready_beans`, `cb_uDate`, `GF_LOGMAIL`, `fens`, `wallet`, `coupons`, `if_open_project`, `if_del`, `user_state`, `user_state_name`, `LOCK_R`, `admin_id`, `admin_gfid`, `admin_gfname`, `fail_auth_reason`, `uDate`, `examine_time`, `achi_h_num`, `achi_h_ratio`, `achi_z_num`, `achi_z_ratio`, `achi_c_num`, `achi_c_ratio`, `lock_date_start`, `lock_date_end`, `occupation`, `work_unit`, `virtual_coin`, `virtual_coin_change_code`, `inviter_gfid`, `valid_date`, `end_valid_date`, `logon_way`, `logon_way_name`, `athlete_rank`, `short_name`, `recent_photo`, `insurance_pic`, `registration_area`, `registration_phone`, `health_report`, `agree_agreement`, `registration_id_card`, `user_type`, `apply_kitchen`, `apply_kitchen_status`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25, :yp26, :yp27, :yp28, :yp29, :yp30, :yp31, :yp32, :yp33, :yp34, :yp35, :yp36, :yp37, :yp38, :yp39, :yp40, :yp41, :yp42, :yp43, :yp44, :yp45, :yp46, :yp47, :yp48, :yp49, :yp50, :yp51, :yp52, :yp53, :yp54, :yp55, :yp56, :yp57, :yp58, :yp59, :yp60, :yp61, :yp62, :yp63, :yp64, :yp65, :yp66, :yp67, :yp68, :yp69, :yp70, :yp71, :yp72, :yp73, :yp74, :yp75, :yp76, :yp77, :yp78, :yp79, :yp80, :yp81, :yp82, :yp83, :yp84, :yp85, :yp86, :yp87, :yp88, :yp89, :yp90, :yp91, :yp92, :yp93, :yp94, :yp95, :yp96, :yp97, :yp98, :yp99, :yp100, :yp101, :yp102, :yp103, :yp104, :yp105, :yp106, :yp107, :yp108, :yp109, :yp110, :yp111, :yp112, :yp113, :yp114, :yp115, :yp116, :yp117, :yp118, :yp119, :yp120, :yp121, :yp122). Bound with :yp0=28348, :yp1='888838', :yp2='test', :yp3='123', :yp4=NULL, :yp5='', :yp6='1234123124124', :yp7='', :yp8='', :yp9=NULL, :yp10=1, :yp11='', :yp12='', :yp13='2024-05-04 21:20:57', :yp14='', :yp15='', :yp16=0, :yp17=54, :yp18='', :yp19='', :yp20='', :yp21='', :yp22='', :yp23='', :yp24='', :yp25='', :yp26='', :yp27='', :yp28='', :yp29='', :yp30='这个人很懒，什么都没留下', :yp31='', :yp32='', :yp33='', :yp34='', :yp35='0', :yp36='0', :yp37='', :yp38='', :yp39=0, :yp40='', :yp41=86, :yp42='', :yp43='', :yp44=NULL, :yp45='', :yp46='', :yp47=NULL, :yp48='', :yp49=0, :yp50=NULL, :yp51=NULL, :yp52='', :yp53='', :yp54='', :yp55=NULL, :yp56=NULL, :yp57='', :yp58='', :yp59=NULL, :yp60=NULL, :yp61=0, :yp62=NULL, :yp63='136', :yp64='未认证', :yp65=NULL, :yp66=NULL, :yp67=NULL, :yp68='2024-05-04 21:20:57', :yp69=0, :yp70=NULL, :yp71=648, :yp72='', :yp73=0, :yp74='0', :yp75=0, :yp76=0, :yp77=0, :yp78=NULL, :yp79='', :yp80='0', :yp81='0.00', :yp82=0, :yp83=649, :yp84=510, :yp85=506, :yp86='正常', :yp87=NULL, :yp88=0, :yp89=0, :yp90='0', :yp91='', :yp92='2024-05-04 21:20:57', :yp93='2024-05-04 21:20:57', :yp94=0, :yp95='100%', :yp96=0, :yp97='0%', :yp98=0, :yp99='0%', :yp100=NULL, :yp101=NULL, :yp102='', :yp103='', :yp104=0, :yp105='', :yp106=NULL, :yp107=NULL, :yp108='长期', :yp109=1439, :yp110='微信注册', :yp111='', :yp112='', :yp113='', :yp114='', :yp115='', :yp116='', :yp117='', :yp118=648, :yp119='', :yp120=NULL, :yp121=NULL, :yp122=NULL.
+2024/05/04 21:20:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '28348' pour la clef 'PRIMARY'' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1084): CDbCommand->execute()
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(812): CActiveRecord->insert(NULL)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(621): CActiveRecord->save()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('1234123124124', '123', 'test')
+#4 [internal function]: GfUser1Controller->actionwxSign('1234123124124', '123', 'test')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=1234123124124&pass=123&name=test
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 21:25:26 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1." 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('', false)
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(607): CActiveRecord->__set('', false)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(620): CModel->offsetSet('', false)
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('1981241', '123', 'test')
+#4 [internal function]: GfUser1Controller->actionwxSign('1981241', '123', 'test')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=1981241&pass=123&name=test
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 21:25:57 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1." 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('', false)
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(607): CActiveRecord->__set('', false)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(620): CModel->offsetSet('', false)
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('1981241', '123', 'test')
+#4 [internal function]: GfUser1Controller->actionwxSign('1981241', '123', 'test')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=1981241&pass=123&name=test
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/04 21:26:14 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1." 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('', false)
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(607): CActiveRecord->__set('', false)
+#2 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(620): CModel->offsetSet('', false)
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(850): GfUser1->zxWxSign('19812411231', '123', 'test')
+#4 [internal function]: GfUser1Controller->actionwxSign('19812411231', '123', 'test')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxSign')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxSign')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19812411231&pass=123&name=test
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---

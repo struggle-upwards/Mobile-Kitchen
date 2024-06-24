@@ -1,0 +1,11 @@
+2024/05/14 19:54:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "create" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('create')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubmemberlist/...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=clubmemberlist/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=clubmemberlist/index5
+---

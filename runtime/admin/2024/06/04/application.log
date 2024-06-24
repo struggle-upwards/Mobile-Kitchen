@@ -1,0 +1,1433 @@
+2024/06/04 13:41:26 [error] [php] Undefined offset: 0 (D:\wamp\www\Mobile_Kitchen\admin\views\orderDetail\card.php:70)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): OrderDetailController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): OrderDetailController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\OrderDetailController.php(46): OrderDetailController->render()
+#3 unknown(0): OrderDetailController->actionCard()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): OrderDetailController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): OrderDetailController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): OrderDetailController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=OrderDetail/card&orderId=2%601
+2024/06/04 15:29:09 [error] [php] Undefined variable: roles (D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\update.php:71)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(56): ClubadminController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(34): ClubadminController->showView()
+#4 unknown(0): ClubadminController->actionUpdate()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/update&id=555&lang_type=0
+2024/06/04 15:31:59 [error] [php] Undefined variable: roles (D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\update.php:71)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(56): ClubadminController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(34): ClubadminController->showView()
+#4 unknown(0): ClubadminController->actionUpdate()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/update&id=886&lang_type=0
+2024/06/04 15:33:42 [error] [php] Undefined variable: roles (D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\update.php:71)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(56): ClubadminController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(34): ClubadminController->showView()
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(29): ClubadminController->actionUpdate()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): ClubadminController->actionCreate()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/create&lang_type=0
+2024/06/04 15:33:48 [error] [php] Undefined variable: roles (D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\update.php:71)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(56): ClubadminController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(34): ClubadminController->showView()
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(29): ClubadminController->actionUpdate()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): ClubadminController->actionCreate()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/create&lang_type=0
+2024/06/04 15:36:00 [error] [php] Undefined variable: roles (D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\update.php:71)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(56): ClubadminController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(34): ClubadminController->showView()
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(29): ClubadminController->actionUpdate()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): ClubadminController->actionCreate()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/create&lang_type=0
+2024/06/04 15:38:36 [error] [php] Undefined variable: roles (D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\update.php:71)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(56): ClubadminController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(34): ClubadminController->showView()
+#4 unknown(0): ClubadminController->actionUpdate()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/update&id=653&lang_type=0
+2024/06/04 15:43:30 [error] [php] Illegal string offset 'first' (D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\update.php:71)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(57): ClubadminController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(34): ClubadminController->showView()
+#4 unknown(0): ClubadminController->actionUpdate()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/update&id=555&lang_type=0
+2024/06/04 16:01:20 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '' à la ligne 1. The SQL statement executed was: SELECT COUNT(*) FROM `club_member_list` `t` JOIN gf_user_1 t2 on t.member_gfid = t2.GF_ID WHERE t..
+2024/06/04 16:01:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1611): CDbCommand->queryScalar()
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(57): CActiveRecord->count(Object(CDbCriteria))
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(ClubMemberList), Object(CDbCriteria), Array, 15, 'index')
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubMemberListController.php(118): BaseController->_list(Object(ClubMemberList), Object(CDbCriteria), 'index', Array)
+#5 [internal function]: ClubMemberListController->actionIndex('', '', '', '', '', '', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubMemberListController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubMemberListController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubmemberlist/...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=clubmemberlist/index
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=index/menu&type=D
+---
+2024/06/04 16:35:48 [error] [php] Undefined variable: menus (D:\wamp\www\Mobile_Kitchen\admin\views\index\menu.php:187)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): IndexController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): IndexController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\IndexController.php(52): IndexController->render()
+#3 unknown(0): IndexController->actionMenu()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): IndexController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): IndexController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=index/menu
+2024/06/04 16:35:53 [error] [php] Undefined variable: menus (D:\wamp\www\Mobile_Kitchen\admin\views\index\menu.php:187)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): IndexController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): IndexController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\IndexController.php(52): IndexController->render()
+#3 unknown(0): IndexController->actionMenu()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): IndexController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): IndexController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=index/menu
+2024/06/04 16:35:53 [error] [php] Undefined variable: menus (D:\wamp\www\Mobile_Kitchen\admin\views\index\menu.php:187)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): IndexController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): IndexController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\IndexController.php(52): IndexController->render()
+#3 unknown(0): IndexController->actionMenu()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): IndexController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): IndexController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=index/menu&type=H
+2024/06/04 16:35:54 [error] [php] Undefined variable: menus (D:\wamp\www\Mobile_Kitchen\admin\views\index\menu.php:187)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): IndexController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): IndexController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\IndexController.php(52): IndexController->render()
+#3 unknown(0): IndexController->actionMenu()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): IndexController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): IndexController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=index/menu&type=H
+2024/06/04 16:35:54 [error] [php] Undefined variable: menus (D:\wamp\www\Mobile_Kitchen\admin\views\index\menu.php:187)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): IndexController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): IndexController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\IndexController.php(52): IndexController->render()
+#3 unknown(0): IndexController->actionMenu()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): IndexController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): IndexController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=index/menu&type=D
+2024/06/04 16:35:55 [error] [php] Undefined variable: menus (D:\wamp\www\Mobile_Kitchen\admin\views\index\menu.php:187)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): IndexController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): IndexController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\IndexController.php(52): IndexController->render()
+#3 unknown(0): IndexController->actionMenu()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): IndexController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): IndexController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=index/menu&type=H
+2024/06/04 16:47:41 [error] [php] Invalid argument supplied for foreach() (D:\wamp\www\Mobile_Kitchen\admin\views\index\menu.php:187)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): IndexController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): IndexController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\IndexController.php(55): IndexController->render()
+#3 unknown(0): IndexController->actionMenu()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): IndexController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): IndexController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=index/menu
+2024/06/04 16:47:43 [error] [php] Invalid argument supplied for foreach() (D:\wamp\www\Mobile_Kitchen\admin\views\index\menu.php:187)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): IndexController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): IndexController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\IndexController.php(55): IndexController->render()
+#3 unknown(0): IndexController->actionMenu()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): IndexController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): IndexController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=index/menu&type=Z
+2024/06/04 16:47:44 [error] [php] Invalid argument supplied for foreach() (D:\wamp\www\Mobile_Kitchen\admin\views\index\menu.php:187)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): IndexController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): IndexController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\IndexController.php(55): IndexController->render()
+#3 unknown(0): IndexController->actionMenu()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): IndexController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): IndexController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=index/menu&type=D
+2024/06/04 17:24:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "zxwxLogin?" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('zxwxLogin?')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('zxwxLogin?')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfUser1/zxwxLog...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfUser1/zxwxLogin?
+---
+2024/06/04 17:24:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('zxwxLogin')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfUser1/zxwxLog...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfUser1/zxwxLogin
+---
+2024/06/04 17:24:19 [error] [php] Undefined index: openid (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:407)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfUser1/zxwxLogin&code=%27
+2024/06/04 17:24:23 [error] [php] Undefined index: openid (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:407)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfUser1/zxwxLogin&code=15
+2024/06/04 17:34:01 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'undefined' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `address` `t` WHERE gf_account = undefined ORDER BY id ASC.
+2024/06/04 17:34:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'undefined' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(80): BaseModel->findAll(Object(CDbCriteria))
+#5 [internal function]: AddressController->actionwxGetadslist('undefined', '0')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxGetadslist')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Address/wxGetad...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=Address/wxGetadslist&account=undefined
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/06/04 17:34:01 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'undefined' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `address` `t` WHERE gf_account = undefined ORDER BY id ASC.
+2024/06/04 17:34:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'undefined' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(80): BaseModel->findAll(Object(CDbCriteria))
+#5 [internal function]: AddressController->actionwxGetadslist('undefined', '0')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxGetadslist')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Address/wxGetad...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=Address/wxGetadslist&account=undefined
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/06/04 17:42:25 [error] [php] Undefined index: file (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php:946)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=GfUser1/TXpic
+2024/06/04 17:54:20 [error] [php] Array to string conversion (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:581)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=gfUser1/zxwxLogin&code=0b3uBdll251uyd4meEll2vAQqg1uBdlP&phone_code=
+2024/06/04 17:54:26 [error] [php] Array to string conversion (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:581)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=gfUser1/zxwxLogin&code=0d3QyWkl2B8jzd40rfll2rAX2O0QyWkC&phone_code=
+2024/06/04 17:54:26 [error] [php] Array to string conversion (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:581)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=gfUser1/zxwxLogin&code=0d3X69100qijdS1nYD200UMj3u1X6912&phone_code=
+2024/06/04 17:54:26 [error] [php] Array to string conversion (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:581)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=gfUser1/zxwxLogin&code=0b3rUw0w3ZGaT23njx0w32dBSg2rUw0O&phone_code=
+2024/06/04 18:36:50 [error] [exception.CException] exception 'CException' with message 'Menu and its behaviors do not have a method or closure named "get_role_menu".' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(229): CComponent->__call('get_role_menu', Array)
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\IndexController.php(125): CActiveRecord->__call('get_role_menu', Array)
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\IndexController.php(125): Menu->get_role_menu('291', 'adminid=587&adm...')
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\IndexController.php(138): IndexController->get_signin('918974', '123456')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): IndexController->actionCheckuser()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('checkUser')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('index/checkUser')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=index/checkUser&TUNAME=918974&PASSWORD=123456
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=index/logout
+---
+2024/06/04 18:37:08 [error] [exception.CException] exception 'CException' with message 'Menu and its behaviors do not have a method or closure named "get_role_menu".' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(229): CComponent->__call('get_role_menu', Array)
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\IndexController.php(125): CActiveRecord->__call('get_role_menu', Array)
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\IndexController.php(125): Menu->get_role_menu('291', 'adminid=587&adm...')
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\IndexController.php(138): IndexController->get_signin('918974', '123456')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): IndexController->actionCheckuser()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('checkUser')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('index/checkUser')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=index/checkUser&TUNAME=918974&PASSWORD=123456
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=index/logout
+---
+2024/06/04 18:38:39 [error] [php] Undefined variable: menu (D:\wamp\www\Mobile_Kitchen\models\Menu.php:285)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): IndexController->actionCheckuser()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): IndexController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): IndexController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=index/checkUser&TUNAME=918974&PASSWORD=123456
+2024/06/04 18:38:43 [error] [php] Undefined variable: menu (D:\wamp\www\Mobile_Kitchen\models\Menu.php:285)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): IndexController->actionCheckuser()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): IndexController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): IndexController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=index/checkUser&TUNAME=918974&PASSWORD=123456
+2024/06/04 18:40:27 [error] [php] Undefined variable: menu (D:\wamp\www\Mobile_Kitchen\models\Menu.php:285)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): IndexController->actionCheckuser()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): IndexController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): IndexController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=index/checkUser&TUNAME=918974&PASSWORD=123456
+2024/06/04 18:40:42 [error] [php] Undefined variable: menu (D:\wamp\www\Mobile_Kitchen\models\Menu.php:285)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): IndexController->actionCheckuser()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): IndexController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): IndexController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=index/checkUser&TUNAME=918974&PASSWORD=123456
+2024/06/04 18:40:56 [error] [php] Undefined variable: menu (D:\wamp\www\Mobile_Kitchen\models\Menu.php:285)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): IndexController->actionCheckuser()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): IndexController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): IndexController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=index/checkUser&TUNAME=918974&PASSWORD=123456
+2024/06/04 18:41:06 [error] [php] Undefined variable: menu (D:\wamp\www\Mobile_Kitchen\models\Menu.php:286)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): IndexController->actionCheckuser()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): IndexController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): IndexController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=index/checkUser&TUNAME=918974&PASSWORD=123456
+2024/06/04 18:41:37 [error] [php] Object of class Menu could not be converted to string (D:\wamp\www\Mobile_Kitchen\models\Menu.php:292)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): IndexController->actionCheckuser()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): IndexController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): IndexController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=index/checkUser&TUNAME=918974&PASSWORD=123456
+2024/06/04 18:41:47 [error] [php] Object of class Menu could not be converted to string (D:\wamp\www\Mobile_Kitchen\models\Menu.php:292)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): IndexController->actionCheckuser()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): IndexController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): IndexController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=index/checkUser&TUNAME=918974&PASSWORD=123456
+2024/06/04 18:42:45 [error] [php] Array to string conversion (D:\wamp\www\Mobile_Kitchen\models\Menu.php:290)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): IndexController->actionCheckuser()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): IndexController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): IndexController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=index/checkUser&TUNAME=918974&PASSWORD=123456
+2024/06/04 18:43:04 [error] [php] Object of class Menu could not be converted to string (D:\wamp\www\Mobile_Kitchen\models\Menu.php:291)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): IndexController->actionCheckuser()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): IndexController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): IndexController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=index/checkUser&TUNAME=918974&PASSWORD=123456
+2024/06/04 19:34:49 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'id' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `qmdd_role_new` `t` WHERE id=291 LIMIT 1.
+2024/06/04 19:34:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'id' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('id=291', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\models\Menu.php(261): BaseModel->find('id=291')
+#5 D:\wamp\www\Mobile_Kitchen\models\Menu.php(233): Menu->getAllmenu('', '', 'D', 291)
+#6 D:\wamp\www\Mobile_Kitchen\admin\controllers\IndexController.php(52): Menu->getNewmenu(291, '', 'D')
+#7 [internal function]: IndexController->actionMenu('D')
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(IndexController), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(IndexController), Object(ReflectionMethod), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('menu')
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('index/menu')
+#15 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#17 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=index/menu
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=index/index
+---
+2024/06/04 19:34:51 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'id' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `qmdd_role_new` `t` WHERE id=291 LIMIT 1.
+2024/06/04 19:34:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'id' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('id=291', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\models\Menu.php(261): BaseModel->find('id=291')
+#5 D:\wamp\www\Mobile_Kitchen\models\Menu.php(233): Menu->getAllmenu('', '', 'D', 291)
+#6 D:\wamp\www\Mobile_Kitchen\admin\controllers\IndexController.php(52): Menu->getNewmenu(291, '', 'D')
+#7 [internal function]: IndexController->actionMenu('D')
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(IndexController), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(IndexController), Object(ReflectionMethod), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('menu')
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('index/menu')
+#15 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#17 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=index/menu
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=index/index
+---
+2024/06/04 19:42:47 [error] [php] Undefined variable: roles (D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\update.php:71)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(56): ClubadminController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(34): ClubadminController->showView()
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(29): ClubadminController->actionUpdate()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): ClubadminController->actionCreate()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/create&lang_type=1
+2024/06/04 19:42:53 [error] [php] Undefined variable: roles (D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\update.php:71)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(56): ClubadminController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(34): ClubadminController->showView()
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(29): ClubadminController->actionUpdate()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): ClubadminController->actionCreate()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/create&lang_type=0
+2024/06/04 19:43:07 [error] [php] Undefined variable: roles (D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\update.php:71)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(56): ClubadminController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(34): ClubadminController->showView()
+#4 unknown(0): ClubadminController->actionUpdate()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/update&id=555&lang_type=0
+2024/06/04 19:46:58 [error] [php] Undefined variable: roles (D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\update.php:71)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(56): ClubadminController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(34): ClubadminController->showView()
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(29): ClubadminController->actionUpdate()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): ClubadminController->actionCreate()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/create&lang_type=1
+2024/06/04 19:49:34 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_partner_member_apply` `t` WHERE gf_account= LIMIT 1.
+2024/06/04 19:49:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('gf_account=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(329): BaseModel->find('gf_account=')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+---
+2024/06/04 19:49:51 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_partner_member_apply` `t` WHERE gf_account= LIMIT 1.
+2024/06/04 19:49:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('gf_account=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(329): BaseModel->find('gf_account=')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+---
+2024/06/04 20:07:38 [error] [php] Undefined variable: roles (D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\update.php:71)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(56): ClubadminController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(34): ClubadminController->showView()
+#4 unknown(0): ClubadminController->actionUpdate()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/update&id=555&lang_type=0
+2024/06/04 20:08:01 [error] [php] Undefined variable: roles (D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\update.php:71)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(56): ClubadminController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(34): ClubadminController->showView()
+#4 unknown(0): ClubadminController->actionUpdate()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/update&id=555&lang_type=0
+2024/06/04 20:10:59 [error] [php] Undefined variable: roles (D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\update.php:71)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(56): ClubadminController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(34): ClubadminController->showView()
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(29): ClubadminController->actionUpdate()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): ClubadminController->actionCreate()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/create&lang_type=1
+2024/06/04 20:47:57 [error] [php] Array to string conversion (D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php:2397)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2166): resolveNameID()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\widgets\CActiveForm.php(962): activeRadioButtonList()
+#2 D:\wamp\www\Mobile_Kitchen\models\BaseLib.php(636): CActiveForm->radioButtonList()
+#3 D:\wamp\www\Mobile_Kitchen\models\BaseLib.php(341): BaseLib->radioByData()
+#4 D:\wamp\www\Mobile_Kitchen\models\BaseLib.php(314): BaseLib->tdRadio()
+#5 D:\wamp\www\Mobile_Kitchen\include\functions.php(1669): BaseLib->getTdData()
+#6 D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\updateopt.php(31): readData()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): ClubadminController->renderInternal()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#11 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(57): ClubadminController->render()
+#12 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(41): ClubadminController->showView()
+#13 unknown(0): ClubadminController->actionUpdateopt()
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#16 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#18 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#19 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#20 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/updateopt&id=555&lang_type=0
+2024/06/04 20:48:00 [error] [php] Array to string conversion (D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php:2397)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2166): resolveNameID()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\widgets\CActiveForm.php(962): activeRadioButtonList()
+#2 D:\wamp\www\Mobile_Kitchen\models\BaseLib.php(636): CActiveForm->radioButtonList()
+#3 D:\wamp\www\Mobile_Kitchen\models\BaseLib.php(341): BaseLib->radioByData()
+#4 D:\wamp\www\Mobile_Kitchen\models\BaseLib.php(314): BaseLib->tdRadio()
+#5 D:\wamp\www\Mobile_Kitchen\include\functions.php(1669): BaseLib->getTdData()
+#6 D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\updateopt.php(31): readData()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): ClubadminController->renderInternal()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#11 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(57): ClubadminController->render()
+#12 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(41): ClubadminController->showView()
+#13 unknown(0): ClubadminController->actionUpdateopt()
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#16 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#18 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#19 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#20 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/updateopt&id=555&lang_type=0
+2024/06/04 20:48:40 [error] [php] Array to string conversion (D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php:2397)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2166): resolveNameID()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\widgets\CActiveForm.php(962): activeRadioButtonList()
+#2 D:\wamp\www\Mobile_Kitchen\models\BaseLib.php(636): CActiveForm->radioButtonList()
+#3 D:\wamp\www\Mobile_Kitchen\models\BaseLib.php(341): BaseLib->radioByData()
+#4 D:\wamp\www\Mobile_Kitchen\models\BaseLib.php(314): BaseLib->tdRadio()
+#5 D:\wamp\www\Mobile_Kitchen\include\functions.php(1669): BaseLib->getTdData()
+#6 D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\updateopt.php(31): readData()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): ClubadminController->renderInternal()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#11 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(57): ClubadminController->render()
+#12 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(41): ClubadminController->showView()
+#13 unknown(0): ClubadminController->actionUpdateopt()
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#16 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#18 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#19 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#20 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/updateopt&id=555&lang_type=0
+2024/06/04 20:49:52 [error] [php] Array to string conversion (D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php:2397)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2166): resolveNameID()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\widgets\CActiveForm.php(962): activeRadioButtonList()
+#2 D:\wamp\www\Mobile_Kitchen\models\BaseLib.php(636): CActiveForm->radioButtonList()
+#3 D:\wamp\www\Mobile_Kitchen\models\BaseLib.php(341): BaseLib->radioByData()
+#4 D:\wamp\www\Mobile_Kitchen\models\BaseLib.php(314): BaseLib->tdRadio()
+#5 D:\wamp\www\Mobile_Kitchen\include\functions.php(1669): BaseLib->getTdData()
+#6 D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\updateopt.php(31): readData()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): ClubadminController->renderInternal()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#11 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(57): ClubadminController->render()
+#12 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(41): ClubadminController->showView()
+#13 unknown(0): ClubadminController->actionUpdateopt()
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#16 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#18 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#19 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#20 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/updateopt&id=555&lang_type=0
+2024/06/04 20:52:00 [error] [php] Array to string conversion (D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php:2397)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2166): resolveNameID()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\widgets\CActiveForm.php(962): activeRadioButtonList()
+#2 D:\wamp\www\Mobile_Kitchen\models\BaseLib.php(636): CActiveForm->radioButtonList()
+#3 D:\wamp\www\Mobile_Kitchen\models\BaseLib.php(341): BaseLib->radioByData()
+#4 D:\wamp\www\Mobile_Kitchen\models\BaseLib.php(314): BaseLib->tdRadio()
+#5 D:\wamp\www\Mobile_Kitchen\include\functions.php(1669): BaseLib->getTdData()
+#6 D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\updateopt.php(31): readData()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): ClubadminController->renderInternal()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#11 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(57): ClubadminController->render()
+#12 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(41): ClubadminController->showView()
+#13 unknown(0): ClubadminController->actionUpdateopt()
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#16 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#18 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#19 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#20 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/updateopt&id=555&lang_type=0
+2024/06/04 20:52:43 [error] [php] Array to string conversion (D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php:2397)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2166): resolveNameID()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\widgets\CActiveForm.php(962): activeRadioButtonList()
+#2 D:\wamp\www\Mobile_Kitchen\models\BaseLib.php(636): CActiveForm->radioButtonList()
+#3 D:\wamp\www\Mobile_Kitchen\models\BaseLib.php(341): BaseLib->radioByData()
+#4 D:\wamp\www\Mobile_Kitchen\models\BaseLib.php(314): BaseLib->tdRadio()
+#5 D:\wamp\www\Mobile_Kitchen\include\functions.php(1669): BaseLib->getTdData()
+#6 D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\updateopt.php(31): readData()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): ClubadminController->renderInternal()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#11 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(57): ClubadminController->render()
+#12 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(41): ClubadminController->showView()
+#13 unknown(0): ClubadminController->actionUpdateopt()
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#16 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#18 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#19 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#20 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/updateopt&id=555&lang_type=0
+2024/06/04 20:53:16 [error] [php] Array to string conversion (D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\updateopt.php:31)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(57): ClubadminController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(41): ClubadminController->showView()
+#4 unknown(0): ClubadminController->actionUpdateopt()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/updateopt&id=555&lang_type=0
+2024/06/04 20:53:24 [error] [php] Array to string conversion (D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\updateopt.php:31)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(57): ClubadminController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(41): ClubadminController->showView()
+#4 unknown(0): ClubadminController->actionUpdateopt()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/updateopt&id=555&lang_type=0
+2024/06/04 20:53:41 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\updateopt.php:31)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(57): ClubadminController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(41): ClubadminController->showView()
+#4 unknown(0): ClubadminController->actionUpdateopt()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/updateopt&id=555&lang_type=0
+2024/06/04 20:56:53 [error] [php] Object of class Role could not be converted to string (D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\updateopt.php:31)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(57): ClubadminController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(41): ClubadminController->showView()
+#4 unknown(0): ClubadminController->actionUpdateopt()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/updateopt&id=555&lang_type=0
+2024/06/04 20:59:01 [error] [php] Undefined variable: roles (D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\update.php:71)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(57): ClubadminController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(34): ClubadminController->showView()
+#4 unknown(0): ClubadminController->actionUpdate()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/update&id=555&lang_type=0
+2024/06/04 21:06:00 [error] [php] include(role2.php): failed to open stream: No such file or directory (D:\wamp\www\Mobile_Kitchen\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\models\BaseLib.php(349): spl_autoload_call()
+#1 D:\wamp\www\Mobile_Kitchen\models\BaseLib.php(335): BaseLib->selectDataSet()
+#2 D:\wamp\www\Mobile_Kitchen\models\BaseLib.php(311): BaseLib->tdCheck()
+#3 D:\wamp\www\Mobile_Kitchen\include\functions.php(1669): BaseLib->getTdData()
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\clubadmin\updateopt.php(31): readData()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): ClubadminController->renderInternal()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): ClubadminController->renderFile()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): ClubadminController->renderPartial()
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(57): ClubadminController->render()
+#10 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(41): ClubadminController->showView()
+#11 unknown(0): ClubadminController->actionUpdateopt()
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#16 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#17 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#18 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/updateopt&id=555&lang_type=0
+2024/06/04 21:14:39 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'role_name' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `qmdd_role_new` `t` WHERE role_name="厨房管理员" LIMIT 1.
+2024/06/04 21:14:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'role_name' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('role_name="\xE5\x8E\xA8\xE6...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(66): BaseModel->find('role_name="\xE5\x8E\xA8\xE6...')
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(59): ClubadminController->saveData(Object(Clubadmin), Array)
+#6 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(41): ClubadminController->showView('555', 'updateopt')
+#7 [internal function]: ClubadminController->actionUpdateopt('555')
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubadminController), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubadminController), Object(ReflectionMethod), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('updateopt')
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubadmin/updat...')
+#15 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#17 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/updateopt&id=555
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=clubadmin/updateopt&id=555&lang_type=0
+---
+2024/06/04 21:15:17 [error] [php] Object of class Role could not be converted to string (D:\wamp\www\Mobile_Kitchen\framework\db\schema\CDbColumnSchema.php:146)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1131): Clubadmin->updateByPk()
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(812): Clubadmin->update()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(68): Clubadmin->save()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(59): ClubadminController->saveData()
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(41): ClubadminController->showView()
+#5 unknown(0): ClubadminController->actionUpdateopt()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/updateopt&id=555
+2024/06/04 21:15:19 [error] [php] Object of class Role could not be converted to string (D:\wamp\www\Mobile_Kitchen\framework\db\schema\CDbColumnSchema.php:146)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1131): Clubadmin->updateByPk()
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(812): Clubadmin->update()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(68): Clubadmin->save()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(59): ClubadminController->saveData()
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubadminController.php(41): ClubadminController->showView()
+#5 unknown(0): ClubadminController->actionUpdateopt()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubadminController->runAction()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubadminController->run()
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubadmin/updateopt&id=555
+2024/06/04 21:36:55 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE club_code=SQ202404019 LIMIT 1.
+2024/06/04 21:36:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('club_code=SQ202...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(406): BaseModel->find('club_code=SQ202...')
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(341): GfPartnerMemberApplyController->bsaveData(Object(GfPartnerMemberApply), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+---
+2024/06/04 21:41:58 [error] [php] Use of undefined constant club_id - assumed 'club_id' (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:22)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+2024/06/04 21:43:06 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE club_code=SQ202404019 LIMIT 1.
+2024/06/04 21:43:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('club_code=SQ202...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(406): BaseModel->find('club_code=SQ202...')
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(341): GfPartnerMemberApplyController->bsaveData(Object(GfPartnerMemberApply), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+---
+2024/06/04 21:43:25 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE club_code=SQ202404019 LIMIT 1.
+2024/06/04 21:43:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('club_code=SQ202...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(406): BaseModel->find('club_code=SQ202...')
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(341): GfPartnerMemberApplyController->bsaveData(Object(GfPartnerMemberApply), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+---
+2024/06/04 21:43:54 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE club_code= LIMIT 1.
+2024/06/04 21:43:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('club_code=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(406): BaseModel->find('club_code=')
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(341): GfPartnerMemberApplyController->bsaveData(Object(GfPartnerMemberApply), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+---
+2024/06/04 21:44:04 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE club_code=SQ202404019 LIMIT 1.
+2024/06/04 21:44:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('club_code=SQ202...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(406): BaseModel->find('club_code=SQ202...')
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(341): GfPartnerMemberApplyController->bsaveData(Object(GfPartnerMemberApply), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+---
+2024/06/04 21:44:24 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE club_code=SQ202404019 LIMIT 1.
+2024/06/04 21:44:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('club_code=SQ202...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(406): BaseModel->find('club_code=SQ202...')
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(341): GfPartnerMemberApplyController->bsaveData(Object(GfPartnerMemberApply), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+---
+2024/06/04 21:44:37 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `gf_partner_member_apply` `t` WHERE gf_account=SQ202404019 LIMIT 1.
+2024/06/04 21:44:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('gf_account=SQ20...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(330): BaseModel->find('gf_account=SQ20...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+---
+2024/06/04 21:47:14 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404005' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE club_code=SQ202404005 LIMIT 1.
+2024/06/04 21:47:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404005' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('club_code=SQ202...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(406): BaseModel->find('club_code=SQ202...')
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(341): GfPartnerMemberApplyController->bsaveData(Object(GfPartnerMemberApply), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+---
+2024/06/04 21:48:50 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE club_code=SQ202404019 LIMIT 1.
+2024/06/04 21:48:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('club_code=SQ202...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(406): BaseModel->find('club_code=SQ202...')
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(341): GfPartnerMemberApplyController->bsaveData(Object(GfPartnerMemberApply), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+---
+2024/06/04 21:51:36 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'f_rname' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE f_rname="SQ202404019" LIMIT 1.
+2024/06/04 21:51:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'f_rname' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('f_rname="SQ2024...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(406): BaseModel->find('f_rname="SQ2024...')
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(421): GfPartnerMemberApplyController->bsaveData(Object(GfPartnerMemberApply), Array)
+#6 [internal function]: GfPartnerMemberApplyController->actionUpdate('743')
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('update')
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#14 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#16 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/update&id=743
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/update&id=743
+---
+2024/06/04 21:56:19 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '3087club_id' inconnu dans where clause. The SQL statement executed was: SELECT COUNT(*) FROM `gf_partner_member_apply` `t` WHERE apply_club_id=3087club_id=3087 and state_name = "待审核" .
+2024/06/04 21:56:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '3087club_id' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1611): CDbCommand->queryScalar()
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(57): CActiveRecord->count(Object(CDbCriteria))
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(GfPartnerMemberApply), Object(CDbCriteria), Array, 15, 'index_check')
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(372): BaseController->_list(Object(GfPartnerMemberApply), Object(CDbCriteria), 'index_check', Array)
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(346): GfPartnerMemberApplyController->showIndex('', '', '', '', 0, 'index_check', '\xE5\xBE\x85\xE5\xAE\xA1\xE6\xA0\xB8')
+#6 [internal function]: GfPartnerMemberApplyController->actionIndex_check('', '', '', '', 0)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_check')
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfPartnerMember...')
+#14 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#16 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfPartnerMemberApply/index_check
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=index/menu
+---
+2024/06/04 21:56:20 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '3087club_id' inconnu dans where clause. The SQL statement executed was: SELECT COUNT(*) FROM `gf_partner_member_apply` `t` WHERE apply_club_id=3087club_id=3087 and state_name = "待审核" .
+2024/06/04 21:56:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '3087club_id' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1611): CDbCommand->queryScalar()
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(57): CActiveRecord->count(Object(CDbCriteria))
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(GfPartnerMemberApply), Object(CDbCriteria), Array, 15, 'index_check')
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(372): BaseController->_list(Object(GfPartnerMemberApply), Object(CDbCriteria), 'index_check', Array)
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(346): GfPartnerMemberApplyController->showIndex('', '', '', '', 0, 'index_check', '\xE5\xBE\x85\xE5\xAE\xA1\xE6\xA0\xB8')
+#6 [internal function]: GfPartnerMemberApplyController->actionIndex_check('', '', '', '', 0)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_check')
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfPartnerMember...')
+#14 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#16 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfPartnerMemberApply/index_check
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=index/menu
+---
+2024/06/04 21:56:22 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '3087club_id' inconnu dans where clause. The SQL statement executed was: SELECT COUNT(*) FROM `gf_partner_member_apply` `t` WHERE apply_club_id=3087club_id=3087 and state_name = "待审核" .
+2024/06/04 21:56:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '3087club_id' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1611): CDbCommand->queryScalar()
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(57): CActiveRecord->count(Object(CDbCriteria))
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(GfPartnerMemberApply), Object(CDbCriteria), Array, 15, 'index_check')
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(372): BaseController->_list(Object(GfPartnerMemberApply), Object(CDbCriteria), 'index_check', Array)
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(346): GfPartnerMemberApplyController->showIndex('', '', '', '', 0, 'index_check', '\xE5\xBE\x85\xE5\xAE\xA1\xE6\xA0\xB8')
+#6 [internal function]: GfPartnerMemberApplyController->actionIndex_check('', '', '', '', 0)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_check')
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfPartnerMember...')
+#14 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#16 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfPartnerMemberApply/index_check
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=index/menu
+---
+2024/06/04 21:56:22 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '3087club_id' inconnu dans where clause. The SQL statement executed was: SELECT COUNT(*) FROM `gf_partner_member_apply` `t` WHERE apply_club_id=3087club_id=3087 and state_name = "未通过" .
+2024/06/04 21:56:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '3087club_id' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1611): CDbCommand->queryScalar()
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(57): CActiveRecord->count(Object(CDbCriteria))
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(GfPartnerMemberApply), Object(CDbCriteria), Array, 15, 'index_fail')
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(372): BaseController->_list(Object(GfPartnerMemberApply), Object(CDbCriteria), 'index_fail', Array)
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(349): GfPartnerMemberApplyController->showIndex('', '', '', '', 0, 'index_fail', '\xE6\x9C\xAA\xE9\x80\x9A\xE8\xBF\x87')
+#6 [internal function]: GfPartnerMemberApplyController->actionIndex_fail('', '', '', '', 0)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_fail')
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfPartnerMember...')
+#14 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#16 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfPartnerMemberApply/index_fail
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=index/menu
+---

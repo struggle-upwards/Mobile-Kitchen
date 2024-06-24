@@ -1,0 +1,1623 @@
+2024/03/03 12:56:25 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1059): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveFinder.php(775): CActiveRecord->afterFindInternal()
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveFinder.php(167): CJoinElement->afterFind()
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(283): CActiveFinder->lazyFind(Object(StudentInfo))
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(143): CActiveRecord->getRelated('club_name')
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\views\studentInfo\index.php(49): CActiveRecord->__get('club_name')
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\Project Envi...')
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Project Envi...', Array, true)
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\Project Envi...', Array, true)
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): CController->render('index', Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\StudentInfoController.php(19): BaseController->_list(Object(StudentInfo), Object(CDbCriteria))
+#17 [internal function]: StudentInfoController->actionIndex('', '0')
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(StudentInfoController), Array)
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(StudentInfoController), Object(ReflectionMethod), Array)
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#24 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('studentInfo/ind...')
+#25 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#26 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#27 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=studentInfo/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=B
+---
+2024/03/03 13:36:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "MallShoppingSettlement/index"。' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('MallShoppingSet...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=MallShoppingSettlement/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=X
+---
+2024/03/03 13:45:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "update_data" 动作.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('update_data')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('update_data')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/up...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubListSqdw/update_data&id=0
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 13:45:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "clubListGys/update_prove"。' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListGys/upd...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubListGys/update_prove&id=0
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 13:45:29 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1059): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveFinder.php(775): CActiveRecord->afterFindInternal()
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveFinder.php(167): CJoinElement->afterFind()
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(283): CActiveFinder->lazyFind(Object(GfPartnerMemberApply))
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(143): CActiveRecord->getRelated('partner_club')
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\index_club.php(151): CActiveRecord->__get('partner_club')
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\Project Envi...')
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Project Envi...', Array, true)
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\Project Envi...', Array, true)
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('index_club', Array, true)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): CController->render('index_club', Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(302): BaseController->_list(Object(GfPartnerMemberApply), Object(CDbCriteria), 'index_club', Array)
+#17 [internal function]: GfPartnerMemberApplyController->actionIndex_club('', '', '', '404', '', '', '3')
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_club')
+#24 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfPartnerMember...')
+#25 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#26 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#27 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=gfPartnerMemberApply/index_club&index=3&type=404
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 13:45:34 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1059): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveFinder.php(775): CActiveRecord->afterFindInternal()
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveFinder.php(167): CJoinElement->afterFind()
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(283): CActiveFinder->lazyFind(Object(GfPartnerMemberApply))
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(143): CActiveRecord->getRelated('partner_club')
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\index_club.php(130): CActiveRecord->__get('partner_club')
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\Project Envi...')
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Project Envi...', Array, true)
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\Project Envi...', Array, true)
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('index_club', Array, true)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): CController->render('index_club', Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(302): BaseController->_list(Object(GfPartnerMemberApply), Object(CDbCriteria), 'index_club', Array)
+#17 [internal function]: GfPartnerMemberApplyController->actionIndex_club('', '', '', '404', '', '', '2')
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_club')
+#24 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfPartnerMember...')
+#25 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#26 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#27 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=gfPartnerMemberApply/index_club&index=2&type=404
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 13:45:42 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(61): BaseModel->findAll(Object(CDbCriteria))
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(ClubList), Object(CDbCriteria), Array, 15, 'index')
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ClubListController.php(40): BaseController->_list(Object(ClubList), Object(CDbCriteria), 'index', Array)
+#13 [internal function]: ClubListController->actionIndex('', '9')
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListController), Array)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListController), Object(ReflectionMethod), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubList/index')
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#23 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubList/index&club_type=9
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 13:45:44 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(61): BaseModel->findAll(Object(CDbCriteria))
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(ClubList), Object(CDbCriteria), Array, 15, 'index')
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ClubListController.php(40): BaseController->_list(Object(ClubList), Object(CDbCriteria), 'index', Array)
+#13 [internal function]: ClubListController->actionIndex('', '9')
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListController), Array)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListController), Object(ReflectionMethod), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubList/index')
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#23 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubList/index&club_type=9
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 13:45:48 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(61): BaseModel->findAll(Object(CDbCriteria))
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(ClubList), Object(CDbCriteria), Array, 15, 'index')
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ClubListController.php(40): BaseController->_list(Object(ClubList), Object(CDbCriteria), 'index', Array)
+#13 [internal function]: ClubListController->actionIndex('', '1086')
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListController), Array)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListController), Object(ReflectionMethod), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubList/index')
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#23 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubList/index&club_type=1086
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 13:45:59 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('id=2450', Array, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\VideoLiveClubController.php(127): BaseModel->find('id=2450')
+#10 [internal function]: VideoLiveClubController->actionUpdate_apply('0')
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(VideoLiveClubController), Array)
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(VideoLiveClubController), Object(ReflectionMethod), Array)
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('update_apply')
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('videoLiveClub/u...')
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#20 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=videoLiveClub/update_apply&id=0
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 13:46:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "mallShoppingSettlement/index_club"。' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('mallShoppingSet...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=mallShoppingSettlement/index_club
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 13:46:08 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('id=2450', Array, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\views\gfCreditHistory\index.php(10): BaseModel->find('id=2450')
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\Project Envi...')
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Project Envi...', Array, true)
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\Project Envi...', Array, true)
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): CController->render('index', Array)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\GfCreditHistoryController.php(34): BaseController->_list(Object(GfCreditHistory), Object(CDbCriteria), 'index', Array)
+#16 [internal function]: GfCreditHistoryController->actionIndex('', '', '', '')
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfCreditHistoryController), Array)
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfCreditHistoryController), Object(ReflectionMethod), Array)
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#23 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfCreditHistory...')
+#24 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#26 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=gfCreditHistory/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 13:46:11 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1496): CActiveRecord->query(Object(CDbCriteria))
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(273): CActiveRecord->findByPk('2450')
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ClubListController.php(222): BaseController->loadModel('2450', 'ClubList')
+#10 [internal function]: ClubListController->actionAbout_me(0)
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListController), Array)
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListController), Object(ReflectionMethod), Array)
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('about_me')
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubList/about_...')
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#20 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubList/about_me
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 13:46:12 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(61): BaseModel->findAll(Object(CDbCriteria))
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(ClubList), Object(CDbCriteria), Array, 15, 'index_about_me')
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ClubListController.php(212): BaseController->_list(Object(ClubList), Object(CDbCriteria), 'index_about_me')
+#13 [internal function]: ClubListController->actionIndex_about_me('')
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListController), Array)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListController), Object(ReflectionMethod), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_about_me')
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubList/index_...')
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#23 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubList/index_about_me
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 13:50:48 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1496): CActiveRecord->query(Object(CDbCriteria))
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(273): CActiveRecord->findByPk('2450')
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ClubListController.php(222): BaseController->loadModel('2450', 'ClubList')
+#10 [internal function]: ClubListController->actionAbout_me(0)
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListController), Array)
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListController), Object(ReflectionMethod), Array)
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('about_me')
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubList/about_...')
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#20 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubList/about_me
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 13:50:50 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(61): BaseModel->findAll(Object(CDbCriteria))
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(ClubList), Object(CDbCriteria), Array, 15, 'index_about_me')
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ClubListController.php(212): BaseController->_list(Object(ClubList), Object(CDbCriteria), 'index_about_me')
+#13 [internal function]: ClubListController->actionIndex_about_me('')
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListController), Array)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListController), Object(ReflectionMethod), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_about_me')
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubList/index_...')
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#23 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubList/index_about_me
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 13:50:52 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('id=2450', Array, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\views\gfCreditHistory\index.php(10): BaseModel->find('id=2450')
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\Project Envi...')
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Project Envi...', Array, true)
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\Project Envi...', Array, true)
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): CController->render('index', Array)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\GfCreditHistoryController.php(34): BaseController->_list(Object(GfCreditHistory), Object(CDbCriteria), 'index', Array)
+#16 [internal function]: GfCreditHistoryController->actionIndex('', '', '', '')
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfCreditHistoryController), Array)
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfCreditHistoryController), Object(ReflectionMethod), Array)
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#23 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfCreditHistory...')
+#24 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#26 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=gfCreditHistory/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 13:50:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "mallShoppingSettlement/index_club"。' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('mallShoppingSet...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=mallShoppingSettlement/index_club
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 13:51:04 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('id=2450', Array, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\VideoLiveClubController.php(127): BaseModel->find('id=2450')
+#10 [internal function]: VideoLiveClubController->actionUpdate_apply('0')
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(VideoLiveClubController), Array)
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(VideoLiveClubController), Object(ReflectionMethod), Array)
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('update_apply')
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('videoLiveClub/u...')
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#20 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=videoLiveClub/update_apply&id=0
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 13:51:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "video_stat" 动作.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('video_stat')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('video_stat')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('boutiqueVideo/v...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=boutiqueVideo/video_stat
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=R
+---
+2024/03/03 13:51:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "gfClubCustomerServiceGroupMember/service_chat"。' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfClubCustomerS...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=gfClubCustomerServiceGroupMember/service_chat&id=587
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=Y
+---
+2024/03/03 13:52:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "gfClubCustomerServiceGroupMember/index"。' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfClubCustomerS...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=gfClubCustomerServiceGroupMember/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=Y
+---
+2024/03/03 13:52:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "gfClubCustomerServiceGroup/index"。' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfClubCustomerS...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=gfClubCustomerServiceGroup/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=Y
+---
+2024/03/03 13:52:33 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('club_type=380', Array, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\models\ClubList.php(191): BaseModel->findAll('club_type=380')
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\MallContractController.php(26): ClubList->getCode(380)
+#12 [internal function]: MallContractController->actionIndex('', '', '', '', '')
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(MallContractController), Array)
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(MallContractController), Object(ReflectionMethod), Array)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('mallContract/in...')
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#22 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=mallContract/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=Y
+---
+2024/03/03 13:52:33 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('club_type=380', Array, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\models\ClubList.php(191): BaseModel->findAll('club_type=380')
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\MallContractController.php(42): ClubList->getCode(380)
+#12 [internal function]: MallContractController->actionIndex_check('', '', '', '', '')
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(MallContractController), Array)
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(MallContractController), Object(ReflectionMethod), Array)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_check')
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('mallContract/in...')
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#22 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=mallContract/index_check
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=Y
+---
+2024/03/03 13:53:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index_lock_release" 动作.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('index_lock_rele...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_lock_rele...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfUserLock/inde...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=gfUserLock/index_lock_release&state=0
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=Z
+---
+2024/03/03 13:55:06 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('', Array, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\QmddFuntionDataController.php(24): BaseModel->findAll()
+#11 [internal function]: QmddFuntionDataController->actionIndex('', '', '')
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(QmddFuntionDataController), Array)
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(QmddFuntionDataController), Object(ReflectionMethod), Array)
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('qmddFuntionData...')
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#21 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=qmddFuntionData/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=Z
+---
+2024/03/03 13:56:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "gfUserAccountPublish/number_manage"。' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfUserAccountPu...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=gfUserAccountPublish/number_manage
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=Z
+---
+2024/03/03 13:56:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "messagetype/index"。' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('messagetype/ind...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=messagetype/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=Z
+---
+2024/03/03 13:56:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "messagetemplate/index"。' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('messagetemplate...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=messagetemplate/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=Z
+---
+2024/03/03 13:56:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "datachangetable/index"。' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('datachangetable...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=datachangetable/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=Z
+---
+2024/03/03 13:56:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "datachange/index"。' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('datachange/inde...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=datachange/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=Z
+---
+2024/03/03 13:57:41 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('club_type=380', Array, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\models\ClubList.php(191): BaseModel->findAll('club_type=380')
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\MallContractController.php(26): ClubList->getCode(380)
+#12 [internal function]: MallContractController->actionIndex('', '', '', '', '')
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(MallContractController), Array)
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(MallContractController), Object(ReflectionMethod), Array)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('mallContract/in...')
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#22 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=mallContract/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=Y
+---
+2024/03/03 13:57:42 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('club_type=380', Array, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\models\ClubList.php(191): BaseModel->findAll('club_type=380')
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\MallContractController.php(42): ClubList->getCode(380)
+#12 [internal function]: MallContractController->actionIndex_check('', '', '', '', '')
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(MallContractController), Array)
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(MallContractController), Object(ReflectionMethod), Array)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_check')
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('mallContract/in...')
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#22 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=mallContract/index_check
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=Y
+---
+2024/03/03 13:58:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "MallShoppingSettlement/index"。' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('MallShoppingSet...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=MallShoppingSettlement/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=X
+---
+2024/03/03 14:01:07 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'cl.cl.unit_state' inconnu dans where clause. The SQL statement executed was: SELECT COUNT(*) FROM `top_score` `t` WHERE 1 and club_id=2450 and top_gfid>0 and score_type=839 and credit>0 and exists(select * from club_list cl where cl.id=t.club_id and cl.cl.unit_state=648).
+2024/03/03 14:01:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'cl.cl.unit_state' inconnu dans where clause' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1611): CDbCommand->queryScalar()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(57): CActiveRecord->count(Object(CDbCriteria))
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(TopScore), Object(CDbCriteria), Array, 15, 'index_real_time...')
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\TopScoreController.php(50): BaseController->_list(Object(TopScore), Object(CDbCriteria), 'index_real_time...', Array)
+#5 [internal function]: TopScoreController->actionIndex_real_time_ranking('', '', '', 0, 0, '', '')
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(TopScoreController), Array)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TopScoreController), Object(ReflectionMethod), Array)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_real_time...')
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('topScore/index_...')
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=topScore/index_real_time_ranking
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=M
+---
+2024/03/03 14:01:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('topscore/index')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=topscore/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=M
+---
+2024/03/03 14:01:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "topScoreSetting/index_level"。' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('topScoreSetting...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=topScoreSetting/index_level
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=M
+---
+2024/03/03 14:01:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "topScoreSetting/index_age"。' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('topScoreSetting...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=topScoreSetting/index_age
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=M
+---
+2024/03/03 14:01:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "topScoreSetting/index_markset"。' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('topScoreSetting...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=topScoreSetting/index_markset
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=M
+---
+2024/03/03 14:01:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index_list" 动作.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('index_list')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_list')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/in...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubListSqdw/index_list&state=721
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=D
+---
+2024/03/03 14:01:44 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(61): BaseModel->findAll(Object(CDbCriteria))
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(ClubList), Object(CDbCriteria), Array, 15, 'index_service')
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ClubListController.php(87): BaseController->_list(Object(ClubList), Object(CDbCriteria), 'index_service', Array)
+#13 [internal function]: ClubListController->actionIndex_service('', '', '', '721', '', '')
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListController), Array)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListController), Object(ReflectionMethod), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_service')
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubList/index_...')
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#23 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubList/index_service&state=721
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=D
+---
+2024/03/03 14:01:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/in...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubListSqdw/index&index=5
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=D
+---
+2024/03/03 14:01:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/in...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubListSqdw/index&index=2
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=D
+---
+2024/03/03 14:01:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/in...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubListSqdw/index&index=2
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=D
+---
+2024/03/03 14:01:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/in...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubListSqdw/index&index=4
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=D
+---
+2024/03/03 14:01:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/in...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubListSqdw/index&index=3
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=D
+---
+2024/03/03 14:01:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index_list" 动作.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('index_list')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_list')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/in...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubListSqdw/index_list&state=372&edit_state=721
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=D
+---
+2024/03/03 14:01:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index_data" 动作.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('index_data')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_data')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/in...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubListSqdw/index_data&index=5
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=D
+---
+2024/03/03 14:01:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index_data" 动作.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('index_data')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_data')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/in...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubListSqdw/index_data&index=1
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=D
+---
+2024/03/03 14:01:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index_data" 动作.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('index_data')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_data')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/in...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubListSqdw/index_data&index=3
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=D
+---
+2024/03/03 14:01:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index_data" 动作.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('index_data')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_data')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/in...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubListSqdw/index_data&index=4
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=D
+---
+2024/03/03 14:24:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index_data" 动作.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('index_data')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_data')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/in...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubListSqdw/index_data&index=4
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=D
+---
+2024/03/03 14:36:29 [error] [exception.CException] exception 'CException' with message '属性 "ActivityList.brief" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('brief')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('brief')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('brief')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\models\ActivityList.php(110): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): ActivityList->afterFind()
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(61): BaseModel->findAll(Object(CDbCriteria))
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(ActivityList), Object(CDbCriteria), Array, 15, 'index')
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ActivityListController.php(34): BaseController->_list(Object(ActivityList), Object(CDbCriteria), 'index', Array)
+#14 [internal function]: ActivityListController->actionIndex('', '')
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ActivityListController), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ActivityListController), Object(ReflectionMethod), Array)
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('activityList/in...')
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#24 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=activityList/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=O
+---
+2024/03/03 14:36:32 [error] [exception.CException] exception 'CException' with message 'ActivityDiyController 无法找到请求的视图 "1index".' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php:881
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('1index', Array, true)
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): CController->render('1index', Array)
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ActivityDiyController.php(28): BaseController->_list(Object(ActivityDiy), Object(CDbCriteria), '1index', Array, 20)
+#3 [internal function]: ActivityDiyController->actionIndex('')
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ActivityDiyController), Array)
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ActivityDiyController), Object(ReflectionMethod), Array)
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('activityDiy/ind...')
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=activityDiy/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=O
+---
+2024/03/03 14:36:34 [error] [exception.CException] exception 'CException' with message '属性 "ActivityList.brief" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('brief')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('brief')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('brief')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\models\ActivityList.php(110): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): ActivityList->afterFind()
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(61): BaseModel->findAll(Object(CDbCriteria))
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(ActivityList), Object(CDbCriteria), Array, 15, 'index_audit')
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ActivityListController.php(101): BaseController->_list(Object(ActivityList), Object(CDbCriteria), 'index_audit', Array)
+#14 [internal function]: ActivityListController->actionIndex_audit('', '', '', '', '')
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ActivityListController), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ActivityListController), Object(ReflectionMethod), Array)
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_audit')
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('activityList/in...')
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#24 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=activityList/index_audit
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=O
+---
+2024/03/03 14:36:36 [error] [exception.CException] exception 'CException' with message '属性 "ActivityList.brief" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('brief')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('brief')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('brief')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\models\ActivityList.php(110): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): ActivityList->afterFind()
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(61): BaseModel->findAll(Object(CDbCriteria))
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(ActivityList), Object(CDbCriteria), Array, 15, 'index_submit')
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ActivityListController.php(66): BaseController->_list(Object(ActivityList), Object(CDbCriteria), 'index_submit', Array)
+#14 [internal function]: ActivityListController->actionIndex_submit('', '')
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ActivityListController), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ActivityListController), Object(ReflectionMethod), Array)
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_submit')
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('activityList/in...')
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#24 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=activityList/index_submit
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=O
+---
+2024/03/03 14:36:37 [error] [exception.CException] exception 'CException' with message '属性 "ActivityList.brief" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('brief')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('brief')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('brief')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\models\ActivityList.php(110): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): ActivityList->afterFind()
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(61): BaseModel->findAll(Object(CDbCriteria))
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(ActivityList), Object(CDbCriteria), Array, 15, 'index')
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ActivityListController.php(34): BaseController->_list(Object(ActivityList), Object(CDbCriteria), 'index', Array)
+#14 [internal function]: ActivityListController->actionIndex('', '')
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ActivityListController), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ActivityListController), Object(ReflectionMethod), Array)
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('activityList/in...')
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#24 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=activityList/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=O
+---
+2024/03/03 14:36:48 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '' à la ligne 1. The SQL statement executed was: SELECT * FROM `activity_list_data` `t` WHERE activity_id=.
+2024/03/03 14:36:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '' à la ligne 1' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('activity_id=', Array, true)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ActivitySignListController.php(172): BaseModel->findAll('activity_id=')
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): ActivitySignListController->actionGetListData()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('getListData')
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('activitySignLis...')
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=activitySignList/getListData
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=activitySignList/index
+---
+2024/03/03 14:40:53 [error] [exception.CException] exception 'CException' with message '属性 "ActivityList.brief" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('brief')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('brief')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('brief')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\models\ActivityList.php(110): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): ActivityList->afterFind()
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(61): BaseModel->findAll(Object(CDbCriteria))
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(ActivityList), Object(CDbCriteria), Array, 15, 'index')
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ActivityListController.php(34): BaseController->_list(Object(ActivityList), Object(CDbCriteria), 'index', Array)
+#14 [internal function]: ActivityListController->actionIndex('', '')
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ActivityListController), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ActivityListController), Object(ReflectionMethod), Array)
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('activityList/in...')
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#24 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=activityList/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=O
+---
+2024/03/03 14:40:54 [error] [exception.CException] exception 'CException' with message '属性 "ActivityList.brief" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('brief')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('brief')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('brief')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\models\ActivityList.php(110): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): ActivityList->afterFind()
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(61): BaseModel->findAll(Object(CDbCriteria))
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(ActivityList), Object(CDbCriteria), Array, 15, 'index_submit')
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ActivityListController.php(66): BaseController->_list(Object(ActivityList), Object(CDbCriteria), 'index_submit', Array)
+#14 [internal function]: ActivityListController->actionIndex_submit('', '')
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ActivityListController), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ActivityListController), Object(ReflectionMethod), Array)
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_submit')
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('activityList/in...')
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#24 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=activityList/index_submit
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=O
+---
+2024/03/03 14:40:55 [error] [exception.CException] exception 'CException' with message '属性 "ActivityList.brief" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('brief')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('brief')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('brief')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\models\ActivityList.php(110): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): ActivityList->afterFind()
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(61): BaseModel->findAll(Object(CDbCriteria))
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(ActivityList), Object(CDbCriteria), Array, 15, 'index_audit')
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ActivityListController.php(101): BaseController->_list(Object(ActivityList), Object(CDbCriteria), 'index_audit', Array)
+#14 [internal function]: ActivityListController->actionIndex_audit('', '', '', '', '')
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ActivityListController), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ActivityListController), Object(ReflectionMethod), Array)
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_audit')
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('activityList/in...')
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#24 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=activityList/index_audit
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=O
+---
+2024/03/03 14:40:56 [error] [exception.CException] exception 'CException' with message 'ActivityDiyController 无法找到请求的视图 "1index".' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php:881
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('1index', Array, true)
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): CController->render('1index', Array)
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ActivityDiyController.php(28): BaseController->_list(Object(ActivityDiy), Object(CDbCriteria), '1index', Array, 20)
+#3 [internal function]: ActivityDiyController->actionIndex('')
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ActivityDiyController), Array)
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ActivityDiyController), Object(ReflectionMethod), Array)
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('activityDiy/ind...')
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=activityDiy/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=O
+---
+2024/03/03 14:51:31 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'kitchen.userlist' n'existe pas. The SQL statement executed was: SELECT COUNT(*) FROM `club_member_upgrade` `t` JOIN userlist on t.gf_id = userlist.GF_ID WHERE !isNull(order_num) and free_state_Id in(1195,1201) AND left(send_date,10)>="2024-03-03" AND left(send_date,10)<="2024-03-03".
+2024/03/03 14:51:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'kitchen.userlist' n'existe pas' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1611): CDbCommand->queryScalar()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(57): CActiveRecord->count(Object(CDbCriteria))
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(ClubMemberUpgrade), Object(CDbCriteria), Array, 15, 'index_pay')
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ClubMemberUpgradeController.php(43): BaseController->_list(Object(ClubMemberUpgrade), Object(CDbCriteria), 'index_pay', Array)
+#5 [internal function]: ClubMemberUpgradeController->actionIndex_pay('', '', '', '', '', '')
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubMemberUpgradeController), Array)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubMemberUpgradeController), Object(ReflectionMethod), Array)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_pay')
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubMemberUpgra...')
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubMemberUpgrade/index_pay
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=B
+---
+2024/03/03 14:51:33 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'kitchen.userlist' n'existe pas. The SQL statement executed was: SELECT COUNT(*) FROM `club_member_upgrade` `t` JOIN userlist on t.gf_id = userlist.GF_ID WHERE !isNull(order_num) and free_state_Id=1202 AND left(grade_achieve_time,10)>="2024-03-03" AND left(grade_achieve_time,10)<="2024-03-03".
+2024/03/03 14:51:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'kitchen.userlist' n'existe pas' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1611): CDbCommand->queryScalar()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(57): CActiveRecord->count(Object(CDbCriteria))
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(ClubMemberUpgrade), Object(CDbCriteria), Array, 15, 'index_confirmed')
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ClubMemberUpgradeController.php(308): BaseController->_list(Object(ClubMemberUpgrade), Object(CDbCriteria), 'index_confirmed', Array)
+#5 [internal function]: ClubMemberUpgradeController->actionIndex_confirmed('', '', '', '', '', '')
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubMemberUpgradeController), Array)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubMemberUpgradeController), Object(ReflectionMethod), Array)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_confirmed')
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubMemberUpgra...')
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubMemberUpgrade/index_confirmed
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=B
+---
+2024/03/03 14:54:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "update_data" 动作.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('update_data')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('update_data')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/up...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubListSqdw/update_data&id=0
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 14:54:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "clubListGys/update_prove"。' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListGys/upd...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubListGys/update_prove&id=0
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 14:55:14 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(61): BaseModel->findAll(Object(CDbCriteria))
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(ClubList), Object(CDbCriteria), Array, 15, 'index')
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ClubListController.php(40): BaseController->_list(Object(ClubList), Object(CDbCriteria), 'index', Array)
+#13 [internal function]: ClubListController->actionIndex('', '1086')
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListController), Array)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListController), Object(ReflectionMethod), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubList/index')
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#23 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubList/index&club_type=1086
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 14:55:25 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1496): CActiveRecord->query(Object(CDbCriteria))
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(273): CActiveRecord->findByPk('2450')
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ClubListController.php(222): BaseController->loadModel('2450', 'ClubList')
+#10 [internal function]: ClubListController->actionAbout_me(0)
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListController), Array)
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListController), Object(ReflectionMethod), Array)
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('about_me')
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubList/about_...')
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#20 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubList/about_me
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 14:55:26 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(61): BaseModel->findAll(Object(CDbCriteria))
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(ClubList), Object(CDbCriteria), Array, 15, 'index_about_me')
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ClubListController.php(212): BaseController->_list(Object(ClubList), Object(CDbCriteria), 'index_about_me')
+#13 [internal function]: ClubListController->actionIndex_about_me('')
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListController), Array)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListController), Object(ReflectionMethod), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_about_me')
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubList/index_...')
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#23 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubList/index_about_me
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 14:55:39 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(61): BaseModel->findAll(Object(CDbCriteria))
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(ClubList), Object(CDbCriteria), Array, 15, 'index')
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ClubListController.php(40): BaseController->_list(Object(ClubList), Object(CDbCriteria), 'index', Array)
+#13 [internal function]: ClubListController->actionIndex('', '1086')
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListController), Array)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListController), Object(ReflectionMethod), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubList/index')
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#23 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubList/index&club_type=1086
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 14:56:46 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1496): CActiveRecord->query(Object(CDbCriteria))
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(273): CActiveRecord->findByPk('2450')
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ClubListController.php(222): BaseController->loadModel('2450', 'ClubList')
+#10 [internal function]: ClubListController->actionAbout_me(0)
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListController), Array)
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListController), Object(ReflectionMethod), Array)
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('about_me')
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubList/about_...')
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#20 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubList/about_me
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 14:56:48 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(61): BaseModel->findAll(Object(CDbCriteria))
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(ClubList), Object(CDbCriteria), Array, 15, 'index_about_me')
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ClubListController.php(212): BaseController->_list(Object(ClubList), Object(CDbCriteria), 'index_about_me')
+#13 [internal function]: ClubListController->actionIndex_about_me('')
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListController), Array)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListController), Object(ReflectionMethod), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_about_me')
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubList/index_...')
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#23 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=clubList/index_about_me
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 14:57:10 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1059): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveFinder.php(775): CActiveRecord->afterFindInternal()
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveFinder.php(167): CJoinElement->afterFind()
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(283): CActiveFinder->lazyFind(Object(GfPartnerMemberApply))
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(143): CActiveRecord->getRelated('partner_club')
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\index_club.php(151): CActiveRecord->__get('partner_club')
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\Project Envi...')
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Project Envi...', Array, true)
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\Project Envi...', Array, true)
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('index_club', Array, true)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): CController->render('index_club', Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(302): BaseController->_list(Object(GfPartnerMemberApply), Object(CDbCriteria), 'index_club', Array)
+#17 [internal function]: GfPartnerMemberApplyController->actionIndex_club('', '', '', '404', '', '', '3')
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_club')
+#24 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfPartnerMember...')
+#25 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#26 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#27 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=gfPartnerMemberApply/index_club&index=3&type=404
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 14:57:11 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1059): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveFinder.php(775): CActiveRecord->afterFindInternal()
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveFinder.php(167): CJoinElement->afterFind()
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(283): CActiveFinder->lazyFind(Object(GfPartnerMemberApply))
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(143): CActiveRecord->getRelated('partner_club')
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\index_club.php(130): CActiveRecord->__get('partner_club')
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\Project Envi...')
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Project Envi...', Array, true)
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\Project Envi...', Array, true)
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('index_club', Array, true)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): CController->render('index_club', Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(302): BaseController->_list(Object(GfPartnerMemberApply), Object(CDbCriteria), 'index_club', Array)
+#17 [internal function]: GfPartnerMemberApplyController->actionIndex_club('', '', '', '404', '', '', '2')
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index_club')
+#24 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfPartnerMember...')
+#25 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#26 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#27 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=gfPartnerMemberApply/index_club&index=2&type=404
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 14:57:19 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecord(Array, true, true)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('id=2450', Array, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\views\gfCreditHistory\index.php(10): BaseModel->find('id=2450')
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\Project Envi...')
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Project Envi...', Array, true)
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\Project Envi...', Array, true)
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): CController->render('index', Array)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\GfCreditHistoryController.php(34): BaseController->_list(Object(GfCreditHistory), Object(CDbCriteria), 'index', Array)
+#16 [internal function]: GfCreditHistoryController->actionIndex('', '', '', '')
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfCreditHistoryController), Array)
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfCreditHistoryController), Object(ReflectionMethod), Array)
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#23 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfCreditHistory...')
+#24 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#26 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=gfCreditHistory/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=A
+---
+2024/03/03 15:16:27 [error] [exception.CException] exception 'CException' with message '属性 "ClubList.contact_id_card_faceid_card_back" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contact_id_card...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('contact_id_card...')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('contact_id_card...')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1059): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveFinder.php(775): CActiveRecord->afterFindInternal()
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveFinder.php(167): CJoinElement->afterFind()
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(283): CActiveFinder->lazyFind(Object(StudentInfo))
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(143): CActiveRecord->getRelated('club_name')
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\views\studentInfo\index.php(49): CActiveRecord->__get('club_name')
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\Project Envi...')
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Project Envi...', Array, true)
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\Project Envi...', Array, true)
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): CController->render('index', Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\StudentInfoController.php(19): BaseController->_list(Object(StudentInfo), Object(CDbCriteria))
+#17 [internal function]: StudentInfoController->actionIndex('', '0')
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(StudentInfoController), Array)
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(StudentInfoController), Object(ReflectionMethod), Array)
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#24 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('studentInfo/ind...')
+#25 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#26 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#27 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=studentInfo/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=B
+---
+2024/03/03 15:22:23 [error] [exception.CException] exception 'CException' with message '属性 "ActivityList.brief" 未被定义.' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('brief')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CModel.php(596): CActiveRecord->__get('brief')
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(278): CModel->offsetGet('brief')
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(266): BaseModel->movePath(1)
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(131): BaseModel->toAddPath()
+#5 D:\Project Environment\wamp\www\Mobile_Kitchen\models\ActivityList.php(110): BaseModel->afterFind()
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1886): ActivityList->afterFind()
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1908): CActiveRecord->populateRecord(Array, true, true)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CActiveRecord->populateRecords(Array, true, NULL, true)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(61): BaseModel->findAll(Object(CDbCriteria))
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(ActivityList), Object(CDbCriteria), Array, 15, 'index')
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\ActivityListController.php(34): BaseController->_list(Object(ActivityList), Object(CDbCriteria), 'index', Array)
+#14 [internal function]: ActivityListController->actionIndex('', '')
+#15 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ActivityListController), Array)
+#16 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ActivityListController), Object(ReflectionMethod), Array)
+#17 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#21 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('activityList/in...')
+#22 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#24 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=activityList/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=O
+---
+2024/03/03 16:05:35 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 't.t.down_type' inconnu dans where clause. The SQL statement executed was: SELECT COUNT(*) FROM `game_list` `t`  left join game_list_data d on d.game_id=t.id WHERE t.t.down_type in (1,2,3) and 1 and t.game_club_id=2450 and t.down_time>="2024-03-03 00:00:00" and t.down_time<="2024-03-03 23:59:59".
+2024/03/03 16:05:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 't.t.down_type' inconnu dans where clause' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1611): CDbCommand->queryScalar()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(57): CActiveRecord->count(Object(CDbCriteria))
+#3 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(GameList), Object(CDbCriteria), Array, 10, 'down_index')
+#4 D:\Project Environment\wamp\www\Mobile_Kitchen\admin\controllers\GameListController.php(366): BaseController->_list(Object(GameList), Object(CDbCriteria), 'down_index', Array, 10)
+#5 [internal function]: GameListController->actionDown_index('', '', '', '', '', 0)
+#6 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GameListController), Array)
+#7 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GameListController), Object(ReflectionMethod), Array)
+#8 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('down_index')
+#12 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GameList/down_i...')
+#13 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=GameList/down_index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=M
+---
+2024/03/03 16:15:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "MallShoppingSettlement/index"。' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('MallShoppingSet...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=MallShoppingSettlement/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=X
+---
+2024/03/03 16:15:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "MallShoppingSettlement/index"。' in D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('MallShoppingSet...')
+#1 D:\Project Environment\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Project Environment\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=MallShoppingSettlement/index
+HTTP_REFERER=http://localhost/Mobile_Kitchen/index.php?r=index/menu&type=X
+---

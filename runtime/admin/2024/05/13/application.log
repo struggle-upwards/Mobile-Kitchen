@@ -1,0 +1,733 @@
+2024/05/13 01:22:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888878&club_id=3076&zsxm=%E8%94%A1%E5%B0%8F%E5%AE%9B&sex=%E7%94%B7&phone=19865487859&id_card=445121200112155158&type_index=%E5%8E%A8%E5%B8%88&address=%E5%B9%BF%E4%B8%9C%E7%9C%81%E5%B9%BF%E5%B7%9E%E5%B8%82%E7%99%BD%E4%BA%91%E5%8C%BA%E8%A5%BF%E9%97%A8%E5%A4%A7%E9%81%93
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/13 01:23:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888878&club_id=3076&zsxm=%E8%94%A1%E5%B0%8F%E5%AE%9B&sex=%E7%94%B7&phone=19865487859&id_card=445121200112155158&type_index=%E5%8E%A8%E5%B8%88&address=%E5%B9%BF%E4%B8%9C%E7%9C%81%E5%B9%BF%E5%B7%9E%E5%B8%82%E7%99%BD%E4%BA%91%E5%8C%BA%E8%A5%BF%E9%97%A8%E5%A4%A7%E9%81%93
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/13 01:23:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888878&club_id=3076&zsxm=%E8%94%A1%E5%B0%8F%E5%AE%9B&sex=%E7%94%B7&phone=19865487859&id_card=445121200112155158&type_index=%E5%8E%A8%E5%B8%88&address=%E5%B9%BF%E4%B8%9C%E7%9C%81%E5%B9%BF%E5%B7%9E%E5%B8%82%E7%99%BD%E4%BA%91%E5%8C%BA%E8%A5%BF%E9%97%A8%E5%A4%A7%E9%81%93
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/13 01:25:23 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888878&club_id=3076&zsxm=%E8%94%A1%E5%B0%8F%E5%AE%9B&sex=%E7%94%B7&phone=19865487859&id_card=445121200112155158&type_index=%E5%8E%A8%E5%B8%88&address=%E5%B9%BF%E4%B8%9C%E7%9C%81%E5%B9%BF%E5%B7%9E%E5%B8%82%E7%99%BD%E4%BA%91%E5%8C%BA%E8%A5%BF%E9%97%A8%E5%A4%A7%E9%81%93
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/13 01:25:58 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888878&club_id=3076&zsxm=%E8%94%A1%E5%B0%8F%E5%AE%9B&sex=%E7%94%B7&phone=19865487859&id_card=445121200112155158&type_index=%E5%8E%A8%E5%B8%88&address=%E5%B9%BF%E4%B8%9C%E7%9C%81%E5%B9%BF%E5%B7%9E%E5%B8%82%E7%99%BD%E4%BA%91%E5%8C%BA%E8%A5%BF%E9%97%A8%E5%A4%A7%E9%81%93
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/13 01:26:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888878&club_id=&zsxm=&sex=&phone=&id_card=&type_index=&address=
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/13 01:27:57 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin
+---
+2024/05/13 01:28:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&account=99855
+---
+2024/05/13 01:28:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=99855
+---
+2024/05/13 01:29:20 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'club_id' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE club_id="3075" LIMIT 1.
+2024/05/13 01:29:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'club_id' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('club_id="3075"', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(814): BaseModel->find('club_id="3075"')
+#5 [internal function]: GfPartnerMemberApplyController->actionapplyjoin('888878', '3075', '', '', '', '', '\xE5\x8E\xA8\xE5\xB8\x88', '', 'undefined', 'undefined')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888878&club_id=3075&zsxm=&sex=&phone=&id_card=&type_index=%E5%8E%A8%E5%B8%88&address=&id_card_face=undefined&id_card_back=undefined
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/13 01:29:54 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'club_id' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE club_id="3075" LIMIT 1.
+2024/05/13 01:29:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'club_id' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('club_id="3075"', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(814): BaseModel->find('club_id="3075"')
+#5 [internal function]: GfPartnerMemberApplyController->actionapplyjoin('888878', '3075', '', '', '', '', '\xE5\x8E\xA8\xE5\xB8\x88', '', 'undefined', 'undefined')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888878&club_id=3075&zsxm=&sex=&phone=&id_card=&type_index=%E5%8E%A8%E5%B8%88&address=&id_card_face=undefined&id_card_back=undefined
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/13 01:36:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "applyjoin1" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('applyjoin1')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin1')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin1&gf_account=888878&club_id=3075&zsxm=%E8%94%A1%E5%A4%A7%E5%A3%AE&sex=%E7%94%B7&phone=19864350555&id_card=445121200005131519&type_index=%E5%8E%A8%E5%B8%88&address=%E5%B9%BF%E4%B8%9C%E7%99%BD%E4%BA%91%E5%A4%A7%E9%81%93&id_card_face=undefined&id_card_back=undefined
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/13 01:38:19 [error] [php] Undefined variable: type_name (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:862)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin1&gf_account=888878&club_id=3075&zsxm=%E8%94%A1%E5%A4%A7%E5%A3%AE&sex=%E7%94%B7&phone=19864350555&id_card=445121200005131519&type_index=%E5%8E%A8%E5%B8%88&address=%E5%B9%BF%E4%B8%9C%E7%99%BD%E4%BA%91%E5%A4%A7%E9%81%93&id_card_face=undefined&id_card_back=undefined
+2024/05/13 01:38:29 [error] [php] Undefined variable: type_name (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:862)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin1&gf_account=888878&club_id=3075&zsxm=%E8%94%A1%E5%A4%A7%E5%A3%AE&sex=%E7%94%B7&phone=19864350555&id_card=445121200005131519&type_index=%E5%8E%A8%E5%B8%88&address=%E5%B9%BF%E4%B8%9C%E7%99%BD%E4%BA%91%E5%A4%A7%E9%81%93&id_card_face=undefined&id_card_back=undefined
+2024/05/13 01:39:55 [error] [php] Undefined variable: type_name (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:862)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin1&gf_account=888878&club_id=3075&zsxm=x&sex=%E7%94%B7&phone=x&id_card=x&type_index=%E5%8E%A8%E5%B8%88&address=x&id_card_face=undefined&id_card_back=undefined
+2024/05/13 01:41:29 [error] [php] Undefined variable: type_name (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:862)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin1&gf_account=888878&club_id=3075&zsxm=x&sex=%E7%94%B7&phone=x&id_card=x&type_index=%E5%8E%A8%E5%B8%88&address=x&id_card_face=undefined&id_card_back=undefined
+2024/05/13 01:41:42 [error] [php] Undefined variable: type_name (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:862)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin1&gf_account=888878&club_id=3075&zsxm=x&sex=%E7%94%B7&phone=19864350797&id_card=x&type_index=%E5%8E%A8%E5%B8%88&address=x&id_card_face=undefined&id_card_back=undefined
+2024/05/13 01:42:31 [error] [php] Undefined variable: type_name (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:862)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin1&gf_account=888878&club_id=3075&zsxm=x&sex=%E7%94%B7&phone=19864350797&id_card=x&type_index=%E5%8E%A8%E5%B8%88&address=x&id_card_face=undefined&id_card_back=undefined
+2024/05/13 01:43:29 [error] [php] Undefined variable: type_name (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:862)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin1&gf_account=888878&club_id=3075&zsxm=x&sex=%E7%94%B7&phone=x&id_card=x&type_name=%E5%8E%A8%E5%B8%88&address=x&id_card_face=undefined&id_card_back=undefined
+2024/05/13 01:43:53 [error] [php] Undefined variable: type_name (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:862)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin1&gf_account=888878&club_id=3075&zsxm=x&sex=%E7%94%B7&phone=x&id_card=x&type_name=%E5%8E%A8%E5%B8%88&address=x&id_card_face=undefined&id_card_back=undefined
+2024/05/13 01:44:08 [error] [php] Undefined variable: type_name (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:862)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin1&gf_account=888878&club_id=3075&zsxm=x&sex=%E7%94%B7&phone=x&id_card=x&type_name=%E5%8E%A8%E5%B8%88&address=x&id_card_face=undefined&id_card_back=undefined
+2024/05/13 01:44:46 [error] [php] Undefined variable: type_name (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:864)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin1&gf_account=888878&club_id=3075&zsxm=x&sex=%E7%94%B7&phone=x&id_card=x&type_name=%E5%8E%A8%E5%B8%88&address=x&id_card_face=undefined&id_card_back=undefined
+2024/05/13 17:12:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "GetMeallist" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('GetMeallist')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('GetMeallist')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/GetMea...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/GetMeallist&id=3075
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/13 17:13:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "GetMeallist" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('GetMeallist')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('GetMeallist')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/GetMea...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/GetMeallist&id=3081
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/13 17:13:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "GetMeallist" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('GetMeallist')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('GetMeallist')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/GetMea...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/GetMeallist&id=3076
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/13 17:16:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "GetMeallist" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('GetMeallist')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('GetMeallist')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/GetMea...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/GetMeallist&id=3076
+---
+2024/05/13 17:57:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "GetMeallist" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('GetMeallist')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('GetMeallist')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/GetMea...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/GetMeallist&id=3076
+---
+2024/05/13 19:38:20 [error] [php] Object of class MealType could not be converted to string (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:239)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+2024/05/13 19:39:07 [error] [php] Object of class MealType could not be converted to string (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:239)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+2024/05/13 19:39:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'meal_type_name' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `meal_data` `t` WHERE meal_type_name=婚宴.
+2024/05/13 19:39:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'meal_type_name' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('meal_type_name=...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(239): BaseModel->findAll('meal_type_name=...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): MealDataController->actionwxCategoryList()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxCategoryList')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/wxCate...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+---
+2024/05/13 19:40:17 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '婚宴' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `meal_data` `t` WHERE meal_type=婚宴.
+2024/05/13 19:40:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '婚宴' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('meal_type=\xE5\xA9\x9A\xE5\xAE...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(239): BaseModel->findAll('meal_type=\xE5\xA9\x9A\xE5\xAE...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): MealDataController->actionwxCategoryList()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxCategoryList')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/wxCate...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+---
+2024/05/13 19:40:20 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '婚宴' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `meal_data` `t` WHERE meal_type=婚宴.
+2024/05/13 19:40:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '婚宴' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('meal_type=\xE5\xA9\x9A\xE5\xAE...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(239): BaseModel->findAll('meal_type=\xE5\xA9\x9A\xE5\xAE...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): MealDataController->actionwxCategoryList()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxCategoryList')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/wxCate...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+---
+2024/05/13 19:41:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '婚宴' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `meal_data` `t` WHERE meal_type=婚宴.
+2024/05/13 19:41:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '婚宴' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('meal_type=\xE5\xA9\x9A\xE5\xAE...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(239): BaseModel->findAll('meal_type=\xE5\xA9\x9A\xE5\xAE...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): MealDataController->actionwxCategoryList()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxCategoryList')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/wxCate...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+---
+2024/05/13 19:41:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '婚宴' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `meal_data` `t` WHERE meal_type=婚宴.
+2024/05/13 19:41:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '婚宴' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('meal_type=\xE5\xA9\x9A\xE5\xAE...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(239): BaseModel->findAll('meal_type=\xE5\xA9\x9A\xE5\xAE...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): MealDataController->actionwxCategoryList()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxCategoryList')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/wxCate...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+---
+2024/05/13 19:41:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '婚宴' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `meal_data` `t` WHERE meal_type=婚宴.
+2024/05/13 19:41:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '婚宴' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('meal_type=\xE5\xA9\x9A\xE5\xAE...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(239): BaseModel->findAll('meal_type=\xE5\xA9\x9A\xE5\xAE...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): MealDataController->actionwxCategoryList()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxCategoryList')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/wxCate...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+---
+2024/05/13 19:41:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '婚宴' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `meal_data` `t` WHERE meal_type=婚宴.
+2024/05/13 19:41:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '婚宴' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('meal_type=\xE5\xA9\x9A\xE5\xAE...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(239): BaseModel->findAll('meal_type=\xE5\xA9\x9A\xE5\xAE...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): MealDataController->actionwxCategoryList()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxCategoryList')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/wxCate...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+---
+2024/05/13 19:42:48 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '聚会宴' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `meal_data` `t` WHERE meal_type=聚会宴.
+2024/05/13 19:42:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '聚会宴' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('meal_type=\xE8\x81\x9A\xE4\xBC...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(241): BaseModel->findAll('meal_type=\xE8\x81\x9A\xE4\xBC...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): MealDataController->actionwxCategoryList()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxCategoryList')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/wxCate...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+---
+2024/05/13 19:42:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '聚会宴' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `meal_data` `t` WHERE meal_type=聚会宴.
+2024/05/13 19:42:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '聚会宴' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('meal_type=\xE8\x81\x9A\xE4\xBC...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(241): BaseModel->findAll('meal_type=\xE8\x81\x9A\xE4\xBC...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): MealDataController->actionwxCategoryList()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxCategoryList')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/wxCate...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+---
+2024/05/13 19:42:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '聚会宴' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `meal_data` `t` WHERE meal_type=聚会宴.
+2024/05/13 19:42:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '聚会宴' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('meal_type=\xE8\x81\x9A\xE4\xBC...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(241): BaseModel->findAll('meal_type=\xE8\x81\x9A\xE4\xBC...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): MealDataController->actionwxCategoryList()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxCategoryList')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/wxCate...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+---
+2024/05/13 19:42:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '聚会宴' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `meal_data` `t` WHERE meal_type=聚会宴.
+2024/05/13 19:42:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '聚会宴' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('meal_type=\xE8\x81\x9A\xE4\xBC...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(241): BaseModel->findAll('meal_type=\xE8\x81\x9A\xE4\xBC...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): MealDataController->actionwxCategoryList()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxCategoryList')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/wxCate...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+---
+2024/05/13 19:43:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '聚会宴' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `meal_data` `t` WHERE meal_type=聚会宴.
+2024/05/13 19:43:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '聚会宴' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('meal_type=\xE8\x81\x9A\xE4\xBC...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(241): BaseModel->findAll('meal_type=\xE8\x81\x9A\xE4\xBC...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): MealDataController->actionwxCategoryList()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxCategoryList')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/wxCate...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+---
+2024/05/13 19:43:06 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '聚会宴' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `meal_data` `t` WHERE meal_type=聚会宴.
+2024/05/13 19:43:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '聚会宴' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('meal_type=\xE8\x81\x9A\xE4\xBC...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(241): BaseModel->findAll('meal_type=\xE8\x81\x9A\xE4\xBC...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): MealDataController->actionwxCategoryList()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxCategoryList')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/wxCate...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+---
+2024/05/13 19:43:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '聚会宴' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `meal_data` `t` WHERE meal_type=聚会宴.
+2024/05/13 19:43:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '聚会宴' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('meal_type=\xE8\x81\x9A\xE4\xBC...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(241): BaseModel->findAll('meal_type=\xE8\x81\x9A\xE4\xBC...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): MealDataController->actionwxCategoryList()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxCategoryList')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/wxCate...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+---
+2024/05/13 19:43:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '聚会宴' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `meal_data` `t` WHERE meal_type=聚会宴.
+2024/05/13 19:43:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '聚会宴' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('meal_type=\xE8\x81\x9A\xE4\xBC...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(241): BaseModel->findAll('meal_type=\xE8\x81\x9A\xE4\xBC...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): MealDataController->actionwxCategoryList()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxCategoryList')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/wxCate...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+---
+2024/05/13 19:43:15 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '婚宴' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `meal_data` `t` WHERE meal_type=婚宴.
+2024/05/13 19:43:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '婚宴' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('meal_type=\xE5\xA9\x9A\xE5\xAE...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(241): BaseModel->findAll('meal_type=\xE5\xA9\x9A\xE5\xAE...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): MealDataController->actionwxCategoryList()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxCategoryList')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/wxCate...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+---
+2024/05/13 19:44:03 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '婚宴' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `meal_data` `t` WHERE meal_type = 婚宴.
+2024/05/13 19:44:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '婚宴' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('meal_type = \xE5\xA9\x9A...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(241): BaseModel->findAll('meal_type = \xE5\xA9\x9A...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): MealDataController->actionwxCategoryList()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxCategoryList')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/wxCate...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+---
+2024/05/13 19:44:04 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ '婚宴' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `meal_data` `t` WHERE meal_type = 婚宴.
+2024/05/13 19:44:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ '婚宴' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('meal_type = \xE5\xA9\x9A...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(241): BaseModel->findAll('meal_type = \xE5\xA9\x9A...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): MealDataController->actionwxCategoryList()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxCategoryList')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/wxCate...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+---
+2024/05/13 19:47:40 [error] [php] Array to string conversion (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:243)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+2024/05/13 19:49:58 [error] [exception.CException] exception 'CException' with message '属性 "MealType.婚宴" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('\xE5\xA9\x9A\xE5\xAE\xB4', Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(607): CActiveRecord->__set('\xE5\xA9\x9A\xE5\xAE\xB4', Array)
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(240): CModel->offsetSet('\xE5\xA9\x9A\xE5\xAE\xB4', Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): MealDataController->actionwxCategoryList()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxCategoryList')
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/wxCate...')
+#9 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#11 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+---
+2024/05/13 19:50:09 [error] [exception.CException] exception 'CException' with message '属性 "MealType.婚宴" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('\xE5\xA9\x9A\xE5\xAE\xB4', Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CModel.php(607): CActiveRecord->__set('\xE5\xA9\x9A\xE5\xAE\xB4', Array)
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(240): CModel->offsetSet('\xE5\xA9\x9A\xE5\xAE\xB4', Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): MealDataController->actionwxCategoryList()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxCategoryList')
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Mealdata/wxCate...')
+#9 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#11 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=Mealdata/wxCategoryList
+---

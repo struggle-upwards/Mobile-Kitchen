@@ -1,0 +1,283 @@
+2024/01/28 15:02:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.qmdd_administrators_receive_message' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `qmdd_administrators_receive_message`.
+2024/01/28 15:02:59 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "QmddAdministratorsReceiveMessage" 对应的 table "{{qmdd_administrators_receive_message}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(QmddAdministratorsReceiveMessage))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1611): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\QmddAdministratorsReceiveMessageController.php(68): CActiveRecord->count('r_club_code=201...')
+#4 [internal function]: QmddAdministratorsReceiveMessageController->actionMessageCount('')
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(QmddAdministratorsReceiveMessageController), Array)
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(QmddAdministratorsReceiveMessageController), Object(ReflectionMethod), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('messageCount')
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('qmddAdministrat...')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#14 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=qmddAdministratorsReceiveMessage/messageCount
+HTTP_REFERER=http://127.0.0.1/sports/admin/index.php?act=top
+---
+2024/01/28 15:08:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.test_ticket_detail' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `test_ticket_detail`.
+2024/01/28 15:08:39 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "testTicketDetail" 对应的 table "{{test_ticket_detail}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(testTicketDetail))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\testTicketDetailController.php(16): CActiveRecord->findAll(Object(CDbCriteria))
+#5 [internal function]: testTicketDetailController->actionGetTicketDetail('1', '2024-01-28')
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(testTicketDetailController), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(testTicketDetailController), Object(ReflectionMethod), Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetTicketDetail')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('testTicketDetai...')
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#15 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=testTicketDetail/GetTicketDetail&id=1&date=2024-01-28
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/01/28 15:08:40 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.test_ticket_detail' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `test_ticket_detail`.
+2024/01/28 15:08:40 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "testTicketDetail" 对应的 table "{{test_ticket_detail}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(testTicketDetail))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\testTicketDetailController.php(16): CActiveRecord->findAll(Object(CDbCriteria))
+#5 [internal function]: testTicketDetailController->actionGetTicketDetail('1', '2024-01-29')
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(testTicketDetailController), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(testTicketDetailController), Object(ReflectionMethod), Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetTicketDetail')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('testTicketDetai...')
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#15 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=testTicketDetail/GetTicketDetail&id=1&date=2024-01-29
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/01/28 15:08:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.test_ticket_detail' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `test_ticket_detail`.
+2024/01/28 15:08:49 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "testTicketDetail" 对应的 table "{{test_ticket_detail}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(testTicketDetail))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\testTicketDetailController.php(16): CActiveRecord->findAll(Object(CDbCriteria))
+#5 [internal function]: testTicketDetailController->actionGetTicketDetail('1', '2024-01-28')
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(testTicketDetailController), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(testTicketDetailController), Object(ReflectionMethod), Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetTicketDetail')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('testTicketDetai...')
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#15 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=testTicketDetail/GetTicketDetail&id=1&date=2024-01-28
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/01/28 15:08:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.test_ticket_detail' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `test_ticket_detail`.
+2024/01/28 15:08:51 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "testTicketDetail" 对应的 table "{{test_ticket_detail}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(testTicketDetail))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\testTicketDetailController.php(16): CActiveRecord->findAll(Object(CDbCriteria))
+#5 [internal function]: testTicketDetailController->actionGetTicketDetail('1', '2024-01-29')
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(testTicketDetailController), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(testTicketDetailController), Object(ReflectionMethod), Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetTicketDetail')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('testTicketDetai...')
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#15 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=testTicketDetail/GetTicketDetail&id=1&date=2024-01-29
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/01/28 15:08:53 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.test_ticket_detail' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `test_ticket_detail`.
+2024/01/28 15:08:53 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "testTicketDetail" 对应的 table "{{test_ticket_detail}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(testTicketDetail))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\testTicketDetailController.php(16): CActiveRecord->findAll(Object(CDbCriteria))
+#5 [internal function]: testTicketDetailController->actionGetTicketDetail('1', '2024-01-28')
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(testTicketDetailController), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(testTicketDetailController), Object(ReflectionMethod), Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetTicketDetail')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('testTicketDetai...')
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#15 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=testTicketDetail/GetTicketDetail&id=1&date=2024-01-28
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/01/28 15:08:54 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.test_ticket_detail' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `test_ticket_detail`.
+2024/01/28 15:08:54 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "testTicketDetail" 对应的 table "{{test_ticket_detail}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(testTicketDetail))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\testTicketDetailController.php(16): CActiveRecord->findAll(Object(CDbCriteria))
+#5 [internal function]: testTicketDetailController->actionGetTicketDetail('1', '2024-01-29')
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(testTicketDetailController), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(testTicketDetailController), Object(ReflectionMethod), Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetTicketDetail')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('testTicketDetai...')
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#15 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=testTicketDetail/GetTicketDetail&id=1&date=2024-01-29
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/01/28 15:08:55 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.test_ticket_detail' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `test_ticket_detail`.
+2024/01/28 15:08:55 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "testTicketDetail" 对应的 table "{{test_ticket_detail}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(testTicketDetail))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\testTicketDetailController.php(16): CActiveRecord->findAll(Object(CDbCriteria))
+#5 [internal function]: testTicketDetailController->actionGetTicketDetail('1', '2024-01-30')
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(testTicketDetailController), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(testTicketDetailController), Object(ReflectionMethod), Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetTicketDetail')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('testTicketDetai...')
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#15 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=testTicketDetail/GetTicketDetail&id=1&date=2024-01-30
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/01/28 15:09:17 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.test_ticket_detail' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `test_ticket_detail`.
+2024/01/28 15:09:17 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "testTicketDetail" 对应的 table "{{test_ticket_detail}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(testTicketDetail))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\testTicketDetailController.php(16): CActiveRecord->findAll(Object(CDbCriteria))
+#5 [internal function]: testTicketDetailController->actionGetTicketDetail('1', '2024-01-28')
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(testTicketDetailController), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(testTicketDetailController), Object(ReflectionMethod), Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetTicketDetail')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('testTicketDetai...')
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#15 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=testTicketDetail/GetTicketDetail&id=1&date=2024-01-28
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/01/28 15:09:20 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.test_ticket_detail' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `test_ticket_detail`.
+2024/01/28 15:09:20 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "testTicketDetail" 对应的 table "{{test_ticket_detail}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(testTicketDetail))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\testTicketDetailController.php(16): CActiveRecord->findAll(Object(CDbCriteria))
+#5 [internal function]: testTicketDetailController->actionGetTicketDetail('1', '2024-01-28')
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(testTicketDetailController), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(testTicketDetailController), Object(ReflectionMethod), Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetTicketDetail')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('testTicketDetai...')
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#15 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=testTicketDetail/GetTicketDetail&id=1&date=2024-01-28
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/01/28 15:09:32 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.test_ticket_detail' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `test_ticket_detail`.
+2024/01/28 15:09:32 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "testTicketDetail" 对应的 table "{{test_ticket_detail}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(testTicketDetail))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\testTicketDetailController.php(16): CActiveRecord->findAll(Object(CDbCriteria))
+#5 [internal function]: testTicketDetailController->actionGetTicketDetail('1', '2024-01-28')
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(testTicketDetailController), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(testTicketDetailController), Object(ReflectionMethod), Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetTicketDetail')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('testTicketDetai...')
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#15 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=testTicketDetail/GetTicketDetail&id=1&date=2024-01-28
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/01/28 22:31:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.qmdd_administrators_receive_message' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `qmdd_administrators_receive_message`.
+2024/01/28 22:31:31 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "QmddAdministratorsReceiveMessage" 对应的 table "{{qmdd_administrators_receive_message}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(QmddAdministratorsReceiveMessage))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1611): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\QmddAdministratorsReceiveMessageController.php(68): CActiveRecord->count('r_club_code=201...')
+#4 [internal function]: QmddAdministratorsReceiveMessageController->actionMessageCount('')
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(QmddAdministratorsReceiveMessageController), Array)
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(QmddAdministratorsReceiveMessageController), Object(ReflectionMethod), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('messageCount')
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('qmddAdministrat...')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#14 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=qmddAdministratorsReceiveMessage/messageCount
+HTTP_REFERER=http://127.0.0.1/sports/admin/index.php?act=top
+---
+2024/01/28 22:46:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.qmdd_administrators_receive_message' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `qmdd_administrators_receive_message`.
+2024/01/28 22:46:43 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "QmddAdministratorsReceiveMessage" 对应的 table "{{qmdd_administrators_receive_message}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(QmddAdministratorsReceiveMessage))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1611): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\QmddAdministratorsReceiveMessageController.php(68): CActiveRecord->count('r_club_code=201...')
+#4 [internal function]: QmddAdministratorsReceiveMessageController->actionMessageCount('')
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(QmddAdministratorsReceiveMessageController), Array)
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(QmddAdministratorsReceiveMessageController), Object(ReflectionMethod), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('messageCount')
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('qmddAdministrat...')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#14 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=qmddAdministratorsReceiveMessage/messageCount
+HTTP_REFERER=http://127.0.0.1/sports/admin/index.php?act=top
+---

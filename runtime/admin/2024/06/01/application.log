@@ -1,0 +1,1374 @@
+2024/06/01 00:08:07 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:285)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=MealData/wxgetdishdetail&meal_id=undefined
+2024/06/01 01:37:04 [error] [exception.CException] exception 'CException' with message 'AddressController 无法找到请求的视图 "create".' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:881
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#1 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(104): CController->render('create', Array)
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(88): BaseController->saveDataMsg(Object(Address), 'Address', Array, 'create', '\xE6\xB7\xBB\xE5\x8A\xA0\xE6\x88\x90\xE5\x8A\x9F', '/mobile_kitchen...')
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(26): BaseController->_create(Object(Address), 'create', Array, '/mobile_kitchen...')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): AddressController->actionCreate()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/create')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=address/index
+---
+2024/06/01 01:46:07 [error] [exception.CException] exception 'CException' with message '属性 "Address.country_code_three" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('country_code_th...')
+#1 D:\wamp\www\Mobile_Kitchen\admin\views\addRess\index.php(43): CActiveRecord->__get('country_code_th...')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#6 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): CController->render('index', Array)
+#7 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(19): BaseController->_list(Object(Address), Object(CDbCriteria))
+#8 [internal function]: AddressController->actionIndex('')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/index')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/index
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=address/index
+---
+2024/06/01 01:46:08 [error] [exception.CException] exception 'CException' with message '属性 "Address.country_code_three" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('country_code_th...')
+#1 D:\wamp\www\Mobile_Kitchen\admin\views\addRess\index.php(43): CActiveRecord->__get('country_code_th...')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#6 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): CController->render('index', Array)
+#7 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(19): BaseController->_list(Object(Address), Object(CDbCriteria))
+#8 [internal function]: AddressController->actionIndex('')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/index')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/index
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=address/index
+---
+2024/06/01 01:46:08 [error] [exception.CException] exception 'CException' with message '属性 "Address.country_code_three" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('country_code_th...')
+#1 D:\wamp\www\Mobile_Kitchen\admin\views\addRess\index.php(43): CActiveRecord->__get('country_code_th...')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#6 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): CController->render('index', Array)
+#7 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(19): BaseController->_list(Object(Address), Object(CDbCriteria))
+#8 [internal function]: AddressController->actionIndex('')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/index')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/index
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=address/index
+---
+2024/06/01 01:46:45 [error] [exception.CException] exception 'CException' with message '属性 "Address.country_code_three" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('country_code_th...')
+#1 D:\wamp\www\Mobile_Kitchen\admin\views\addRess\index.php(43): CActiveRecord->__get('country_code_th...')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#6 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): CController->render('index', Array)
+#7 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(19): BaseController->_list(Object(Address), Object(CDbCriteria))
+#8 [internal function]: AddressController->actionIndex('')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/index')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/index
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=address/index
+---
+2024/06/01 01:46:46 [error] [exception.CException] exception 'CException' with message '属性 "Address.country_code_three" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('country_code_th...')
+#1 D:\wamp\www\Mobile_Kitchen\admin\views\addRess\index.php(43): CActiveRecord->__get('country_code_th...')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#6 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): CController->render('index', Array)
+#7 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(19): BaseController->_list(Object(Address), Object(CDbCriteria))
+#8 [internal function]: AddressController->actionIndex('')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/index')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/index
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=address/index
+---
+2024/06/01 01:46:46 [error] [exception.CException] exception 'CException' with message '属性 "Address.country_code_three" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('country_code_th...')
+#1 D:\wamp\www\Mobile_Kitchen\admin\views\addRess\index.php(43): CActiveRecord->__get('country_code_th...')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#6 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): CController->render('index', Array)
+#7 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(19): BaseController->_list(Object(Address), Object(CDbCriteria))
+#8 [internal function]: AddressController->actionIndex('')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('index')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/index')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/index
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=address/index
+---
+2024/06/01 01:56:34 [error] [exception.CException] exception 'CException' with message '属性 "Address.dish_name" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('dish_name')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2747): CActiveRecord->__get('dish_name')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(Address), 'dish_name')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(Address), 'dish_name', Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Address), 'dish_name', Array)
+#5 D:\wamp\www\Mobile_Kitchen\admin\views\addRess\create.php(18): CActiveForm->textField(Object(Address), 'dish_name', Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#10 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(104): CController->render('create', Array)
+#11 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(88): BaseController->saveDataMsg(Object(Address), 'Address', Array, 'create', '\xE6\xB7\xBB\xE5\x8A\xA0\xE6\x88\x90\xE5\x8A\x9F', '/mobile_kitchen...')
+#12 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(26): BaseController->_create(Object(Address), 'create', Array, '/mobile_kitchen...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): AddressController->actionCreate()
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#18 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/create')
+#19 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#21 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=address/index
+---
+2024/06/01 01:56:35 [error] [exception.CException] exception 'CException' with message '属性 "Address.dish_name" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('dish_name')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2747): CActiveRecord->__get('dish_name')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(Address), 'dish_name')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(Address), 'dish_name', Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Address), 'dish_name', Array)
+#5 D:\wamp\www\Mobile_Kitchen\admin\views\addRess\create.php(18): CActiveForm->textField(Object(Address), 'dish_name', Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#10 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(104): CController->render('create', Array)
+#11 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(88): BaseController->saveDataMsg(Object(Address), 'Address', Array, 'create', '\xE6\xB7\xBB\xE5\x8A\xA0\xE6\x88\x90\xE5\x8A\x9F', '/mobile_kitchen...')
+#12 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(26): BaseController->_create(Object(Address), 'create', Array, '/mobile_kitchen...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): AddressController->actionCreate()
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#18 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/create')
+#19 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#21 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=address/index
+---
+2024/06/01 01:56:37 [error] [exception.CException] exception 'CException' with message '属性 "Address.dish_name" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('dish_name')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2747): CActiveRecord->__get('dish_name')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(Address), 'dish_name')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(Address), 'dish_name', Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Address), 'dish_name', Array)
+#5 D:\wamp\www\Mobile_Kitchen\admin\views\addRess\create.php(18): CActiveForm->textField(Object(Address), 'dish_name', Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#10 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(104): CController->render('create', Array)
+#11 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(88): BaseController->saveDataMsg(Object(Address), 'Address', Array, 'create', '\xE6\xB7\xBB\xE5\x8A\xA0\xE6\x88\x90\xE5\x8A\x9F', '/mobile_kitchen...')
+#12 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(26): BaseController->_create(Object(Address), 'create', Array, '/mobile_kitchen...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): AddressController->actionCreate()
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#18 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/create')
+#19 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#21 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=address/index
+---
+2024/06/01 02:03:11 [error] [php] Undefined variable: province (D:\wamp\www\Mobile_Kitchen\admin\views\addRess\create.php:29)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): AddressController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): AddressController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(104): AddressController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(88): AddressController->saveDataMsg()
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(26): AddressController->_create()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): AddressController->actionCreate()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): AddressController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): AddressController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): AddressController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=address/create
+2024/06/01 02:04:40 [error] [php] Undefined variable: province (D:\wamp\www\Mobile_Kitchen\admin\views\addRess\create.php:29)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): AddressController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): AddressController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(104): AddressController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(88): AddressController->saveDataMsg()
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(26): AddressController->_create()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): AddressController->actionCreate()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): AddressController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): AddressController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): AddressController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=address/create
+2024/06/01 02:04:40 [error] [php] Undefined variable: province (D:\wamp\www\Mobile_Kitchen\admin\views\addRess\create.php:29)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): AddressController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): AddressController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(104): AddressController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(88): AddressController->saveDataMsg()
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(26): AddressController->_create()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): AddressController->actionCreate()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): AddressController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): AddressController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): AddressController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=address/create
+2024/06/01 02:04:40 [error] [php] Undefined variable: province (D:\wamp\www\Mobile_Kitchen\admin\views\addRess\create.php:29)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): AddressController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): AddressController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(104): AddressController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(88): AddressController->saveDataMsg()
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(26): AddressController->_create()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): AddressController->actionCreate()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): AddressController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): AddressController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): AddressController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=address/create
+2024/06/01 02:05:27 [error] [php] Undefined variable: province (D:\wamp\www\Mobile_Kitchen\admin\views\addRess\create.php:29)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): AddressController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): AddressController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(104): AddressController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(88): AddressController->saveDataMsg()
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(26): AddressController->_create()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): AddressController->actionCreate()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): AddressController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): AddressController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): AddressController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=address/create
+2024/06/01 02:05:28 [error] [php] Undefined variable: province (D:\wamp\www\Mobile_Kitchen\admin\views\addRess\create.php:29)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): AddressController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): AddressController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(104): AddressController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(88): AddressController->saveDataMsg()
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(26): AddressController->_create()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): AddressController->actionCreate()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): AddressController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): AddressController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): AddressController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=address/create
+2024/06/01 02:08:22 [error] [php] Undefined variable: arclist (D:\wamp\www\Mobile_Kitchen\admin\views\addRess\index.php:39)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): AddressController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): AddressController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(32): AddressController->render()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): AddressController->actionCreate()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): AddressController->runAction()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): AddressController->runActionWithFilters()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): AddressController->run()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=address/create
+2024/06/01 02:08:23 [error] [php] Undefined variable: arclist (D:\wamp\www\Mobile_Kitchen\admin\views\addRess\index.php:39)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): AddressController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): AddressController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(32): AddressController->render()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): AddressController->actionCreate()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): AddressController->runAction()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): AddressController->runActionWithFilters()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): AddressController->run()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=address/create
+2024/06/01 02:08:43 [error] [php] Undefined variable: district (D:\wamp\www\Mobile_Kitchen\admin\views\addRess\create.php:29)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): AddressController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): AddressController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(32): AddressController->render()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): AddressController->actionCreate()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): AddressController->runAction()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): AddressController->runActionWithFilters()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): AddressController->run()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=address/create
+2024/06/01 02:08:44 [error] [php] Undefined variable: district (D:\wamp\www\Mobile_Kitchen\admin\views\addRess\create.php:29)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): AddressController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): AddressController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(32): AddressController->render()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): AddressController->actionCreate()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): AddressController->runAction()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): AddressController->runActionWithFilters()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): AddressController->run()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=address/create
+2024/06/01 02:08:44 [error] [php] Undefined variable: district (D:\wamp\www\Mobile_Kitchen\admin\views\addRess\create.php:29)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): AddressController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): AddressController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(32): AddressController->render()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): AddressController->actionCreate()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): AddressController->runAction()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): AddressController->runActionWithFilters()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): AddressController->run()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=address/create
+2024/06/01 02:08:44 [error] [php] Undefined variable: district (D:\wamp\www\Mobile_Kitchen\admin\views\addRess\create.php:29)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): AddressController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): AddressController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(32): AddressController->render()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): AddressController->actionCreate()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): AddressController->runAction()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): AddressController->runActionWithFilters()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): AddressController->run()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=address/create
+2024/06/01 02:33:28 [error] [exception.CException] exception 'CException' with message 'AddressController and its behaviors do not have a method or closure named "saveData".' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(34): CComponent->__call('saveData', Array)
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(34): AddressController->saveData(Object(Address), Array)
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): AddressController->actionCreate()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/create')
+#8 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#10 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=address/create
+---
+2024/06/01 02:34:19 [error] [exception.CException] exception 'CException' with message 'AddressController and its behaviors do not have a method or closure named "saveData".' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(34): CComponent->__call('saveData', Array)
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(34): AddressController->saveData(Object(Address), Array)
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): AddressController->actionCreate()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/create')
+#8 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#10 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=address/create
+---
+2024/06/01 02:34:27 [error] [exception.CException] exception 'CException' with message 'AddressController and its behaviors do not have a method or closure named "saveData".' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(34): CComponent->__call('saveData', Array)
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(34): AddressController->saveData(Object(Address), Array)
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): AddressController->actionCreate()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/create')
+#8 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#10 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=address/create
+---
+2024/06/01 03:23:31 [error] [php] Undefined index: ads_detail (D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php:42)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): AddressController->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): AddressController->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): AddressController->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=address/update&id=2
+2024/06/01 11:18:33 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:285)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=MealData/wxgetdishdetail&meal_id=undefined
+2024/06/01 11:46:36 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:285)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=MealData/wxgetdishdetail&meal_id=undefined
+2024/06/01 12:26:34 [error] [php] Undefined index: openid (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:407)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=GfUser1/towxbind&gf_account=888829&code=
+2024/06/01 12:42:49 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:285)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=MealData/wxgetdishdetail&meal_id=undefined
+2024/06/01 12:50:39 [error] [php] Undefined index: openid (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:407)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=GfUser1/towxbind&gf_account=888813&code=
+2024/06/01 14:00:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "wxbaocunaddress、" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('wxbaocunaddress...')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress...')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress%E3%80%81
+---
+2024/06/01 14:00:06 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_user_1` `t` WHERE gf_account= LIMIT 1.
+2024/06/01 14:00:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('gf_account=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(87): BaseModel->find('gf_account=')
+#5 [internal function]: AddressController->actionwxbaocunaddress('', '', '', '', '', '', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress
+---
+2024/06/01 14:00:29 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_user_1` `t` WHERE gf_account= LIMIT 1.
+2024/06/01 14:00:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('gf_account=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(87): BaseModel->find('gf_account=')
+#5 [internal function]: AddressController->actionwxbaocunaddress('', '', '', '', '', '', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress
+---
+2024/06/01 14:00:29 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_user_1` `t` WHERE gf_account= LIMIT 1.
+2024/06/01 14:00:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('gf_account=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(87): BaseModel->find('gf_account=')
+#5 [internal function]: AddressController->actionwxbaocunaddress('', '', '', '', '', '', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress
+---
+2024/06/01 14:00:30 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_user_1` `t` WHERE gf_account= LIMIT 1.
+2024/06/01 14:00:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('gf_account=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(87): BaseModel->find('gf_account=')
+#5 [internal function]: AddressController->actionwxbaocunaddress('', '', '', '', '', '', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress
+---
+2024/06/01 14:00:32 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_user_1` `t` WHERE gf_account= LIMIT 1.
+2024/06/01 14:00:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('gf_account=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(87): BaseModel->find('gf_account=')
+#5 [internal function]: AddressController->actionwxbaocunaddress('', '', '', '', '', '', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress
+---
+2024/06/01 14:01:13 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_user_1` `t` WHERE gf_account= LIMIT 1.
+2024/06/01 14:01:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('gf_account=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(87): BaseModel->find('gf_account=')
+#5 [internal function]: AddressController->actionwxbaocunaddress('')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress
+---
+2024/06/01 14:01:43 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_user_1` `t` WHERE gf_account= LIMIT 1.
+2024/06/01 14:01:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('gf_account=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(87): BaseModel->find('gf_account=')
+#5 [internal function]: AddressController->actionwxbaocunaddress('', '', '', '', '', '', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress
+---
+2024/06/01 14:07:58 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_user_1` `t` WHERE gf_account= LIMIT 1.
+2024/06/01 14:07:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('gf_account=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(87): BaseModel->find('gf_account=')
+#5 [internal function]: AddressController->actionwxbaocunaddress('', '', '', '', '', '', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Address/wxbaocu...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=Address/wxbaocunaddress
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/06/01 14:08:13 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_user_1` `t` WHERE gf_account= LIMIT 1.
+2024/06/01 14:08:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('gf_account=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(87): BaseModel->find('gf_account=')
+#5 [internal function]: AddressController->actionwxbaocunaddress('', '', '', '', '', '', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Address/wxbaocu...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=Address/wxbaocunaddress
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/06/01 14:08:55 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_user_1` `t` WHERE gf_account= LIMIT 1.
+2024/06/01 14:08:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('gf_account=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(87): BaseModel->find('gf_account=')
+#5 [internal function]: AddressController->actionwxbaocunaddress('', '', '', '', '', '', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Address/wxbaocu...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=Address/wxbaocunaddress
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/06/01 14:09:30 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888829', 'q', '19888878957', '{"code":"110000...', '{"code":"110100...', '{"code":"110102...', 'qsq', '0')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=Address/wxbaocunaddress&account=888829&name=q&phone=19888878957&province=%7B%22code%22%3A%22110000%22%2C%22value%22%3A%22%E5%8C%97%E4%BA%AC%E5%B8%82%22%2C%22children%22%3A%5B%7B%22code%22%3A%22110100%22%2C%22value%22%3A%22%E5%8C%97%E4%BA%AC%E5%B8%82%22%2C%22children%22%3A%5B%7B%22code%22%3A%22110101%22%2C%22value%22%3A%22%E4%B8%9C%E5%9F%8E%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110102%22%2C%22value%22%3A%22%E8%A5%BF%E5%9F%8E%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110105%22%2C%22value%22%3A%22%E6%9C%9D%E9%98%B3%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110106%22%2C%22value%22%3A%22%E4%B8%B0%E5%8F%B0%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110107%22%2C%22value%22%3A%22%E7%9F%B3%E6%99%AF%E5%B1%B1%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110108%22%2C%22value%22%3A%22%E6%B5%B7%E6%B7%80%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110109%22%2C%22value%22%3A%22%E9%97%A8%E5%A4%B4%E6%B2%9F%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110111%22%2C%22value%22%3A%22%E6%88%BF%E5%B1%B1%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110112%22%2C%22value%22%3A%22%E9%80%9A%E5%B7%9E%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110113%22%2C%22value%22%3A%22%E9%A1%BA%E4%B9%89%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110114%22%2C%22value%22%3A%22%E6%98%8C%E5%B9%B3%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110115%22%2C%22value%22%3A%22%E5%A4%A7%E5%85%B4%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110116%22%2C%22value%22%3A%22%E6%80%80%E6%9F%94%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110117%22%2C%22value%22%3A%22%E5%B9%B3%E8%B0%B7%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110118%22%2C%22value%22%3A%22%E5%AF%86%E4%BA%91%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110119%22%2C%22value%22%3A%22%E5%BB%B6%E5%BA%86%E5%8C%BA%22%7D%5D%7D%5D%7D&city=%7B%22code%22%3A%22110100%22%2C%22value%22%3A%22%E5%8C%97%E4%BA%AC%E5%B8%82%22%2C%22children%22%3A%5B%7B%22code%22%3A%22110101%22%2C%22value%22%3A%22%E4%B8%9C%E5%9F%8E%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110102%22%2C%22value%22%3A%22%E8%A5%BF%E5%9F%8E%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110105%22%2C%22value%22%3A%22%E6%9C%9D%E9%98%B3%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110106%22%2C%22value%22%3A%22%E4%B8%B0%E5%8F%B0%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110107%22%2C%22value%22%3A%22%E7%9F%B3%E6%99%AF%E5%B1%B1%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110108%22%2C%22value%22%3A%22%E6%B5%B7%E6%B7%80%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110109%22%2C%22value%22%3A%22%E9%97%A8%E5%A4%B4%E6%B2%9F%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110111%22%2C%22value%22%3A%22%E6%88%BF%E5%B1%B1%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110112%22%2C%22value%22%3A%22%E9%80%9A%E5%B7%9E%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110113%22%2C%22value%22%3A%22%E9%A1%BA%E4%B9%89%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110114%22%2C%22value%22%3A%22%E6%98%8C%E5%B9%B3%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110115%22%2C%22value%22%3A%22%E5%A4%A7%E5%85%B4%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110116%22%2C%22value%22%3A%22%E6%80%80%E6%9F%94%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110117%22%2C%22value%22%3A%22%E5%B9%B3%E8%B0%B7%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110118%22%2C%22value%22%3A%22%E5%AF%86%E4%BA%91%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110119%22%2C%22value%22%3A%22%E5%BB%B6%E5%BA%86%E5%8C%BA%22%7D%5D%7D&district=%7B%22code%22%3A%22110102%22%2C%22value%22%3A%22%E8%A5%BF%E5%9F%8E%E5%8C%BA%22%7D&ads_detail=qsq&isDefault=0
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/06/01 14:10:44 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888829', '', '', '{"code":"110000...', '{"code":"110100...', '{"code":"110102...', 'adawd', '0')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=Address/wxbaocunaddress&account=888829&name=&phone=&province=%7B%22code%22%3A%22110000%22%2C%22value%22%3A%22%E5%8C%97%E4%BA%AC%E5%B8%82%22%2C%22children%22%3A%5B%7B%22code%22%3A%22110100%22%2C%22value%22%3A%22%E5%8C%97%E4%BA%AC%E5%B8%82%22%2C%22children%22%3A%5B%7B%22code%22%3A%22110101%22%2C%22value%22%3A%22%E4%B8%9C%E5%9F%8E%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110102%22%2C%22value%22%3A%22%E8%A5%BF%E5%9F%8E%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110105%22%2C%22value%22%3A%22%E6%9C%9D%E9%98%B3%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110106%22%2C%22value%22%3A%22%E4%B8%B0%E5%8F%B0%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110107%22%2C%22value%22%3A%22%E7%9F%B3%E6%99%AF%E5%B1%B1%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110108%22%2C%22value%22%3A%22%E6%B5%B7%E6%B7%80%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110109%22%2C%22value%22%3A%22%E9%97%A8%E5%A4%B4%E6%B2%9F%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110111%22%2C%22value%22%3A%22%E6%88%BF%E5%B1%B1%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110112%22%2C%22value%22%3A%22%E9%80%9A%E5%B7%9E%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110113%22%2C%22value%22%3A%22%E9%A1%BA%E4%B9%89%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110114%22%2C%22value%22%3A%22%E6%98%8C%E5%B9%B3%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110115%22%2C%22value%22%3A%22%E5%A4%A7%E5%85%B4%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110116%22%2C%22value%22%3A%22%E6%80%80%E6%9F%94%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110117%22%2C%22value%22%3A%22%E5%B9%B3%E8%B0%B7%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110118%22%2C%22value%22%3A%22%E5%AF%86%E4%BA%91%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110119%22%2C%22value%22%3A%22%E5%BB%B6%E5%BA%86%E5%8C%BA%22%7D%5D%7D%5D%7D&city=%7B%22code%22%3A%22110100%22%2C%22value%22%3A%22%E5%8C%97%E4%BA%AC%E5%B8%82%22%2C%22children%22%3A%5B%7B%22code%22%3A%22110101%22%2C%22value%22%3A%22%E4%B8%9C%E5%9F%8E%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110102%22%2C%22value%22%3A%22%E8%A5%BF%E5%9F%8E%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110105%22%2C%22value%22%3A%22%E6%9C%9D%E9%98%B3%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110106%22%2C%22value%22%3A%22%E4%B8%B0%E5%8F%B0%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110107%22%2C%22value%22%3A%22%E7%9F%B3%E6%99%AF%E5%B1%B1%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110108%22%2C%22value%22%3A%22%E6%B5%B7%E6%B7%80%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110109%22%2C%22value%22%3A%22%E9%97%A8%E5%A4%B4%E6%B2%9F%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110111%22%2C%22value%22%3A%22%E6%88%BF%E5%B1%B1%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110112%22%2C%22value%22%3A%22%E9%80%9A%E5%B7%9E%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110113%22%2C%22value%22%3A%22%E9%A1%BA%E4%B9%89%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110114%22%2C%22value%22%3A%22%E6%98%8C%E5%B9%B3%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110115%22%2C%22value%22%3A%22%E5%A4%A7%E5%85%B4%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110116%22%2C%22value%22%3A%22%E6%80%80%E6%9F%94%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110117%22%2C%22value%22%3A%22%E5%B9%B3%E8%B0%B7%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110118%22%2C%22value%22%3A%22%E5%AF%86%E4%BA%91%E5%8C%BA%22%7D%2C%7B%22code%22%3A%22110119%22%2C%22value%22%3A%22%E5%BB%B6%E5%BA%86%E5%8C%BA%22%7D%5D%7D&district=%7B%22code%22%3A%22110102%22%2C%22value%22%3A%22%E8%A5%BF%E5%9F%8E%E5%8C%BA%22%7D&ads_detail=adawd&isDefault=0
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/06/01 14:12:09 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888829', 'x', '12345678', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\x92\x8C\xE5\xB9\xB3\xE5\x8C\xBA', '234dddd', '0')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=Address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/06/01 14:14:46 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888829', 'x', '12345678', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\x92\x8C\xE5\xB9\xB3\xE5\x8C\xBA', '234dddd', '0')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+---
+2024/06/01 14:18:22 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888829', 'x', '12345678', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\x92\x8C\xE5\xB9\xB3\xE5\x8C\xBA', '234dddd', '0')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+---
+2024/06/01 14:18:59 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888829', 'x', '12345678', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\x92\x8C\xE5\xB9\xB3\xE5\x8C\xBA', '234dddd', '0')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+---
+2024/06/01 14:19:00 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888829', 'x', '12345678', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\x92\x8C\xE5\xB9\xB3\xE5\x8C\xBA', '234dddd', '0')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+---
+2024/06/01 14:19:02 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888829', 'x', '12345678', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\x92\x8C\xE5\xB9\xB3\xE5\x8C\xBA', '234dddd', '0')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+---
+2024/06/01 14:19:49 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888829', 'x', '12345678', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\x92\x8C\xE5\xB9\xB3\xE5\x8C\xBA', '234dddd', '0')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+---
+2024/06/01 14:20:33 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888829', 'x', '12345678', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\x92\x8C\xE5\xB9\xB3\xE5\x8C\xBA', '234dddd', '0')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+---
+2024/06/01 14:20:34 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888829', 'x', '12345678', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\x92\x8C\xE5\xB9\xB3\xE5\x8C\xBA', '234dddd', '0')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+---
+2024/06/01 14:20:34 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888829', 'x', '12345678', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\x92\x8C\xE5\xB9\xB3\xE5\x8C\xBA', '234dddd', '0')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+---
+2024/06/01 14:20:34 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888829', 'x', '12345678', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\x92\x8C\xE5\xB9\xB3\xE5\x8C\xBA', '234dddd', '0')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+---
+2024/06/01 14:20:34 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888829', 'x', '12345678', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\x92\x8C\xE5\xB9\xB3\xE5\x8C\xBA', '234dddd', '0')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+---
+2024/06/01 14:20:35 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888829', 'x', '12345678', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\x92\x8C\xE5\xB9\xB3\xE5\x8C\xBA', '234dddd', '0')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+---
+2024/06/01 14:20:35 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888829', 'x', '12345678', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\x92\x8C\xE5\xB9\xB3\xE5\x8C\xBA', '234dddd', '0')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+---
+2024/06/01 14:20:35 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888829', 'x', '12345678', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\x92\x8C\xE5\xB9\xB3\xE5\x8C\xBA', '234dddd', '0')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+---
+2024/06/01 14:20:39 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888829', 'x', '12345678', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\x92\x8C\xE5\xB9\xB3\xE5\x8C\xBA', '234dddd', '0')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+---
+2024/06/01 14:20:59 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888829', 'x', '12345678', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\x92\x8C\xE5\xB9\xB3\xE5\x8C\xBA', '234dddd', '0')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+---
+2024/06/01 14:21:30 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888829', 'x', '12345678', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\xA4\xA9\xE6\xB4\xA5\xE5\xB8\x82', '\xE5\x92\x8C\xE5\xB9\xB3\xE5\x8C\xBA', '234dddd', '0')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+---
+2024/06/01 14:21:35 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888829', '', '', '', '', '', '', '')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829
+---
+2024/06/01 14:21:44 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888818', '', '', '', '', '', '', '')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888818
+---
+2024/06/01 14:22:11 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888818', '', '', '', '', '', '', '')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888818
+---
+2024/06/01 14:23:14 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888818', '', '', '', '', '', '', '')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888818
+---
+2024/06/01 14:23:15 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(99): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888818', '', '', '', '', '', '', '')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888818
+---
+2024/06/01 14:23:42 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(88): CActiveRecord->__get('id')
+#2 [internal function]: AddressController->actionwxbaocunaddress('888818', '', '', '', '', '', '', '')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('address/wxbaocu...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888818
+---
+2024/06/01 14:23:53 [error] [php] Object of class GfUser1 could not be converted to string (D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php:88)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): AddressController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): AddressController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): AddressController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888818
+2024/06/01 14:29:29 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php:107)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): AddressController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): AddressController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): AddressController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+2024/06/01 14:29:53 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php:108)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): AddressController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): AddressController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): AddressController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+2024/06/01 14:29:54 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php:108)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): AddressController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): AddressController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): AddressController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+2024/06/01 14:29:54 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php:108)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): AddressController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): AddressController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): AddressController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+2024/06/01 14:31:14 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php:108)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): AddressController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): AddressController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): AddressController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=address/wxbaocunaddress&account=888829&name=x&phone=12345678&province=%E5%A4%A9%E6%B4%A5%E5%B8%82&city=%E5%A4%A9%E6%B4%A5%E5%B8%82&district=%E5%92%8C%E5%B9%B3%E5%8C%BA&ads_detail=234dddd&isDefault=0
+2024/06/01 15:06:22 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `address` `t` WHERE id= LIMIT 1.
+2024/06/01 15:06:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('id=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(89): BaseModel->find('id=')
+#5 [internal function]: AddressController->actionwxbaocunaddress('', '888829', '\xE9\xBB\x84', '19867859683', '\xE5\xB9\xBF\xE4\xB8\x9C\xE7\x9C\x81', '\xE5\xB9\xBF\xE5\xB7\x9E\xE5\xB8\x82', '\xE5\xA4\xA9\xE6\xB2\xB3\xE5\x8C\xBA', '\xE5\x8D\x8E\xE5\x8D\x97\xE5\xB8\x88\xE8\x8C\x83\xE5\xA4\xA7...', '1')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxbaocunaddress')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Address/wxbaocu...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=Address/wxbaocunaddress&addressId=&account=888829&name=%E9%BB%84&phone=19867859683&province=%E5%B9%BF%E4%B8%9C%E7%9C%81&city=%E5%B9%BF%E5%B7%9E%E5%B8%82&district=%E5%A4%A9%E6%B2%B3%E5%8C%BA&ads_detail=%E5%8D%8E%E5%8D%97%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AD%A6%E9%99%A2%E6%9E%B6%E7%A9%BA%E5%B1%82&isDefault=1
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/06/01 15:16:43 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:285)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=MealData/wxgetdishdetail&meal_id=undefined
+2024/06/01 16:14:12 [error] [php] Undefined index: openid (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:407)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=GfUser1/towxbind&gf_account=888829&code=
+2024/06/01 17:09:38 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:285)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=MealData/wxgetdishdetail&meal_id=undefined
+2024/06/01 17:10:52 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:285)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=MealData/wxgetdishdetail&meal_id=undefined
+2024/06/01 17:14:49 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:285)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=MealData/wxgetdishdetail&meal_id=undefined
+2024/06/01 17:15:03 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:285)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=MealData/wxgetdishdetail&meal_id=undefined

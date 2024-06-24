@@ -1,0 +1,7 @@
+admin/runtime/admin/*
+error_log.txt
+data/config.php
+admin/assets/
+test_log.txt
+admin/uploads/
+

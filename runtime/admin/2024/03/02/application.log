@@ -1,0 +1,84 @@
+2024/03/02 08:31:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.swiperimage' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `swiperimage`.
+2024/03/02 08:31:23 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "swiperImage" 对应的 table "{{swiperimage}}".' in D:\PHP\wamp64\www\sports\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 D:\PHP\wamp64\www\sports\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(swiperImage))
+#1 D:\PHP\wamp64\www\sports\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 D:\PHP\wamp64\www\sports\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 D:\PHP\wamp64\www\sports\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 D:\PHP\wamp64\www\sports\admin\components\BaseModel.php(652): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#5 D:\PHP\wamp64\www\sports\admin\controllers\swiperimageController.php(101): BaseModel->findAll(Object(CDbCriteria))
+#6 D:\PHP\wamp64\www\sports\framework\web\actions\CInlineAction.php(49): swiperImageController->actionWeChatGetAllImage()
+#7 D:\PHP\wamp64\www\sports\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\PHP\wamp64\www\sports\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\PHP\wamp64\www\sports\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\PHP\wamp64\www\sports\framework\web\CWebApplication.php(282): CController->run('WeChatGetAllIma...')
+#11 D:\PHP\wamp64\www\sports\framework\web\CWebApplication.php(141): CWebApplication->runController('swiperImage/WeC...')
+#12 D:\PHP\wamp64\www\sports\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\PHP\wamp64\www\sports\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/sports/index.php?r=swiperImage/WeChatGetAllImage
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/03/02 08:31:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.gridicon' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `gridicon`.
+2024/03/02 08:31:23 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "gridIcon" 对应的 table "{{gridicon}}".' in D:\PHP\wamp64\www\sports\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 D:\PHP\wamp64\www\sports\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(gridIcon))
+#1 D:\PHP\wamp64\www\sports\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 D:\PHP\wamp64\www\sports\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 D:\PHP\wamp64\www\sports\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 D:\PHP\wamp64\www\sports\admin\components\BaseModel.php(652): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#5 D:\PHP\wamp64\www\sports\admin\controllers\gridIconController.php(100): BaseModel->findAll(Object(CDbCriteria))
+#6 D:\PHP\wamp64\www\sports\framework\web\actions\CInlineAction.php(49): gridIconController->actionWeChatGetAllIcon()
+#7 D:\PHP\wamp64\www\sports\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\PHP\wamp64\www\sports\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\PHP\wamp64\www\sports\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\PHP\wamp64\www\sports\framework\web\CWebApplication.php(282): CController->run('WeChatGetAllIco...')
+#11 D:\PHP\wamp64\www\sports\framework\web\CWebApplication.php(141): CWebApplication->runController('gridIcon/WeChat...')
+#12 D:\PHP\wamp64\www\sports\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\PHP\wamp64\www\sports\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/sports/index.php?r=gridIcon/WeChatGetAllIcon
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/03/02 08:31:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.swiperimage' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `swiperimage`.
+2024/03/02 08:31:42 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "swiperImage" 对应的 table "{{swiperimage}}".' in D:\PHP\wamp64\www\sports\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 D:\PHP\wamp64\www\sports\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(swiperImage))
+#1 D:\PHP\wamp64\www\sports\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 D:\PHP\wamp64\www\sports\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 D:\PHP\wamp64\www\sports\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 D:\PHP\wamp64\www\sports\admin\components\BaseModel.php(652): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#5 D:\PHP\wamp64\www\sports\admin\controllers\swiperimageController.php(101): BaseModel->findAll(Object(CDbCriteria))
+#6 D:\PHP\wamp64\www\sports\framework\web\actions\CInlineAction.php(49): swiperImageController->actionWeChatGetAllImage()
+#7 D:\PHP\wamp64\www\sports\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\PHP\wamp64\www\sports\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\PHP\wamp64\www\sports\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\PHP\wamp64\www\sports\framework\web\CWebApplication.php(282): CController->run('WeChatGetAllIma...')
+#11 D:\PHP\wamp64\www\sports\framework\web\CWebApplication.php(141): CWebApplication->runController('swiperImage/WeC...')
+#12 D:\PHP\wamp64\www\sports\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\PHP\wamp64\www\sports\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/sports/index.php?r=swiperImage/WeChatGetAllImage
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/03/02 08:31:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.gridicon' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `gridicon`.
+2024/03/02 08:31:42 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "gridIcon" 对应的 table "{{gridicon}}".' in D:\PHP\wamp64\www\sports\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 D:\PHP\wamp64\www\sports\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(gridIcon))
+#1 D:\PHP\wamp64\www\sports\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 D:\PHP\wamp64\www\sports\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 D:\PHP\wamp64\www\sports\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 D:\PHP\wamp64\www\sports\admin\components\BaseModel.php(652): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#5 D:\PHP\wamp64\www\sports\admin\controllers\gridIconController.php(100): BaseModel->findAll(Object(CDbCriteria))
+#6 D:\PHP\wamp64\www\sports\framework\web\actions\CInlineAction.php(49): gridIconController->actionWeChatGetAllIcon()
+#7 D:\PHP\wamp64\www\sports\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\PHP\wamp64\www\sports\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\PHP\wamp64\www\sports\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\PHP\wamp64\www\sports\framework\web\CWebApplication.php(282): CController->run('WeChatGetAllIco...')
+#11 D:\PHP\wamp64\www\sports\framework\web\CWebApplication.php(141): CWebApplication->runController('gridIcon/WeChat...')
+#12 D:\PHP\wamp64\www\sports\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\PHP\wamp64\www\sports\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/sports/index.php?r=gridIcon/WeChatGetAllIcon
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---

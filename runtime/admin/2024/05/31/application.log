@@ -1,0 +1,217 @@
+2024/05/31 18:42:33 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:285)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=MealData/wxgetdishdetail&meal_id=undefined
+2024/05/31 18:42:36 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:285)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=MealData/wxgetdishdetail&meal_id=undefined
+2024/05/31 18:42:38 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:285)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=MealData/wxgetdishdetail&meal_id=undefined
+2024/05/31 18:42:45 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:285)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=MealData/wxgetdishdetail&meal_id=undefined
+2024/05/31 20:35:04 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.proof" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('proof', '/uploads/file/T...')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(953): CActiveRecord->__set('proof', '/uploads/file/T...')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfUser1Controller->actionTXpic()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('TXpic')
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/TXpic')
+#8 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#10 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=GfUser1/TXpic
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/31 20:35:32 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.proof" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('proof', '/uploads/file/T...')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(953): CActiveRecord->__set('proof', '/uploads/file/T...')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfUser1Controller->actionTXpic()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('TXpic')
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/TXpic')
+#8 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#10 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=GfUser1/TXpic
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/31 21:47:09 [error] [php] file_get_contents(): Filename cannot be empty (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php:959)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=GfUser1/TXpic
+2024/05/31 22:08:58 [error] [php] Undefined variable: code (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php:938)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=GfUser1/wxUpdateuser&gf_account=888829&name=
+2024/05/31 22:09:00 [error] [php] Undefined variable: code (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php:938)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=GfUser1/wxUpdateuser&gf_account=888829&name=
+2024/05/31 22:09:01 [error] [php] Undefined variable: code (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php:938)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=GfUser1/wxUpdateuser&gf_account=888829&name=
+2024/05/31 22:09:02 [error] [php] Undefined variable: code (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php:938)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=GfUser1/wxUpdateuser&gf_account=888829&name=
+2024/05/31 22:09:03 [error] [php] Undefined variable: code (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php:938)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=GfUser1/wxUpdateuser&gf_account=888829&name=
+2024/05/31 22:09:04 [error] [php] Undefined variable: code (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php:938)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=GfUser1/wxUpdateuser&gf_account=888829&name=
+2024/05/31 22:11:12 [error] [php] Undefined variable: code (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php:938)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=GfUser1/wxUpdateuser&gf_account=888829&name=
+2024/05/31 22:14:13 [error] [php] Undefined variable: code (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php:938)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=GfUser1/wxUpdateuser&gf_account=888829&name=
+2024/05/31 22:16:44 [error] [php] Undefined variable: code (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php:938)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=GfUser1/wxUpdateuser&gf_account=888829&name=
+2024/05/31 22:58:12 [error] [php] Undefined variable: code (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php:973)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=GfUser1/TXpic
+2024/05/31 23:36:41 [error] [php] Undefined index: openid (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:407)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=GfUser1/towxbind&gf_account=888829&code=
+2024/05/31 23:39:01 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:285)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=MealData/wxgetdishdetail&meal_id=undefined

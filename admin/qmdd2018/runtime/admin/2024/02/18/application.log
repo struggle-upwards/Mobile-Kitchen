@@ -1,0 +1,436 @@
+2024/02/18 09:49:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.qmdd_administrators_receive_message' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `qmdd_administrators_receive_message`.
+2024/02/18 09:49:50 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "QmddAdministratorsReceiveMessage" 对应的 table "{{qmdd_administrators_receive_message}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(QmddAdministratorsReceiveMessage))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1611): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\QmddAdministratorsReceiveMessageController.php(68): CActiveRecord->count('r_club_code=201...')
+#4 [internal function]: QmddAdministratorsReceiveMessageController->actionMessageCount('')
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(QmddAdministratorsReceiveMessageController), Array)
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(QmddAdministratorsReceiveMessageController), Object(ReflectionMethod), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('messageCount')
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('qmddAdministrat...')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CApplication->run()
+#14 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=qmddAdministratorsReceiveMessage/messageCount
+HTTP_REFERER=http://127.0.0.1/sports/admin/index.php?act=top
+---
+2024/02/18 09:56:51 [error] [php] Undefined index: club_id (E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\ClubadminController.php:83)
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): ClubadminController->runAction()
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): ClubadminController->run()
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CWebApplication->run()
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=clubadmin/update&id=0&f_id=198&admin_gfaccount=%20&admin_gfnick=%E5%90%B4%E6%B6%A6%E4%B8%B0&password=671f0a783a1fe99a6d2ffed325b1b101&pay_pass=123456
+2024/02/18 09:56:53 [error] [php] Undefined index: club_id (E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\ClubadminController.php:83)
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): ClubadminController->runAction()
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): ClubadminController->run()
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CWebApplication->run()
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=clubadmin/update&id=0&f_id=198&admin_gfaccount=%20&admin_gfnick=%E5%90%B4%E6%B6%A6%E4%B8%B0&password=671f0a783a1fe99a6d2ffed325b1b101&pay_pass=123456
+2024/02/18 09:57:53 [error] [php] Undefined index: club_id (E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\ClubadminController.php:83)
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): ClubadminController->runAction()
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): ClubadminController->run()
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CWebApplication->run()
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=clubadmin/update&id=0&f_id=198&admin_gfaccount=%20&admin_gfnick=%E5%90%B4%E6%B6%A6%E4%B8%B0&password=671f0a783a1fe99a6d2ffed325b1b101&pay_pass=123456
+2024/02/18 10:15:26 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.eg_region' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `eg_region`.
+2024/02/18 10:15:26 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "eg_region" 对应的 table "{{eg_region}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(eg_region))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\testStadiumController.php(14): CActiveRecord->findAll(Object(CDbCriteria))
+#5 [internal function]: testStadiumController->actionGetCity('\xE5\x90\x88\xE8\x82\xA5\xE5\xB8\x82')
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(testStadiumController), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(testStadiumController), Object(ReflectionMethod), Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetCity')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('testStadium/Get...')
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CApplication->run()
+#15 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=testStadium/GetCity&cityKeywords=%E5%90%88%E8%82%A5%E5%B8%82
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/02/18 10:16:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.eg_region' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `eg_region`.
+2024/02/18 10:16:33 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "eg_region" 对应的 table "{{eg_region}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(eg_region))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\testStadiumController.php(14): CActiveRecord->findAll(Object(CDbCriteria))
+#5 [internal function]: testStadiumController->actionGetCity('\xE5\x90\x88\xE8\x82\xA5\xE5\xB8\x82')
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(testStadiumController), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(testStadiumController), Object(ReflectionMethod), Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetCity')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('testStadium/Get...')
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CApplication->run()
+#15 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=testStadium/GetCity&cityKeywords=%E5%90%88%E8%82%A5%E5%B8%82
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/02/18 10:22:17 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and admin_gfaccount=' ' LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `qmdd_administrators` `t` WHERE admin_level= and admin_gfaccount=' ' LIMIT 1.
+2024/02/18 10:22:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and admin_gfaccount=' ' LIMIT 1' at line 1' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\CDbCommand.php:543
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\ClubadminController.php(83): CActiveRecord->find('admin_level= an...')
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\ClubadminController.php(74): ClubadminController->saveData(NULL, Array, '')
+#5 [internal function]: ClubadminController->actionUpdate('')
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubadminController), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubadminController), Object(ReflectionMethod), Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('update')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('clubadmin/updat...')
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CApplication->run()
+#15 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=clubadmin/update&id=&admin_gfaccount=+&admin_gfnick=&password=&pay_pass=&f_id=
+HTTP_REFERER=http://127.0.0.1/sports/admin/qmdd2018/index.php?r=clubadmin/create&lang_type=0
+---
+2024/02/18 10:22:18 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and admin_gfaccount=' ' LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `qmdd_administrators` `t` WHERE admin_level= and admin_gfaccount=' ' LIMIT 1.
+2024/02/18 10:22:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and admin_gfaccount=' ' LIMIT 1' at line 1' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\CDbCommand.php:543
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\ClubadminController.php(83): CActiveRecord->find('admin_level= an...')
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\ClubadminController.php(74): ClubadminController->saveData(NULL, Array, '')
+#5 [internal function]: ClubadminController->actionUpdate('')
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubadminController), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubadminController), Object(ReflectionMethod), Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('update')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('clubadmin/updat...')
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CApplication->run()
+#15 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=clubadmin/update&id=&admin_gfaccount=+&admin_gfnick=&password=&pay_pass=&f_id=
+HTTP_REFERER=http://127.0.0.1/sports/admin/qmdd2018/index.php?r=clubadmin/create&lang_type=0
+---
+2024/02/18 11:09:44 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.qmdd_administrators_receive_message' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `qmdd_administrators_receive_message`.
+2024/02/18 11:09:44 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "QmddAdministratorsReceiveMessage" 对应的 table "{{qmdd_administrators_receive_message}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(QmddAdministratorsReceiveMessage))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1611): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\QmddAdministratorsReceiveMessageController.php(68): CActiveRecord->count('r_club_code=201...')
+#4 [internal function]: QmddAdministratorsReceiveMessageController->actionMessageCount('')
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(QmddAdministratorsReceiveMessageController), Array)
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(QmddAdministratorsReceiveMessageController), Object(ReflectionMethod), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('messageCount')
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('qmddAdministrat...')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CApplication->run()
+#14 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=qmddAdministratorsReceiveMessage/messageCount
+HTTP_REFERER=http://127.0.0.1/sports/admin/index.php?act=top
+---
+2024/02/18 11:19:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.qmdd_administrators_receive_message' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `qmdd_administrators_receive_message`.
+2024/02/18 11:19:36 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "QmddAdministratorsReceiveMessage" 对应的 table "{{qmdd_administrators_receive_message}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(QmddAdministratorsReceiveMessage))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1611): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\QmddAdministratorsReceiveMessageController.php(68): CActiveRecord->count('r_club_code=201...')
+#4 [internal function]: QmddAdministratorsReceiveMessageController->actionMessageCount('')
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(QmddAdministratorsReceiveMessageController), Array)
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(QmddAdministratorsReceiveMessageController), Object(ReflectionMethod), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('messageCount')
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('qmddAdministrat...')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CApplication->run()
+#14 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=qmddAdministratorsReceiveMessage/messageCount
+HTTP_REFERER=http://127.0.0.1/sports/admin/index.php?act=top
+---
+2024/02/18 12:55:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.eg_region' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `eg_region`.
+2024/02/18 12:55:36 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "eg_region" 对应的 table "{{eg_region}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(eg_region))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\testStadiumController.php(14): CActiveRecord->findAll(Object(CDbCriteria))
+#5 [internal function]: testStadiumController->actionGetCity('\xE5\x90\x88\xE8\x82\xA5\xE5\xB8\x82')
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(testStadiumController), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(testStadiumController), Object(ReflectionMethod), Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetCity')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('testStadium/Get...')
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CApplication->run()
+#15 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=testStadium/GetCity&cityKeywords=%E5%90%88%E8%82%A5%E5%B8%82
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/02/18 15:26:40 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.eg_region' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `eg_region`.
+2024/02/18 15:26:40 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "eg_region" 对应的 table "{{eg_region}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(eg_region))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\testStadiumController.php(14): CActiveRecord->findAll(Object(CDbCriteria))
+#5 [internal function]: testStadiumController->actionGetCity('\xE5\x90\x88\xE8\x82\xA5\xE5\xB8\x82')
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(testStadiumController), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(testStadiumController), Object(ReflectionMethod), Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetCity')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('testStadium/Get...')
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CApplication->run()
+#15 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=testStadium/GetCity&cityKeywords=%E5%90%88%E8%82%A5%E5%B8%82
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/02/18 15:27:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.eg_region' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `eg_region`.
+2024/02/18 15:27:27 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "eg_region" 对应的 table "{{eg_region}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(eg_region))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\testStadiumController.php(14): CActiveRecord->findAll(Object(CDbCriteria))
+#5 [internal function]: testStadiumController->actionGetCity('\xE5\x90\x88\xE8\x82\xA5\xE5\xB8\x82')
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(testStadiumController), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(testStadiumController), Object(ReflectionMethod), Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetCity')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('testStadium/Get...')
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CApplication->run()
+#15 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=testStadium/GetCity&cityKeywords=%E5%90%88%E8%82%A5%E5%B8%82
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/02/18 21:39:08 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sport.qmdd_administrators_receive_message' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `qmdd_administrators_receive_message`.
+2024/02/18 21:39:08 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "QmddAdministratorsReceiveMessage" 对应的 table "{{qmdd_administrators_receive_message}}".' in E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(QmddAdministratorsReceiveMessage))
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1611): CActiveRecord->getTableSchema()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\QmddAdministratorsReceiveMessageController.php(68): CActiveRecord->count('r_club_code=201...')
+#4 [internal function]: QmddAdministratorsReceiveMessageController->actionMessageCount('')
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(QmddAdministratorsReceiveMessageController), Array)
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(QmddAdministratorsReceiveMessageController), Object(ReflectionMethod), Array)
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('messageCount')
+#11 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('qmddAdministrat...')
+#12 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CApplication->run()
+#14 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=qmddAdministratorsReceiveMessage/messageCount
+HTTP_REFERER=http://127.0.0.1/sports/admin/index.php?act=top
+---
+2024/02/18 21:39:17 [error] [php] Creating default object from empty value (E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\ClubadminController.php:93)
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): ClubadminController->runAction()
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): ClubadminController->run()
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CWebApplication->run()
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=clubadmin/update&id=&admin_gfaccount=+&admin_gfnick=&password=&pay_pass=&f_id=287
+2024/02/18 21:39:18 [error] [php] Creating default object from empty value (E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\ClubadminController.php:93)
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): ClubadminController->runAction()
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): ClubadminController->run()
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CWebApplication->run()
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=clubadmin/update&id=&admin_gfaccount=+&admin_gfnick=&password=&pay_pass=&f_id=287
+2024/02/18 21:39:19 [error] [php] Creating default object from empty value (E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\ClubadminController.php:93)
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): ClubadminController->runAction()
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): ClubadminController->run()
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CWebApplication->run()
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=clubadmin/update&id=&admin_gfaccount=+&admin_gfnick=&password=&pay_pass=&f_id=287
+2024/02/18 21:39:24 [error] [php] Creating default object from empty value (E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\ClubadminController.php:93)
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): ClubadminController->runAction()
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): ClubadminController->run()
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CWebApplication->run()
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=clubadmin/update&id=&admin_gfaccount=+&admin_gfnick=&password=&pay_pass=&f_id=287
+2024/02/18 21:49:24 [error] [php] Creating default object from empty value (E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\ClubadminController.php:93)
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): ClubadminController->runAction()
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): ClubadminController->run()
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CWebApplication->run()
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=clubadmin/update&id=&admin_gfaccount=+&admin_gfnick=&password=&pay_pass=&f_id=185
+2024/02/18 21:53:55 [error] [php] Creating default object from empty value (E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\ClubadminController.php:93)
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): ClubadminController->runAction()
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): ClubadminController->run()
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CWebApplication->run()
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=clubadmin/update&id=&f_id=288&admin_gfaccount=%20&admin_gfnick=&password=&pay_pass
+2024/02/18 21:55:02 [error] [php] Creating default object from empty value (E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\ClubadminController.php:93)
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): ClubadminController->runAction()
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): ClubadminController->run()
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CWebApplication->run()
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=clubadmin/update&id=&f_id=287&admin_gfaccount=%20&admin_gfnick=&password=&pay_pass
+2024/02/18 21:55:25 [error] [php] Creating default object from empty value (E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\ClubadminController.php:93)
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): ClubadminController->runAction()
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): ClubadminController->run()
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CWebApplication->run()
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=clubadmin/update&id=&f_id=288&admin_gfaccount=%20&admin_gfnick=&password=&pay_pass
+2024/02/18 21:58:50 [error] [php] Undefined index: pay_pass (E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\ClubadminController.php:68)
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): ClubadminController->runAction()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): ClubadminController->run()
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CWebApplication->run()
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=clubadmin/update&id=&f_id=288&admin_gfaccount=13976364146&admin_gfnick=%E6%9D%8E%E6%98%A5%E9%9F%B5&password=undefined&pay_passundefined
+2024/02/18 21:59:03 [error] [php] Undefined index: pay_pass (E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\ClubadminController.php:68)
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): ClubadminController->runAction()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): ClubadminController->run()
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CWebApplication->run()
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=clubadmin/update&id=&f_id=288&admin_gfaccount=13923705710&admin_gfnick=%E5%90%B4%E6%B6%A6%E4%B8%B0&password=undefined&pay_passundefined
+2024/02/18 21:59:05 [error] [php] Undefined index: pay_pass (E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\ClubadminController.php:68)
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): ClubadminController->runAction()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): ClubadminController->run()
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CWebApplication->run()
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=clubadmin/update&id=&f_id=287&admin_gfaccount=13923705710&admin_gfnick=%E5%90%B4%E6%B6%A6%E4%B8%B0&password=undefined&pay_passundefined
+2024/02/18 21:59:18 [error] [php] Undefined index: pay_pass (E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\ClubadminController.php:68)
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): ClubadminController->runAction()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): ClubadminController->run()
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CWebApplication->run()
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=clubadmin/update&id=&f_id=287&admin_gfaccount=13923705710&admin_gfnick=%E5%90%B4%E6%B6%A6%E4%B8%B0&password=undefined&pay_passundefined
+2024/02/18 21:59:33 [error] [php] Undefined index: pay_pass (E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\ClubadminController.php:68)
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): ClubadminController->runAction()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): ClubadminController->run()
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CWebApplication->run()
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=clubadmin/update&id=&f_id=288&admin_gfaccount=13923705710&admin_gfnick=%E5%90%B4%E6%B6%A6%E4%B8%B0&password=undefined&pay_passundefined
+2024/02/18 21:59:58 [error] [php] Undefined index: pay_pass (E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\admin\controllers\ClubadminController.php:68)
+Stack trace:
+#0 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(286): ClubadminController->runAction()
+#3 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CController.php(265): ClubadminController->runActionWithFilters()
+#4 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): ClubadminController->run()
+#5 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 E:\WORK\scnu\hsyii\wamp64\www\sports\admin\qmdd2018\index.php(46): CWebApplication->run()
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=clubadmin/update&id=&f_id=288&admin_gfaccount=13976364146&admin_gfnick=%E6%9D%8E%E6%98%A5%E9%9F%B5&password=undefined&pay_passundefined

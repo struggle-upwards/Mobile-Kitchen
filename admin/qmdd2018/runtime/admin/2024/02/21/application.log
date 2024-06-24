@@ -1,0 +1,21 @@
+2024/02/21 20:05:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 1271 Illegal mix of collations for operation '='. The SQL statement executed was: SELECT * FROM `test_ticket_detail` `t` WHERE stadium_id=50 and place_name="羽毛球场1号场" and project="羽毛球" and sell_time="2月21日".
+2024/02/21 20:05:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[HY000]: General error: 1271 Illegal mix of collations for operation '='' in E:\wamp\www\sports\admin\qmdd2018\framework\db\CDbCommand.php:543
+Stack trace:
+#0 E:\wamp\www\sports\admin\qmdd2018\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 E:\wamp\www\sports\admin\qmdd2018\admin\controllers\testTicketDetailController.php(24): CActiveRecord->findAll('stadium_id=50 a...')
+#4 [internal function]: testTicketDetailController->actionGetTicketDetail('50', '2\xE6\x9C\x8821\xE6\x97\xA5', '\xE7\xBE\xBD\xE6\xAF\x9B\xE7\x90\x83')
+#5 E:\wamp\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(testTicketDetailController), Array)
+#6 E:\wamp\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(testTicketDetailController), Object(ReflectionMethod), Array)
+#7 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetTicketDetail')
+#11 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('testTicketDetai...')
+#12 E:\wamp\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 E:\wamp\www\sports\admin\qmdd2018\index.php(46): CApplication->run()
+#14 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=testTicketDetail/GetTicketDetail&id=50&date=2%E6%9C%8821%E6%97%A5&project=%E7%BE%BD%E6%AF%9B%E7%90%83
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---

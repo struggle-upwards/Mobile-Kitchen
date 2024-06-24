@@ -1,0 +1,88 @@
+
+<div ><table width="100%" ><tr ><td width="50%"><font style="width:100px;font-size:24px;">
+当前界面：订场管理》场馆可预订时间管理》<a class="nav-a" style="color: #84563e">星期管理</a></font></td><td width="50%" align="right">
+<span><a style="display:none;" id="j-delete" class="btn" href="javascript:;" onclick="we.dele(we.checkval('.check-item input:checked'), deleteUrl);"><i class="fa fa-trash-o"></i>批刪除</a>
+<a class="btn" href="/mobile_kitchen/index.php?r=testWeek/create"><i class="fa fa-plus"></i>添加</a>
+<a class="btn" href="/mobile_kitchen/index.php?r=testWeek/index"><i class="fa fa-refresh"></i>刷新</a>
+</span></td></tr></table>
+</div><!--box-title end--><div class="box-content">
+<div class="box-table">
+<table class="list" >
+<tr class="table-title"><th class="check">
+<input id="j-checkall" class="input-check" type="checkbox"></th>
+<th  align="center" >编号</th><th  align="center" >星期</th><th  align="center" >序号</th>
+<th>操作</th>
+</tr><tbody id="tbody1"><tr>
+<td class="check check-item"><input class="input-check" type="checkbox" value="1"></td>
+<td >01</td><td >星期一</td><td >1</td>
+<td>
+
+<a class="btn" href="/mobile_kitchen/index.php?r=testWeek/update&id=1"
+ title="编辑"><i class="fa fa-edit"></i></a>
+<a class="btn" href="javascript:;" onclick="we.dele('1'
+, deleteUrl);" title="删除"><i class="fa fa-trash-o"></i></a></td><script> var deleteUrl ="/mobile_kitchen/index.php?r=testWeek/delete&id=ID";</script></tr> <tr style="background: #eee">
+<td class="check check-item"><input class="input-check" type="checkbox" value="2"></td>
+<td >02</td><td >星期二</td><td >2</td>
+<td>
+
+<a class="btn" href="/mobile_kitchen/index.php?r=testWeek/update&id=2"
+ title="编辑"><i class="fa fa-edit"></i></a>
+<a class="btn" href="javascript:;" onclick="we.dele('2'
+, deleteUrl);" title="删除"><i class="fa fa-trash-o"></i></a></td></tr><tr>
+<td class="check check-item"><input class="input-check" type="checkbox" value="3"></td>
+<td >03</td><td >星期三</td><td >3</td>
+<td>
+
+<a class="btn" href="/mobile_kitchen/index.php?r=testWeek/update&id=3"
+ title="编辑"><i class="fa fa-edit"></i></a>
+<a class="btn" href="javascript:;" onclick="we.dele('3'
+, deleteUrl);" title="删除"><i class="fa fa-trash-o"></i></a></td></tr> <tr style="background: #eee">
+<td class="check check-item"><input class="input-check" type="checkbox" value="4"></td>
+<td >04</td><td >星期四</td><td >4</td>
+<td>
+
+<a class="btn" href="/mobile_kitchen/index.php?r=testWeek/update&id=4"
+ title="编辑"><i class="fa fa-edit"></i></a>
+<a class="btn" href="javascript:;" onclick="we.dele('4'
+, deleteUrl);" title="删除"><i class="fa fa-trash-o"></i></a></td></tr><tr>
+<td class="check check-item"><input class="input-check" type="checkbox" value="5"></td>
+<td >05</td><td >星期五</td><td >5</td>
+<td>
+
+<a class="btn" href="/mobile_kitchen/index.php?r=testWeek/update&id=5"
+ title="编辑"><i class="fa fa-edit"></i></a>
+<a class="btn" href="javascript:;" onclick="we.dele('5'
+, deleteUrl);" title="删除"><i class="fa fa-trash-o"></i></a></td></tr> <tr style="background: #eee">
+<td class="check check-item"><input class="input-check" type="checkbox" value="6"></td>
+<td >06</td><td >星期六</td><td >6</td>
+<td>
+
+<a class="btn" href="/mobile_kitchen/index.php?r=testWeek/update&id=6"
+ title="编辑"><i class="fa fa-edit"></i></a>
+<a class="btn" href="javascript:;" onclick="we.dele('6'
+, deleteUrl);" title="删除"><i class="fa fa-trash-o"></i></a></td></tr><tr>
+<td class="check check-item"><input class="input-check" type="checkbox" value="7"></td>
+<td >07</td><td >星期日</td><td >7</td>
+<td>
+
+<a class="btn" href="/mobile_kitchen/index.php?r=testWeek/update&id=7"
+ title="编辑"><i class="fa fa-edit"></i></a>
+<a class="btn" href="javascript:;" onclick="we.dele('7'
+, deleteUrl);" title="删除"><i class="fa fa-trash-o"></i></a></td></tr><tbody></table>
+</div><!--box-table end--><div class="box-page c" id="page1"></div><script>
+    function changPage(Psize,purl,pid,pname,pcmd){ 
+    $.ajax({
+        type: 'post', url: purl,
+        data: { pageSize: Psize, keyid:pid,keyname:pname,keycmd: pcmd},
+        dataType: 'json',
+        success: function(data) {
+           console.log(data);
+          document.getElementById('tbody1').innerHTML =data['html'];
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest);
+        }
+    });
+  }
+//  changPage(15,'/mobile_kitchen/index.php?r=testWeek/indexData','id','wcode,week,weekn','编辑:update,删除');
+ </script></div>

@@ -1,0 +1,297 @@
+2024/05/12 00:30:30 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_user_1` `t` WHERE security_phone= LIMIT 1.
+2024/05/12 00:30:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('security_phone=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(645): BaseModel->find('security_phone=')
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(886): GfUser1->newzxWxUser('oSAS563V6msH3gM...', '')
+#6 [internal function]: GfUser1Controller->actionzxWxLogin('0f3fcAFa1KhsqH0...', '')
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('zxwxLogin')
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfuser1/zxwxLog...')
+#14 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#16 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfuser1/zxwxLogin&code=0f3fcAFa1KhsqH0t8hJa1rupGM2fcAFk
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/12 00:31:28 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_user_1` `t` WHERE security_phone= LIMIT 1.
+2024/05/12 00:31:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('security_phone=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(646): BaseModel->find('security_phone=')
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(886): GfUser1->newzxWxUser('oSAS563V6msH3gM...', '')
+#6 [internal function]: GfUser1Controller->actionzxWxLogin('0d3VfAFa1HvsqH0...', '')
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('zxwxLogin')
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfuser1/zxwxLog...')
+#14 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#16 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfuser1/zxwxLogin&code=0d3VfAFa1HvsqH0F78Ga1J761C1VfAFy
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/12 00:31:33 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_user_1` `t` WHERE security_phone= LIMIT 1.
+2024/05/12 00:31:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('security_phone=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(646): BaseModel->find('security_phone=')
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(886): GfUser1->newzxWxUser('oSAS563V6msH3gM...', '')
+#6 [internal function]: GfUser1Controller->actionzxWxLogin('0f3hUt0w353OK23...', '')
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('zxwxLogin')
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfuser1/zxwxLog...')
+#14 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#16 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfuser1/zxwxLogin&code=0f3hUt0w353OK234Ty3w3tGwqq3hUt0w
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/12 00:32:09 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_user_1` `t` WHERE security_phone= LIMIT 1.
+2024/05/12 00:32:09 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('security_phone=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(648): BaseModel->find('security_phone=')
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(886): GfUser1->newzxWxUser('oSAS563V6msH3gM...', '')
+#6 [internal function]: GfUser1Controller->actionzxWxLogin('0f303y0008Gu5S1...', '')
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('zxwxLogin')
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfuser1/zxwxLog...')
+#14 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#16 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfuser1/zxwxLogin&code=0f303y0008Gu5S14Kn400mAAg3203y0f
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/12 00:32:45 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_user_1` `t` WHERE security_phone= LIMIT 1.
+2024/05/12 00:32:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('security_phone=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(648): BaseModel->find('security_phone=')
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(886): GfUser1->newzxWxUser('oSAS563V6msH3gM...', '')
+#6 [internal function]: GfUser1Controller->actionzxWxLogin('0c3OVc0w3v05L23...', '')
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('zxwxLogin')
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfuser1/zxwxLog...')
+#14 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#16 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfuser1/zxwxLogin&code=0c3OVc0w3v05L23vfO0w3AQ0yL2OVc0n
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/12 00:33:19 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_user_1` `t` WHERE security_phone= LIMIT 1.
+2024/05/12 00:33:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('security_phone=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(648): BaseModel->find('security_phone=')
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(886): GfUser1->newzxWxUser('oSAS563V6msH3gM...', '')
+#6 [internal function]: GfUser1Controller->actionzxWxLogin('0f3UjjFa1BlwqH0...', '')
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('zxwxLogin')
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfuser1/zxwxLog...')
+#14 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#16 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfuser1/zxwxLogin&code=0f3UjjFa1BlwqH0NwmHa1pDitx1UjjF9
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/12 00:34:36 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_user_1` `t` WHERE security_phone= LIMIT 1.
+2024/05/12 00:34:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('security_phone=', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(648): BaseModel->find('security_phone=')
+#5 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(886): GfUser1->newzxWxUser('oSAS563V6msH3gM...', '')
+#6 [internal function]: GfUser1Controller->actionzxWxLogin('0a3f9h000lJy5S1...', '')
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('zxwxLogin')
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfuser1/zxwxLog...')
+#14 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#16 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfuser1/zxwxLogin&code=0a3f9h000lJy5S16gt0006DnfH0f9h0a
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/12 00:37:37 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.openid" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('openid', 'oSAS563V6msH3gM...')
+#1 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(666): CActiveRecord->__set('openid', 'oSAS563V6msH3gM...')
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(886): GfUser1->newzxWxUser('oSAS563V6msH3gM...', '')
+#3 [internal function]: GfUser1Controller->actionzxWxLogin('0d38bWZv30K8L23...', '')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('zxwxLogin')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfuser1/zxwxLog...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfuser1/zxwxLogin&code=0d38bWZv30K8L23UDp2w370yaZ28bWZd
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/12 00:47:42 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.openid" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('openid', 'oSAS563V6msH3gM...')
+#1 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(672): CActiveRecord->__set('openid', 'oSAS563V6msH3gM...')
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(886): GfUser1->newzxWxUser('oSAS563V6msH3gM...', '19864350767')
+#3 [internal function]: GfUser1Controller->actionzxWxLogin('0f3KWh000Tzz5S1...', '19864350767')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('zxwxLogin')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfuser1/zxwxLog...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfuser1/zxwxLogin&code=0f3KWh000Tzz5S1ES9400jkcDF4KWh0h&phone_code=19864350767
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/12 01:06:33 [error] [exception.CException] exception 'CException' with message '属性 "ActivityList.isOnline" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('isOnline')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2747): CActiveRecord->__get('isOnline')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(1994): CHtml::resolveValue(Object(ActivityList), 'isOnline')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\widgets\CActiveForm.php(914): CHtml::activeDropDownList(Object(ActivityList), 'isOnline', Array, Array)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\activityList\update.php(98): CActiveForm->dropDownList(Object(ActivityList), 'isOnline', Array, Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\ActivityListController.php(312): CController->render('update', Array)
+#10 [internal function]: ActivityListController->actionUpdate('69')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ActivityListController), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ActivityListController), Object(ReflectionMethod), Array)
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('update')
+#17 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('activityList/up...')
+#18 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#20 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=activityList/update&id=69&disabled=disabled
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=activityList/index_submit
+---
+2024/05/12 02:27:08 [error] [php] in_array() expects parameter 2 to be array, null given (D:\wamp\www\Mobile_Kitchen\admin\views\mealData\update.php:89)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): MealDataController->renderInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): MealDataController->renderFile()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): MealDataController->renderPartial()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(53): MealDataController->render()
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(38): MealDataController->viewUpdate()
+#5 unknown(0): MealDataController->actionUpdate()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=mealData/update&id=4
+2024/05/12 02:27:11 [error] [php] in_array() expects parameter 2 to be array, null given (D:\wamp\www\Mobile_Kitchen\admin\views\mealData\update.php:89)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): MealDataController->renderInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): MealDataController->renderFile()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): MealDataController->renderPartial()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(53): MealDataController->render()
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(38): MealDataController->viewUpdate()
+#5 unknown(0): MealDataController->actionUpdate()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=mealData/update&id=6
+2024/05/12 02:27:15 [error] [php] in_array() expects parameter 2 to be array, null given (D:\wamp\www\Mobile_Kitchen\admin\views\mealData\update.php:89)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): MealDataController->renderInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): MealDataController->renderFile()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): MealDataController->renderPartial()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(53): MealDataController->render()
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(38): MealDataController->viewUpdate()
+#5 unknown(0): MealDataController->actionUpdate()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=mealData/update&id=4
+2024/05/12 02:27:42 [error] [php] in_array() expects parameter 2 to be array, null given (D:\wamp\www\Mobile_Kitchen\admin\views\mealData\update.php:89)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): MealDataController->renderInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): MealDataController->renderFile()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): MealDataController->renderPartial()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(53): MealDataController->render()
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php(38): MealDataController->viewUpdate()
+#5 unknown(0): MealDataController->actionUpdate()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=mealData/update&id=6

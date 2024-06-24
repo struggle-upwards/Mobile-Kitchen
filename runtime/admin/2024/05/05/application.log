@@ -1,0 +1,305 @@
+2024/05/05 00:20:03 [error] [php] Undefined variable: user (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:581)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350123&pass=123456&name=0505%E6%B3%A8%E5%86%8C
+2024/05/05 00:20:59 [error] [php] Undefined variable: user (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:581)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350123&pass=123456&name=0505%E6%B3%A8%E5%86%8C
+2024/05/05 00:21:02 [error] [php] Undefined variable: user (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:581)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GfUser1/wxSign&phone_code=19864350123&pass=123456&name=0505%E6%B3%A8%E5%86%8C
+2024/05/05 01:57:48 [error] [php] Undefined variable: criteriac (D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubListSqdwController.php:229)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): ClubListSqdwController->runAction()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): ClubListSqdwController->runActionWithFilters()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): ClubListSqdwController->run()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=clubListSqdw/WeChatGetclublist
+2024/05/05 17:25:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "WeChatGetclublist?id=3075" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('WeChatGetclubli...')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('WeChatGetclubli...')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/We...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=clubListSqdw/WeChatGetclublist?id=3075
+---
+2024/05/05 17:25:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "WeChatGetclublist?id=3075" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('WeChatGetclubli...')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('WeChatGetclubli...')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/We...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=clubListSqdw/WeChatGetclublist?id=3075
+---
+2024/05/05 17:25:54 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'club_id' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE (state = 372) AND (club_id = 3075) ORDER BY id ASC.
+2024/05/05 17:25:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'club_id' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubListSqdwController.php(233): BaseModel->findAll(Object(CDbCriteria))
+#5 [internal function]: ClubListSqdwController->actionWeChatGetclublist('3075')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListSqdwController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListSqdwController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('WeChatGetclubli...')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/We...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=clubListSqdw/WeChatGetclublist&id=3075
+---
+2024/05/05 17:32:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '}) ORDER BY id ASC' à la ligne 1. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE (state = 372) AND (id = 3075}) ORDER BY id ASC.
+2024/05/05 17:32:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '}) ORDER BY id ASC' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubListSqdwController.php(233): BaseModel->findAll(Object(CDbCriteria))
+#5 [internal function]: ClubListSqdwController->actionWeChatGetclublist('3075}')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListSqdwController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListSqdwController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('WeChatGetclubli...')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/We...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=clubListSqdw/WeChatGetclublist&id=3075%7D
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/05 17:32:45 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '}) ORDER BY id ASC' à la ligne 1. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE (state = 372) AND (id = 3075}) ORDER BY id ASC.
+2024/05/05 17:32:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '}) ORDER BY id ASC' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubListSqdwController.php(233): BaseModel->findAll(Object(CDbCriteria))
+#5 [internal function]: ClubListSqdwController->actionWeChatGetclublist('3075}')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListSqdwController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListSqdwController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('WeChatGetclubli...')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/We...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=clubListSqdw/WeChatGetclublist&id=3075%7D
+---
+2024/05/05 17:33:40 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '}) ORDER BY id ASC' à la ligne 1. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE (state = 372) AND (id = 3075}) ORDER BY id ASC.
+2024/05/05 17:33:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '}) ORDER BY id ASC' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubListSqdwController.php(233): BaseModel->findAll(Object(CDbCriteria))
+#5 [internal function]: ClubListSqdwController->actionWeChatGetclublist('3075}')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListSqdwController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListSqdwController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('WeChatGetclubli...')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/We...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=clubListSqdw/WeChatGetclublist&id=3075%7D
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/05 17:33:45 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '}) ORDER BY id ASC' à la ligne 1. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE (state = 372) AND (id = 3075}) ORDER BY id ASC.
+2024/05/05 17:33:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '}) ORDER BY id ASC' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubListSqdwController.php(233): BaseModel->findAll(Object(CDbCriteria))
+#5 [internal function]: ClubListSqdwController->actionWeChatGetclublist('3075}')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListSqdwController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListSqdwController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('WeChatGetclubli...')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/We...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=clubListSqdw/WeChatGetclublist&id=3075%7D
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/05 17:33:54 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '}) ORDER BY id ASC' à la ligne 1. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE (state = 372) AND (id = 3075}) ORDER BY id ASC.
+2024/05/05 17:33:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '}) ORDER BY id ASC' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubListSqdwController.php(233): BaseModel->findAll(Object(CDbCriteria))
+#5 [internal function]: ClubListSqdwController->actionWeChatGetclublist('3075}')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListSqdwController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListSqdwController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('WeChatGetclubli...')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/We...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=clubListSqdw/WeChatGetclublist&id=3075%7D
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/05 17:33:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '}) ORDER BY id ASC' à la ligne 1. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE (state = 372) AND (id = 3076}) ORDER BY id ASC.
+2024/05/05 17:33:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '}) ORDER BY id ASC' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubListSqdwController.php(233): BaseModel->findAll(Object(CDbCriteria))
+#5 [internal function]: ClubListSqdwController->actionWeChatGetclublist('3076}')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListSqdwController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListSqdwController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('WeChatGetclubli...')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/We...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=clubListSqdw/WeChatGetclublist&id=3076%7D
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/05 17:34:48 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '}) ORDER BY id ASC' à la ligne 1. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE (state = 372) AND (id = 3075}) ORDER BY id ASC.
+2024/05/05 17:34:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '}) ORDER BY id ASC' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubListSqdwController.php(233): BaseModel->findAll(Object(CDbCriteria))
+#5 [internal function]: ClubListSqdwController->actionWeChatGetclublist('3075}')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListSqdwController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListSqdwController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('WeChatGetclubli...')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/We...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=clubListSqdw/WeChatGetclublist&id=3075%7D
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/05 17:35:16 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '}) ORDER BY id ASC' à la ligne 1. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE (state = 372) AND (id = 3075}) ORDER BY id ASC.
+2024/05/05 17:35:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '}) ORDER BY id ASC' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubListSqdwController.php(233): BaseModel->findAll(Object(CDbCriteria))
+#5 [internal function]: ClubListSqdwController->actionWeChatGetclublist('3075}')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListSqdwController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListSqdwController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('WeChatGetclubli...')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/We...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=clubListSqdw/WeChatGetclublist&id=3075%7D
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/05 17:35:19 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '}) ORDER BY id ASC' à la ligne 1. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE (state = 372) AND (id = 3075}) ORDER BY id ASC.
+2024/05/05 17:35:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '}) ORDER BY id ASC' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubListSqdwController.php(233): BaseModel->findAll(Object(CDbCriteria))
+#5 [internal function]: ClubListSqdwController->actionWeChatGetclublist('3075}')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListSqdwController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListSqdwController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('WeChatGetclubli...')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/We...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=clubListSqdw/WeChatGetclublist&id=3075%7D
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/05 17:35:22 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '}) ORDER BY id ASC' à la ligne 1. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE (state = 372) AND (id = 3075}) ORDER BY id ASC.
+2024/05/05 17:35:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '}) ORDER BY id ASC' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\ClubListSqdwController.php(233): BaseModel->findAll(Object(CDbCriteria))
+#5 [internal function]: ClubListSqdwController->actionWeChatGetclublist('3075}')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListSqdwController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListSqdwController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('WeChatGetclubli...')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('clubListSqdw/We...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=clubListSqdw/WeChatGetclublist&id=3075%7D
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---

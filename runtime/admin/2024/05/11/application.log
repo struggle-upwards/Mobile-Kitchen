@@ -1,0 +1,796 @@
+2024/05/11 00:02:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "gfpartmemberapply/applyjoin"。' in D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartmemberapp...')
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartmemberapply/applyjoin&gf_account=888828&club_code=SQ202404019&zsxm=%E7%8E%8B%E5%B0%8F%E8%99%8E&sex=%E7%94%B7&phone=19864350777&id_card=445121200005105156&type_index=undefined&address=&id_card_face=&id_card_back=
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/11 00:02:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "gfpartmemberapply/applyjoin"。' in D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartmemberapp...')
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartmemberapply/applyjoin
+---
+2024/05/11 00:02:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "gfpartmemberapply/applyjoin"。' in D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartmemberapp...')
+#1 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#3 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartmemberapply/applyjoin
+---
+2024/05/11 00:03:21 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin
+---
+2024/05/11 00:03:36 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE club_code=SQ202404019 LIMIT 1.
+2024/05/11 00:03:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('club_code=SQ202...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(848): BaseModel->find('club_code=SQ202...')
+#5 [internal function]: GfPartnerMemberApplyController->actionapplyjoin('888828', 'SQ202404019', '\xE7\x8E\x8B\xE5\xB0\x8F\xE8\x99\x8E', '\xE7\x94\xB7', '19864350777', '445121200005105...', 'undefined', '', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828&club_code=SQ202404019&zsxm=%E7%8E%8B%E5%B0%8F%E8%99%8E&sex=%E7%94%B7&phone=19864350777&id_card=445121200005105156&type_index=undefined&address=&id_card_face=&id_card_back=
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/11 00:04:00 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE club_code=SQ202404019 LIMIT 1.
+2024/05/11 00:04:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('club_code=SQ202...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(848): BaseModel->find('club_code=SQ202...')
+#5 [internal function]: GfPartnerMemberApplyController->actionapplyjoin('888828', 'SQ202404019', '\xE7\x8E\x8B\xE5\xB0\x8F\xE8\x99\x8E', '\xE7\x94\xB7', '19864350777', '445121200005105...', 'undefined', '', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828&club_code=SQ202404019&zsxm=%E7%8E%8B%E5%B0%8F%E8%99%8E&sex=%E7%94%B7&phone=19864350777&id_card=445121200005105156&type_index=undefined&address=&id_card_face=&id_card_back=
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/11 00:04:03 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE club_code=SQ202404019 LIMIT 1.
+2024/05/11 00:04:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('club_code=SQ202...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(848): BaseModel->find('club_code=SQ202...')
+#5 [internal function]: GfPartnerMemberApplyController->actionapplyjoin('888828', 'SQ202404019', '\xE7\x8E\x8B\xE5\xB0\x8F\xE8\x99\x8E', '\xE7\x94\xB7', '19864350777', '445121200005105...', 'undefined', '', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828&club_code=SQ202404019&zsxm=%E7%8E%8B%E5%B0%8F%E8%99%8E&sex=%E7%94%B7&phone=19864350777&id_card=445121200005105156&type_index=undefined&address=&id_card_face=&id_card_back=
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/11 00:05:19 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE club_code=SQ202404019 LIMIT 1.
+2024/05/11 00:05:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('club_code=SQ202...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(848): BaseModel->find('club_code=SQ202...')
+#5 [internal function]: GfPartnerMemberApplyController->actionapplyjoin('888828', 'SQ202404019', '\xE7\x8E\x8B\xE5\xB0\x8F\xE8\x99\x8E', '\xE7\x94\xB7', '19864350777', '445121200005105...', 'undefined', '', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828&club_code=SQ202404019&zsxm=%E7%8E%8B%E5%B0%8F%E8%99%8E&sex=%E7%94%B7&phone=19864350777&id_card=445121200005105156&type_index=undefined&address=&id_card_face=&id_card_back=
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/11 00:05:28 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE club_code=SQ202404019 LIMIT 1.
+2024/05/11 00:05:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('club_code=SQ202...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(848): BaseModel->find('club_code=SQ202...')
+#5 [internal function]: GfPartnerMemberApplyController->actionapplyjoin('888828', 'SQ202404019', '\xE7\x8E\x8B\xE5\xB0\x8F\xE8\x99\x8E', '\xE7\x94\xB7', '19864350777', '445121200005105...', '0', '', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828&club_code=SQ202404019&zsxm=%E7%8E%8B%E5%B0%8F%E8%99%8E&sex=%E7%94%B7&phone=19864350777&id_card=445121200005105156&type_index=0&address=&id_card_face=&id_card_back=
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/11 00:06:42 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE club_code=SQ202404019 LIMIT 1.
+2024/05/11 00:06:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('club_code=SQ202...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(848): BaseModel->find('club_code=SQ202...')
+#5 [internal function]: GfPartnerMemberApplyController->actionapplyjoin('888828', 'SQ202404019', '\xE7\x8E\x8B\xE5\xB0\x8F\xE8\x99\x8E', '\xE7\x94\xB7', '19864350777', '445121200005105...', '0', '', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828&club_code=SQ202404019&zsxm=%E7%8E%8B%E5%B0%8F%E8%99%8E&sex=%E7%94%B7&phone=19864350777&id_card=445121200005105156&type_index=0&address=&id_card_face=&id_card_back=
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/11 00:07:10 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE club_code=SQ202404019 LIMIT 1.
+2024/05/11 00:07:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('club_code=SQ202...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(849): BaseModel->find('club_code=SQ202...')
+#5 [internal function]: GfPartnerMemberApplyController->actionapplyjoin('888828', 'SQ202404019', '\xE7\x8E\x8B\xE5\xB0\x8F\xE8\x99\x8E', '\xE7\x94\xB7', '19864350777', '445121200005105...', '0', '', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828&club_code=SQ202404019&zsxm=%E7%8E%8B%E5%B0%8F%E8%99%8E&sex=%E7%94%B7&phone=19864350777&id_card=445121200005105156&type_index=0&address=&id_card_face=&id_card_back=
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/11 00:08:01 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE club_code=SQ202404019 LIMIT 1.
+2024/05/11 00:08:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('club_code=SQ202...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(850): BaseModel->find('club_code=SQ202...')
+#5 [internal function]: GfPartnerMemberApplyController->actionapplyjoin('888828', 'SQ202404019', '\xE7\x8E\x8B\xE5\xB0\x8F\xE8\x99\x8E', '\xE7\x94\xB7', '19864350777', '445121200005105...', '0', '', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828&club_code=SQ202404019&zsxm=%E7%8E%8B%E5%B0%8F%E8%99%8E&sex=%E7%94%B7&phone=19864350777&id_card=445121200005105156&type_index=0&address=&id_card_face=&id_card_back=
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/11 00:09:06 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE club_code=SQ202404019 LIMIT 1.
+2024/05/11 00:09:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('club_code=SQ202...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(850): BaseModel->find('club_code=SQ202...')
+#5 [internal function]: GfPartnerMemberApplyController->actionapplyjoin('888828', 'SQ202404019', '\xE7\x8E\x8B\xE5\xB0\x8F\xE8\x99\x8E', '\xE7\x94\xB7', '19864350777', '445121200005105...', '0', '', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828&club_code=SQ202404019&zsxm=%E7%8E%8B%E5%B0%8F%E8%99%8E&sex=%E7%94%B7&phone=19864350777&id_card=445121200005105156&type_index=0&address=&id_card_face=&id_card_back=
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/11 00:11:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "applyjoin?" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('applyjoin?')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin?')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin?&gf_account=888828
+---
+2024/05/11 00:11:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828
+---
+2024/05/11 00:11:26 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828
+---
+2024/05/11 00:11:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828
+---
+2024/05/11 00:11:37 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE club_code=SQ202404019 LIMIT 1.
+2024/05/11 00:11:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'SQ202404019' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('club_code=SQ202...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(850): BaseModel->find('club_code=SQ202...')
+#5 [internal function]: GfPartnerMemberApplyController->actionapplyjoin('888828', 'SQ202404019', '\xE7\x8E\x8B\xE5\xB0\x8F\xE8\x99\x8E', '\xE7\x94\xB7', '19864350777', '445121200005105...', '0', '', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828&club_code=SQ202404019&zsxm=%E7%8E%8B%E5%B0%8F%E8%99%8E&sex=%E7%94%B7&phone=19864350777&id_card=445121200005105156&type_index=0&address=&id_card_face=&id_card_back=
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/11 00:13:13 [error] [php] Undefined variable: type (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:879)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828&club_code=SQ202404019&zsxm=%E7%8E%8B%E5%B0%8F%E8%99%8E&sex=%E7%94%B7&phone=19864350777&id_card=445121200005105156&type_index=0&address=&id_card_face=&id_card_back=
+2024/05/11 00:14:13 [error] [php] Undefined variable: type (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:879)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828&club_code=SQ202404019&zsxm=%E7%8E%8B%E5%B0%8F%E8%99%8E&sex=%E7%94%B7&phone=19864350777&id_card=445121200005105156&type_index=0&address=&id_card_face=&id_card_back=
+2024/05/11 00:14:53 [error] [php] Undefined variable: type (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:879)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828&club_code=SQ202404019&zsxm=%E7%8E%8B%E5%B0%8F%E8%99%8E&sex=%E7%94%B7&phone=19864350777&id_card=445121200005105156&type_index=0&address=&id_card_face=&id_card_back=
+2024/05/11 00:15:08 [error] [php] Undefined variable: type (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:880)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828&club_code=SQ202404019&zsxm=%E7%8E%8B%E5%B0%8F%E8%99%8E&sex=%E7%94%B7&phone=19864350777&id_card=445121200005105156&type_index=0&address=&id_card_face=&id_card_back=
+2024/05/11 00:15:34 [error] [php] Undefined variable: type (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:881)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828&club_code=SQ202404019&zsxm=%E7%8E%8B%E5%B0%8F%E8%99%8E&sex=%E7%94%B7&phone=19864350777&id_card=445121200005105156&type_index=0&address=&id_card_face=&id_card_back=
+2024/05/11 00:15:50 [error] [php] Undefined variable: type (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:882)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828&club_code=SQ202404019&zsxm=%E7%8E%8B%E5%B0%8F%E8%99%8E&sex=%E7%94%B7&phone=19864350777&id_card=445121200005105156&type_index=0&address=&id_card_face=&id_card_back=
+2024/05/11 00:16:09 [error] [php] Undefined variable: type (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:882)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828&club_code=SQ202404019&zsxm=%E7%8E%8B%E5%B0%8F%E8%99%8E&sex=%E7%94%B7&phone=19864350777&id_card=445121200005105156&type_index=0&address=&id_card_face=&id_card_back=
+2024/05/11 00:16:25 [error] [php] Undefined variable: type (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:882)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828&club_code=SQ202404019&zsxm=%E7%8E%8B%E5%B0%8F%E8%99%8E&sex=%E7%94%B7&phone=19864350777&id_card=445121200005105156&type_index=0&address=&id_card_face=&id_card_back=
+2024/05/11 00:17:07 [error] [php] Undefined variable: type (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:882)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828&club_code=SQ202404019&zsxm=%E7%8E%8B%E5%B0%8F%E8%99%8E&sex=%E7%94%B7&phone=19864350777&id_card=445121200005105156&type_index=0&address=&id_card_face=&id_card_back=
+2024/05/11 00:20:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828
+---
+2024/05/11 01:18:10 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:444)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfPartnerMemberApply/Updatecheck&id=727
+2024/05/11 01:20:08 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(429): CActiveRecord->__get('id')
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(393): GfPartnerMemberApplyController->checkpass('727')
+#3 [internal function]: GfPartnerMemberApplyController->actionUpdatecheck('727')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('Updatecheck')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfPartnerMember...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfPartnerMemberApply/Updatecheck&id=727
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfPartnerMemberApply/Updatecheck&id=727
+---
+2024/05/11 01:21:28 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(429): CActiveRecord->__get('id')
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(393): GfPartnerMemberApplyController->checkpass('727')
+#3 [internal function]: GfPartnerMemberApplyController->actionUpdatecheck('727')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('Updatecheck')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfPartnerMember...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfPartnerMemberApply/Updatecheck&id=727
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfPartnerMemberApply/Updatecheck&id=727
+---
+2024/05/11 01:22:43 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(429): CActiveRecord->__get('id')
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(393): GfPartnerMemberApplyController->checkpass('727')
+#3 [internal function]: GfPartnerMemberApplyController->actionUpdatecheck('727')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('Updatecheck')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfPartnerMember...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfPartnerMemberApply/Updatecheck&id=727
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfPartnerMemberApply/Updatecheck&id=727
+---
+2024/05/11 01:23:27 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.id" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(430): CActiveRecord->__get('id')
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(393): GfPartnerMemberApplyController->checkpass('727')
+#3 [internal function]: GfPartnerMemberApplyController->actionUpdatecheck('727')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('Updatecheck')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfPartnerMember...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfPartnerMemberApply/Updatecheck&id=727
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfPartnerMemberApply/Updatecheck&id=727
+---
+2024/05/11 01:24:02 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:446)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfPartnerMemberApply/Updatecheck&id=727
+2024/05/11 01:24:48 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:446)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfPartnerMemberApply/Updatecheck&id=727
+2024/05/11 01:25:08 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:446)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfPartnerMemberApply/Updatecheck&id=727
+2024/05/11 01:29:29 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '728' pour la clef 'PRIMARY'. The SQL statement executed was: INSERT INTO `gf_partner_member_apply` (`native`, `nation`, `apply_phone`, `apply_address`, `apply_email`, `state`, `certificates`, `resume`, `club_code`, `club_phone`, `partner_code`, `company_type`, `company_registered_capital`, `fax_no`, `auth_state`, `member_values_id`, `apply_club_gfnick`, `apply_club_phone`, `certificates_number`, `is_del`, `invite_initiator`, `del_initiator`, `gf_account`, `club_id`, `apply_club_code`, `apply_club_name`, `zsxm`, `sex`, `id_card`, `type`, `id_card_face`, `id_card_back`, `type_name`, `apply_time`, `admin_id`, `admin_name`, `update`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25, :yp26, :yp27, :yp28, :yp29, :yp30, :yp31, :yp32, :yp33, :yp34, :yp35, :yp36). Bound with :yp0='', :yp1='', :yp2='12', :yp3='55', :yp4='', :yp5=371, :yp6='', :yp7='', :yp8='', :yp9='', :yp10='', :yp11='', :yp12='', :yp13='', :yp14=929, :yp15=0, :yp16='', :yp17='', :yp18='', :yp19=648, :yp20=210, :yp21=210, :yp22='888844', :yp23=2450, :yp24='SQ202404019', :yp25='', :yp26='zhao', :yp27='nan', :yp28='555', :yp29=1720, :yp30='', :yp31='', :yp32='厨师', :yp33='2024-05-11 01:29:29', :yp34=587, :yp35='曾锡山', :yp36='2024-05-11 01:29:29'.
+2024/05/11 01:29:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '728' pour la clef 'PRIMARY'' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1084): CDbCommand->execute()
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(812): CActiveRecord->insert(NULL)
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(407): CActiveRecord->save()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(340): GfPartnerMemberApplyController->bsaveData(Object(GfPartnerMemberApply), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+---
+2024/05/11 01:30:44 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:446)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfPartnerMemberApply/Updatecheck&id=730
+2024/05/11 01:31:08 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:446)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfPartnerMemberApply/Updatecheck&id=730
+2024/05/11 01:32:41 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:446)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfPartnerMemberApply/Updatecheck&id=731
+2024/05/11 01:33:47 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:446)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfPartnerMemberApply/Updatecheck&id=731
+2024/05/11 01:35:13 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:446)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfPartnerMemberApply/Updatecheck&id=731
+2024/05/11 01:43:57 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:430)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfPartnerMemberApply/Updatecheck&id=711
+2024/05/11 20:56:52 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('applyjoin')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/applyjoin&gf_account=888828
+---
+2024/05/11 23:13:03 [error] [php] Undefined index: openid (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:397)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfuser1/zxwxLogin&code=0e35Smll2EENpd4QRynl2rV1v815SmlL
+2024/05/11 23:13:17 [error] [php] Undefined index: openid (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:397)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfuser1/zxWxLogin&code=xxx
+2024/05/11 23:18:21 [error] [php] include(wxUser.php): failed to open stream: No such file or directory (D:\wamp\www\Mobile_Kitchen\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(882): spl_autoload_call()
+#1 unknown(0): GfUser1Controller->actionzxWxLogin()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfuser1/zxwxLogin&code=0e3596ll2Eo4qd4mwOll2nIEy74596ln
+2024/05/11 23:18:36 [error] [php] Undefined index: openid (D:\wamp\www\Mobile_Kitchen\models\GfUser1.php:397)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfuser1/zxWxLogin&code=xxx
+2024/05/11 23:21:25 [error] [php] include(wxUser.php): failed to open stream: No such file or directory (D:\wamp\www\Mobile_Kitchen\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(885): spl_autoload_call()
+#1 unknown(0): GfUser1Controller->actionzxWxLogin()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfUser1Controller->runAction()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfUser1Controller->runActionWithFilters()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfUser1Controller->run()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfuser1/zxwxLogin&code=0b3Ek6ll2F34qd475Vkl246nZk1Ek6l4
+2024/05/11 23:22:45 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.register_time" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('register_time', '2024-05-11 23:2...')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(887): CActiveRecord->__set('register_time', '2024-05-11 23:2...')
+#2 [internal function]: GfUser1Controller->actionzxWxLogin('0b3GOt000Nur5S1...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('zxwxLogin')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfuser1/zxwxLog...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfuser1/zxwxLogin&code=0b3GOt000Nur5S1tSv100a4N8X0GOt0S
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/11 23:23:32 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.register_time" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('register_time', '2024-05-11 23:2...')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(888): CActiveRecord->__set('register_time', '2024-05-11 23:2...')
+#2 [internal function]: GfUser1Controller->actionzxWxLogin('0e3ejCGa1GMkpH0...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('zxwxLogin')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfuser1/zxwxLog...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfuser1/zxwxLogin&code=0e3ejCGa1GMkpH0VcEGa1G7s4B4ejCGd
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/11 23:24:19 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.register_time" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('register_time', '2024-05-11 23:2...')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(888): CActiveRecord->__set('register_time', '2024-05-11 23:2...')
+#2 [internal function]: GfUser1Controller->actionzxWxLogin('0f39Op0w3QuMK23...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('zxwxLogin')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfuser1/zxwxLog...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfuser1/zxwxLogin&code=0f39Op0w3QuMK23XJG0w3f7F0s49Op0h
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/11 23:25:08 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.register_time" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(162): CComponent->__set('register_time', '2024-05-11 23:2...')
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(890): CActiveRecord->__set('register_time', '2024-05-11 23:2...')
+#2 [internal function]: GfUser1Controller->actionzxWxLogin('0a3GXt0004bt5S1...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('zxwxLogin')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfuser1/zxwxLog...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfuser1/zxwxLogin&code=0a3GXt0004bt5S1IVC000MUPLV2GXt0w
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/05/11 23:27:31 [error] [exception.CException] exception 'CException' with message '属性 "GfUser1.roleCode" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('roleCode')
+#1 D:\wamp\www\Mobile_Kitchen\models\GfUser1.php(414): CActiveRecord->__get('roleCode')
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfUser1Controller.php(894): GfUser1->getWxInfo()
+#3 [internal function]: GfUser1Controller->actionzxWxLogin('0d3LKnll2MBOpd4...')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('zxwxLogin')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfuser1/zxwxLog...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfuser1/zxwxLogin&code=0d3LKnll2MBOpd4tBPll2xzoaj2LKnla
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---

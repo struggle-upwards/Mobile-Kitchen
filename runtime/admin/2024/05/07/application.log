@@ -1,0 +1,1279 @@
+2024/05/07 16:28:35 [error] [php] Undefined index: type (D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\index_apply.php:4)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): GfPartnerMemberApplyController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): GfPartnerMemberApplyController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): GfPartnerMemberApplyController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(28): GfPartnerMemberApplyController->_list()
+#4 unknown(0): GfPartnerMemberApplyController->actionIndex_apply()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply
+2024/05/07 16:29:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'create' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_partner_member_inputset` `t` WHERE isNull(set_id) and is_invite=649 and type=create.
+2024/05/07 16:29:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'create' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('isNull(set_id) ...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php(112): BaseModel->findAll('isNull(set_id) ...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(328): CController->render('update', Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create&type=create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+---
+2024/05/07 16:33:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'create' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_partner_member_inputset` `t` WHERE isNull(set_id) and is_invite=649 and type=create.
+2024/05/07 16:33:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'create' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('isNull(set_id) ...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php(112): BaseModel->findAll('isNull(set_id) ...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(328): CController->render('update', Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create&type=create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+---
+2024/05/07 16:34:38 [error] [php] Undefined index: type (D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php:22)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): GfPartnerMemberApplyController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): GfPartnerMemberApplyController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(328): GfPartnerMemberApplyController->render()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+2024/05/07 16:34:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'create' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_partner_member_inputset` `t` WHERE isNull(set_id) and is_invite=649 and type=create.
+2024/05/07 16:34:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'create' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('isNull(set_id) ...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php(112): BaseModel->findAll('isNull(set_id) ...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(328): CController->render('update', Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create&type=create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+---
+2024/05/07 16:36:03 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'create' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_partner_member_inputset` `t` WHERE isNull(set_id) and is_invite=649 and type=create.
+2024/05/07 16:36:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'create' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('isNull(set_id) ...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php(112): BaseModel->findAll('isNull(set_id) ...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(329): CController->render('update', Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create&type=create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+---
+2024/05/07 16:36:07 [error] [php] Undefined index: type (D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php:22)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): GfPartnerMemberApplyController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): GfPartnerMemberApplyController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(329): GfPartnerMemberApplyController->render()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+2024/05/07 16:36:10 [error] [php] Undefined index: type (D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php:22)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): GfPartnerMemberApplyController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): GfPartnerMemberApplyController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(329): GfPartnerMemberApplyController->render()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+2024/05/07 16:36:37 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'create' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_partner_member_inputset` `t` WHERE isNull(set_id) and is_invite=649 and type=create.
+2024/05/07 16:36:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'create' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('isNull(set_id) ...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php(112): BaseModel->findAll('isNull(set_id) ...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(328): CController->render('update', Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create&type=create
+---
+2024/05/07 16:39:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'create' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_partner_member_inputset` `t` WHERE isNull(set_id) and is_invite=649 and type=create.
+2024/05/07 16:39:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'create' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('isNull(set_id) ...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php(112): BaseModel->findAll('isNull(set_id) ...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(329): CController->render('update', Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create&type=create
+---
+2024/05/07 16:40:03 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'create' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_partner_member_inputset` `t` WHERE isNull(set_id) and is_invite=649 and type=create.
+2024/05/07 16:40:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'create' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('isNull(set_id) ...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php(112): BaseModel->findAll('isNull(set_id) ...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(329): CController->render('update', Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create&type=create
+---
+2024/05/07 16:40:04 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'create' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_partner_member_inputset` `t` WHERE isNull(set_id) and is_invite=649 and type=create.
+2024/05/07 16:40:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'create' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('isNull(set_id) ...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php(112): BaseModel->findAll('isNull(set_id) ...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(329): CController->render('update', Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create&type=create
+---
+2024/05/07 16:40:24 [error] [exception.CException] exception 'CException' with message '属性 "GfPartnerMemberApply.reasons_failure" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('reasons_failure')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2747): CActiveRecord->__get('reasons_failure')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(1840): CHtml::resolveValue(Object(GfPartnerMemberApply), 'reasons_failure')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\widgets\CActiveForm.php(853): CHtml::activeTextArea(Object(GfPartnerMemberApply), 'reasons_failure', Array)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\create.php(160): CActiveForm->textArea(Object(GfPartnerMemberApply), 'reasons_failure', Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(329): CController->render('create', Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create&type=create
+---
+2024/05/07 16:41:37 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'create' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_partner_member_inputset` `t` WHERE isNull(set_id) and is_invite=649 and type=create.
+2024/05/07 16:41:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'create' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('isNull(set_id) ...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php(112): BaseModel->findAll('isNull(set_id) ...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(329): CController->render('update', Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create&type=create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+---
+2024/05/07 16:45:47 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '' à la ligne 1. The SQL statement executed was: SELECT COUNT(*) FROM `gf_partner_member_apply` `t` WHERE partner_id=2450 and state=371 and auth_state=929 and type=.
+2024/05/07 16:45:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1611): CDbCommand->queryScalar()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(75): CActiveRecord->count('partner_id=2450...')
+#3 [internal function]: GfPartnerMemberApplyController->actionIndex('', '', '', '', '', '', '', '')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('')
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#13 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply
+---
+2024/05/07 16:47:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'create' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_partner_member_inputset` `t` WHERE isNull(set_id) and is_invite=649 and type=create.
+2024/05/07 16:47:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'create' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll('isNull(set_id) ...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php(112): BaseModel->findAll('isNull(set_id) ...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(329): CController->render('update', Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create&type=create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+---
+2024/05/07 17:07:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "updata" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('updata')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('updata')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/updata
+---
+2024/05/07 17:07:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('update')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/update
+---
+2024/05/07 17:07:38 [error] [php] Undefined index: type (D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php:22)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): GfPartnerMemberApplyController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): GfPartnerMemberApplyController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(341): GfPartnerMemberApplyController->render()
+#3 unknown(0): GfPartnerMemberApplyController->actionUpdate()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/update&id=1
+2024/05/07 17:07:48 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'and club_id=2405 and project_id=188 LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_partner_member_set` `t` WHERE type= and club_id=2405 and project_id=188 LIMIT 1.
+2024/05/07 17:07:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'and club_id=2405 and project_id=188 LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('type= and club_...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php(175): BaseModel->find('type= and club_...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(341): CController->render('update', Array)
+#10 [internal function]: GfPartnerMemberApplyController->actionUpdate('1')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('update')
+#17 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#18 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#20 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/update&id=1&type=404
+---
+2024/05/07 17:11:54 [error] [php] Undefined index: type (D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php:22)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): GfPartnerMemberApplyController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): GfPartnerMemberApplyController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(341): GfPartnerMemberApplyController->render()
+#3 unknown(0): GfPartnerMemberApplyController->actionUpdate()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/update&id=1
+2024/05/07 17:11:55 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('update')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/update
+---
+2024/05/07 17:11:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "updata" 动作.' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:486
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(270): CController->missingAction('updata')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('updata')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#3 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/updata
+---
+2024/05/07 17:14:03 [error] [php] Undefined index: type (D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php:22)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): GfPartnerMemberApplyController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): GfPartnerMemberApplyController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(329): GfPartnerMemberApplyController->render()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+2024/05/07 17:19:41 [error] [php] Undefined index: type (D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php:22)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): GfPartnerMemberApplyController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): GfPartnerMemberApplyController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(329): GfPartnerMemberApplyController->render()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+2024/05/07 17:20:16 [error] [php] Undefined index: type (D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php:22)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): GfPartnerMemberApplyController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): GfPartnerMemberApplyController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(329): GfPartnerMemberApplyController->render()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+2024/05/07 17:22:12 [error] [php] Undefined index: type (D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php:22)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): GfPartnerMemberApplyController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): GfPartnerMemberApplyController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(329): GfPartnerMemberApplyController->render()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+2024/05/07 17:23:47 [error] [exception.CException] exception 'CException' with message '属性 "GfPartnerMemberApply.reasons_failure" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('reasons_failure')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2747): CActiveRecord->__get('reasons_failure')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(1840): CHtml::resolveValue(Object(GfPartnerMemberApply), 'reasons_failure')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\widgets\CActiveForm.php(853): CHtml::activeTextArea(Object(GfPartnerMemberApply), 'reasons_failure', Array)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\create.php(156): CActiveForm->textArea(Object(GfPartnerMemberApply), 'reasons_failure', Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(329): CController->render('create', Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create&type=404
+---
+2024/05/07 17:23:51 [error] [exception.CException] exception 'CException' with message '属性 "GfPartnerMemberApply.reasons_failure" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('reasons_failure')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2747): CActiveRecord->__get('reasons_failure')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(1840): CHtml::resolveValue(Object(GfPartnerMemberApply), 'reasons_failure')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\widgets\CActiveForm.php(853): CHtml::activeTextArea(Object(GfPartnerMemberApply), 'reasons_failure', Array)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\create.php(156): CActiveForm->textArea(Object(GfPartnerMemberApply), 'reasons_failure', Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(329): CController->render('create', Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create&type=404
+---
+2024/05/07 17:23:54 [error] [exception.CException] exception 'CException' with message '属性 "GfPartnerMemberApply.reasons_failure" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('reasons_failure')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2747): CActiveRecord->__get('reasons_failure')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(1840): CHtml::resolveValue(Object(GfPartnerMemberApply), 'reasons_failure')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\widgets\CActiveForm.php(853): CHtml::activeTextArea(Object(GfPartnerMemberApply), 'reasons_failure', Array)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\create.php(156): CActiveForm->textArea(Object(GfPartnerMemberApply), 'reasons_failure', Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(329): CController->render('create', Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+---
+2024/05/07 17:25:10 [error] [exception.CException] exception 'CException' with message '属性 "GfPartnerMemberApply.reasons_failure" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('reasons_failure')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2747): CActiveRecord->__get('reasons_failure')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(1840): CHtml::resolveValue(Object(GfPartnerMemberApply), 'reasons_failure')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\widgets\CActiveForm.php(853): CHtml::activeTextArea(Object(GfPartnerMemberApply), 'reasons_failure', Array)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\create.php(156): CActiveForm->textArea(Object(GfPartnerMemberApply), 'reasons_failure', Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(329): CController->render('create', Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+---
+2024/05/07 17:25:17 [error] [exception.CException] exception 'CException' with message '属性 "GfPartnerMemberApply.reasons_failure" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('reasons_failure')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2747): CActiveRecord->__get('reasons_failure')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(1840): CHtml::resolveValue(Object(GfPartnerMemberApply), 'reasons_failure')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\widgets\CActiveForm.php(853): CHtml::activeTextArea(Object(GfPartnerMemberApply), 'reasons_failure', Array)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\create.php(156): CActiveForm->textArea(Object(GfPartnerMemberApply), 'reasons_failure', Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(329): CController->render('create', Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#16 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create&type=404
+---
+2024/05/07 17:27:26 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('getMemberInputs...')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GFPartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GFPartnerMemberApply/getMemberInputset&club_id=2450&project_id=
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+---
+2024/05/07 17:27:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('getMemberInputs...')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GFPartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GFPartnerMemberApply/getMemberInputset&club_id=2450&project_id=
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+---
+2024/05/07 17:27:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('getMemberInputs...')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GFPartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GFPartnerMemberApply/getMemberInputset&club_id=2450&project_id=
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+---
+2024/05/07 17:27:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('getMemberInputs...')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GFPartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GFPartnerMemberApply/getMemberInputset&club_id=2450&project_id=
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+---
+2024/05/07 17:27:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('getMemberInputs...')
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GFPartnerMember...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#7 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GFPartnerMemberApply/getMemberInputset&club_id=2450&project_id=
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+---
+2024/05/07 17:31:29 [error] [php] Undefined index: partner_id (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:426)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+2024/05/07 17:31:57 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:571)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GFPartnerMemberApply/getMemberInputset&type=404&club_id=2450&project_id=189
+2024/05/07 17:31:57 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:571)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GFPartnerMemberApply/getMemberInputset&type=404&club_id=2450&project_id=189
+2024/05/07 17:31:58 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:571)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GFPartnerMemberApply/getMemberInputset&type=404&club_id=2450&project_id=189
+2024/05/07 17:32:02 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:571)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=GFPartnerMemberApply/getMemberInputset&type=404&club_id=2450&project_id=189
+2024/05/07 17:35:27 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'AND type=403 LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_partner_member_set` `t` WHERE club_id=2450 AND project_id = AND type=403 LIMIT 1.
+2024/05/07 17:35:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'AND type=403 LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('club_id=2450 AN...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(570): BaseModel->find('club_id=2450 AN...')
+#5 [internal function]: GfPartnerMemberApplyController->actionGetMemberInputset('403', '2450', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('getMemberInputs...')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('GFPartnerMember...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=GFPartnerMemberApply/getMemberInputset&type=403&club_id=2450&project_id=
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+---
+2024/05/07 18:01:46 [error] [php] Undefined index: content (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:419)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+2024/05/07 18:01:52 [error] [php] Undefined index: partner_id (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:426)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+2024/05/07 22:32:11 [error] [php] Undefined index: partner_id (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:426)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+2024/05/07 22:32:53 [error] [php] Undefined index: partner_id (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:426)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+2024/05/07 23:08:18 [error] [php] Undefined variable: data (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:28)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+2024/05/07 23:08:18 [error] [php] Undefined variable: data (D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php:28)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+2024/05/07 23:08:31 [error] [php] Undefined variable: project_list (D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\index_apply.php:20)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): GfPartnerMemberApplyController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): GfPartnerMemberApplyController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): GfPartnerMemberApplyController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(28): GfPartnerMemberApplyController->_list()
+#4 unknown(0): GfPartnerMemberApplyController->actionIndex_apply()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+2024/05/07 23:08:31 [error] [php] Undefined variable: project_list (D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\index_apply.php:20)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): GfPartnerMemberApplyController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): GfPartnerMemberApplyController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): GfPartnerMemberApplyController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(28): GfPartnerMemberApplyController->_list()
+#4 unknown(0): GfPartnerMemberApplyController->actionIndex_apply()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+2024/05/07 23:08:32 [error] [php] Undefined variable: project_list (D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\index_apply.php:20)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): GfPartnerMemberApplyController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): GfPartnerMemberApplyController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): GfPartnerMemberApplyController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(28): GfPartnerMemberApplyController->_list()
+#4 unknown(0): GfPartnerMemberApplyController->actionIndex_apply()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+2024/05/07 23:08:40 [error] [php] Undefined variable: project_list (D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\index_apply.php:20)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): GfPartnerMemberApplyController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): GfPartnerMemberApplyController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): GfPartnerMemberApplyController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(28): GfPartnerMemberApplyController->_list()
+#4 unknown(0): GfPartnerMemberApplyController->actionIndex_apply()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+2024/05/07 23:08:41 [error] [php] Undefined variable: project_list (D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\index_apply.php:20)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): GfPartnerMemberApplyController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): GfPartnerMemberApplyController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): GfPartnerMemberApplyController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(28): GfPartnerMemberApplyController->_list()
+#4 unknown(0): GfPartnerMemberApplyController->actionIndex_apply()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+2024/05/07 23:08:42 [error] [php] Undefined variable: project_list (D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\index_apply.php:20)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): GfPartnerMemberApplyController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): GfPartnerMemberApplyController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): GfPartnerMemberApplyController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(28): GfPartnerMemberApplyController->_list()
+#4 unknown(0): GfPartnerMemberApplyController->actionIndex_apply()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+2024/05/07 23:08:42 [error] [php] Undefined variable: project_list (D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\index_apply.php:20)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): GfPartnerMemberApplyController->renderFile()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): GfPartnerMemberApplyController->renderPartial()
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(433): GfPartnerMemberApplyController->render()
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(28): GfPartnerMemberApplyController->_list()
+#4 unknown(0): GfPartnerMemberApplyController->actionIndex_apply()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): GfPartnerMemberApplyController->runAction()
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): GfPartnerMemberApplyController->runActionWithFilters()
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): GfPartnerMemberApplyController->run()
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+2024/05/07 23:09:13 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'and type="create" and apply_time>="2020-05-07" and apply_time<="2027-05-07"' à la ligne 1. The SQL statement executed was: SELECT COUNT(*) FROM `gf_partner_member_apply` `t` WHERE partner_id=2450 and state= and type="create" and apply_time>="2020-05-07" and apply_time<="2027-05-07".
+2024/05/07 23:09:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'and type="create" and apply_time>="2020-05-07" and apply_time<="2027-05-07"' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1611): CDbCommand->queryScalar()
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(57): CActiveRecord->count(Object(CDbCriteria))
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(GfPartnerMemberApply), Object(CDbCriteria), Array, 15, 'index_apply')
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(28): BaseController->_list(Object(GfPartnerMemberApply), Object(CDbCriteria), 'index_apply', Array)
+#5 [internal function]: GfPartnerMemberApplyController->actionIndex_apply('create', '', '2020-05-07', '2027-05-07', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('Index_apply')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply%2FIndex_apply&state=&type=create&project_id=&start_date=2020-05-07&end_date=2027-05-07&keywords=
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+---
+2024/05/07 23:10:45 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'and type="create" and apply_time>="2022-05-07" and apply_time<="2026-05-07"' à la ligne 1. The SQL statement executed was: SELECT COUNT(*) FROM `gf_partner_member_apply` `t` WHERE partner_id=2450 and state= and type="create" and apply_time>="2022-05-07" and apply_time<="2026-05-07".
+2024/05/07 23:10:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'and type="create" and apply_time>="2022-05-07" and apply_time<="2026-05-07"' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1611): CDbCommand->queryScalar()
+#2 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(57): CActiveRecord->count(Object(CDbCriteria))
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseController.php(432): BaseController->get_listData(Object(GfPartnerMemberApply), Object(CDbCriteria), Array, 15, 'index_apply')
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(26): BaseController->_list(Object(GfPartnerMemberApply), Object(CDbCriteria), 'index_apply', Array)
+#5 [internal function]: GfPartnerMemberApplyController->actionIndex_apply('create', '', '2022-05-07', '2026-05-07', '', '')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('Index_apply')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply%2FIndex_apply&state=&type=create&start_date=2022-05-07&end_date=2026-05-07&keywords=
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+---
+2024/05/07 23:12:43 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'and club_id= and project_id= LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_partner_member_set` `t` WHERE type= and club_id= and project_id= LIMIT 1.
+2024/05/07 23:12:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'and club_id= and project_id= LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('type= and club_...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php(175): BaseModel->find('type= and club_...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(345): CController->render('update', Array)
+#10 [internal function]: GfPartnerMemberApplyController->actionUpdate('695')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('update')
+#17 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#18 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#20 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/update&id=695&type=
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+---
+2024/05/07 23:12:47 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'and club_id= and project_id= LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_partner_member_set` `t` WHERE type= and club_id= and project_id= LIMIT 1.
+2024/05/07 23:12:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'and club_id= and project_id= LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('type= and club_...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php(175): BaseModel->find('type= and club_...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(345): CController->render('update', Array)
+#10 [internal function]: GfPartnerMemberApplyController->actionUpdate('695')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('update')
+#17 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#18 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#20 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/update&id=695&type=
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+---
+2024/05/07 23:17:59 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'and club_id= and project_id= LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_partner_member_set` `t` WHERE type= and club_id= and project_id= LIMIT 1.
+2024/05/07 23:17:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'and club_id= and project_id= LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('type= and club_...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php(175): BaseModel->find('type= and club_...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(345): CController->render('update', Array)
+#10 [internal function]: GfPartnerMemberApplyController->actionUpdate('695')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('update')
+#17 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#18 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#20 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/update&id=695&type=
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+---
+2024/05/07 23:21:32 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'and project_id= LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_partner_member_set` `t` WHERE type=1721 and club_id= and project_id= LIMIT 1.
+2024/05/07 23:21:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'and project_id= LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('type=1721 and c...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php(134): BaseModel->find('type=1721 and c...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(345): CController->render('update', Array)
+#10 [internal function]: GfPartnerMemberApplyController->actionUpdate('693')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('update')
+#17 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#18 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#20 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/update&id=693&type=1721
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+---
+2024/05/07 23:24:07 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'and club_id= LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_partner_member_set` `t` WHERE type= and club_id= LIMIT 1.
+2024/05/07 23:24:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'and club_id= LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('type= and club_...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php(134): BaseModel->find('type= and club_...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(345): CController->render('update', Array)
+#10 [internal function]: GfPartnerMemberApplyController->actionUpdate('695')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('update')
+#17 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#18 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#20 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/update&id=695&type=
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+---
+2024/05/07 23:27:20 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'and club_id= LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_partner_member_set` `t` WHERE type= and club_id= LIMIT 1.
+2024/05/07 23:27:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'and club_id= LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('type= and club_...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php(134): BaseModel->find('type= and club_...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(345): CController->render('update', Array)
+#10 [internal function]: GfPartnerMemberApplyController->actionUpdate('695')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('update')
+#17 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#18 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#20 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/update&id=695&type=
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+---
+2024/05/07 23:27:35 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'and club_id= LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `gf_partner_member_set` `t` WHERE type= and club_id= LIMIT 1.
+2024/05/07 23:27:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'and club_id= LIMIT 1' à la ligne 1' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryRow()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1465): CActiveRecord->query(Object(CDbCriteria), false, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(660): CActiveRecord->find('type= and club_...', Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\update.php(134): BaseModel->find('type= and club_...')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(345): CController->render('update', Array)
+#10 [internal function]: GfPartnerMemberApplyController->actionUpdate('695')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('update')
+#17 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#18 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#20 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/update&id=695&type=
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+---
+2024/05/07 23:28:41 [error] [exception.CException] exception 'CException' with message 'GfPartnerMemberApplyController 无法找到请求的视图 "update".' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:881
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(345): CController->render('update', Array)
+#2 [internal function]: GfPartnerMemberApplyController->actionUpdate('695')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('update')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/update&id=695&type=
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+---
+2024/05/07 23:31:26 [error] [exception.CException] exception 'CException' with message 'GfPartnerMemberApplyController 无法找到请求的视图 "update".' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:881
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(345): CController->render('update', Array)
+#2 [internal function]: GfPartnerMemberApplyController->actionUpdate('681')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('update')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/update&id=681&type=403
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+---
+2024/05/07 23:31:30 [error] [exception.CException] exception 'CException' with message 'GfPartnerMemberApplyController 无法找到请求的视图 "update".' in D:\wamp\www\Mobile_Kitchen\framework\web\CController.php:881
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('update', Array, true)
+#1 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(345): CController->render('update', Array)
+#2 [internal function]: GfPartnerMemberApplyController->actionUpdate('676')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('update')
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#10 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#12 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/update&id=676&type=404
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+---
+2024/05/07 23:45:18 [error] [exception.CException] exception 'CException' with message '属性 "GfPartnerMemberApply.id_card_face" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id_card_face')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2747): CActiveRecord->__get('id_card_face')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(GfPartnerMemberApply), 'id_card_face')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(1795): CHtml::activeInputField('hidden', Object(GfPartnerMemberApply), 'id_card_face', Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\widgets\CActiveForm.php(823): CHtml::activeHiddenField(Object(GfPartnerMemberApply), 'id_card_face', Array)
+#5 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\create.php(76): CActiveForm->hiddenField(Object(GfPartnerMemberApply), 'id_card_face', Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#10 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(326): CController->render('create', Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#16 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#17 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#19 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+---
+2024/05/07 23:45:34 [error] [exception.CException] exception 'CException' with message '属性 "GfPartnerMemberApply.id_card_face" 未被定义.' in D:\wamp\www\Mobile_Kitchen\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id_card_face')
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2747): CActiveRecord->__get('id_card_face')
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(GfPartnerMemberApply), 'id_card_face')
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\helpers\CHtml.php(1795): CHtml::activeInputField('hidden', Object(GfPartnerMemberApply), 'id_card_face', Array)
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\widgets\CActiveForm.php(823): CHtml::activeHiddenField(Object(GfPartnerMemberApply), 'id_card_face', Array)
+#5 D:\wamp\www\Mobile_Kitchen\admin\views\gfPartnerMemberApply\create.php(76): CActiveForm->hiddenField(Object(GfPartnerMemberApply), 'id_card_face', Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\Mob...')
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\Mob...', Array, true)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(872): CBaseController->renderFile('D:\\wamp\\www\\Mob...', Array, true)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#10 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(326): CController->render('create', Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(49): GfPartnerMemberApplyController->actionCreate()
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('create')
+#16 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#17 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#19 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/create
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+---

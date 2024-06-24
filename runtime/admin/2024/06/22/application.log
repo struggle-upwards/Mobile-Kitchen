@@ -1,0 +1,76 @@
+2024/06/22 20:40:53 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'ttt_kit.top_score' n'existe pas. The SQL statement executed was: UPDATE `club_member_list` SET `id`=:yp0, `gfpm_apply_id`=:yp1, `club_id`=:yp2, `club_name`=:yp3, `member_gfid`=:yp4, `gf_account`=:yp5, `zsxm`=:yp6, `member_project_id`=:yp7, `idname`=:yp8, `id_card_type`=:yp9, `id_card_type_name`=:yp10, `id_card`=:yp11, `real_sex`=:yp12, `real_birthday`=:yp13, `integral`=:yp14, `club_status`=:yp15, `club_status_name`=:yp16, `user_member_id`=:yp17, `udate`=:yp18, `apply_time`=:yp19, `data_belong_code`=:yp20, `if_del`=:yp21, `project_name`=:yp22, `project_level_id`=:yp23, `project_level_xh`=:yp24, `project_level_name`=:yp25, `logon_way`=:yp26, `logon_way_name`=:yp27, `user_type`=:yp28, `apply_kitchen`=:yp29, `apply_kitchen_status`=:yp30, `apply_kitchen_name`=:yp31 WHERE `club_member_list`.`id`=16032. Bound with :yp0=16032, :yp1=753, :yp2=3081, :yp3='食尚煮意', :yp4=NULL, :yp5=888804, :yp6='', :yp7=NULL, :yp8=NULL, :yp9=843, :yp10='身份证', :yp11='', :yp12=205, :yp13=NULL, :yp14='0', :yp15=338, :yp16='已绑定', :yp17=NULL, :yp18='2024-06-22 20:40:53', :yp19='2024-06-10 15:43:18', :yp20='', :yp21=510, :yp22=NULL, :yp23=0, :yp24=0, :yp25='', :yp26=1439, :yp27='微信授权', :yp28='厨师', :yp29=NULL, :yp30=NULL, :yp31=NULL.
+2024/06/22 20:40:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'ttt_kit.top_score' n'existe pas' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1758): CDbCommand->execute()
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1131): CActiveRecord->updateByPk('16032', Array)
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(812): CActiveRecord->update(NULL)
+#3 D:\wamp\www\Mobile_Kitchen\admin\controllers\GfPartnerMemberApplyController.php(549): CActiveRecord->save()
+#4 [internal function]: GfPartnerMemberApplyController->actionUnuse('753', 'auth_state', '1484')
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfPartnerMemberApplyController), Array)
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfPartnerMemberApplyController), Object(ReflectionMethod), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('unuse')
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('gfpartnerMember...')
+#12 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#14 {main}
+REQUEST_URI=/mobile_kitchen/index.php?r=gfpartnerMemberApply/unuse&id=753&new=auth_state&del=1484
+HTTP_REFERER=http://127.0.0.1/mobile_kitchen/index.php?r=gfpartnerMemberApply/Index_apply&type=create
+---
+2024/06/22 20:43:47 [error] [php] Trying to get property of non-object (D:\wamp\www\Mobile_Kitchen\admin\controllers\MealDataController.php:288)
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): MealDataController->runAction()
+#3 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): MealDataController->runActionWithFilters()
+#4 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): MealDataController->run()
+#5 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\wamp\www\Mobile_Kitchen\index.php(35): CWebApplication->run()
+REQUEST_URI=/Mobile_Kitchen/index.php?r=MealData/wxgetdishdetail&meal_id=undefined
+2024/06/22 20:43:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'undefined' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `address` `t` WHERE gf_account = undefined ORDER BY id ASC.
+2024/06/22 20:43:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'undefined' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(80): BaseModel->findAll(Object(CDbCriteria))
+#5 [internal function]: AddressController->actionwxGetadslist('undefined', '0')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxGetadslist')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Address/wxGetad...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=Address/wxGetadslist&account=undefined
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---
+2024/06/22 20:43:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Champ 'undefined' inconnu dans where clause. The SQL statement executed was: SELECT * FROM `address` `t` WHERE gf_account = undefined ORDER BY id ASC.
+2024/06/22 20:43:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Champ 'undefined' inconnu dans where clause' in D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\Mobile_Kitchen\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1360): CDbCommand->queryAll()
+#2 D:\wamp\www\Mobile_Kitchen\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#3 D:\wamp\www\Mobile_Kitchen\admin\components\BaseModel.php(664): CActiveRecord->findAll(Object(CDbCriteria), Array, true)
+#4 D:\wamp\www\Mobile_Kitchen\admin\controllers\AddressController.php(80): BaseModel->findAll(Object(CDbCriteria))
+#5 [internal function]: AddressController->actionwxGetadslist('undefined', '0')
+#6 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AddressController), Array)
+#7 D:\wamp\www\Mobile_Kitchen\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AddressController), Object(ReflectionMethod), Array)
+#8 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\Mobile_Kitchen\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(282): CController->run('wxGetadslist')
+#12 D:\wamp\www\Mobile_Kitchen\framework\web\CWebApplication.php(141): CWebApplication->runController('Address/wxGetad...')
+#13 D:\wamp\www\Mobile_Kitchen\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\wamp\www\Mobile_Kitchen\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/Mobile_Kitchen/index.php?r=Address/wxGetadslist&account=undefined
+HTTP_REFERER=https://servicewechat.com/wxf392ee482ff9e385/devtools/page-frame.html
+---

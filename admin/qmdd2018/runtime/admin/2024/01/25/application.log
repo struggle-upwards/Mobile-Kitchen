@@ -1,0 +1,257 @@
+2024/01/25 23:38:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'sport.qmdd_administrators_receive_message' n'existe pas. The SQL statement executed was: SHOW FULL COLUMNS FROM `qmdd_administrators_receive_message`.
+2024/01/25 23:38:43 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "QmddAdministratorsReceiveMessage" 对应的 table "{{qmdd_administrators_receive_message}}".' in E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(QmddAdministratorsReceiveMessage))
+#1 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1611): CActiveRecord->getTableSchema()
+#3 E:\wamp\www\sports\admin\qmdd2018\admin\controllers\QmddAdministratorsReceiveMessageController.php(68): CActiveRecord->count('r_club_code=201...')
+#4 [internal function]: QmddAdministratorsReceiveMessageController->actionMessageCount('')
+#5 E:\wamp\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(QmddAdministratorsReceiveMessageController), Array)
+#6 E:\wamp\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(QmddAdministratorsReceiveMessageController), Object(ReflectionMethod), Array)
+#7 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('messageCount')
+#11 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('qmddAdministrat...')
+#12 E:\wamp\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 E:\wamp\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#14 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=qmddAdministratorsReceiveMessage/messageCount
+HTTP_REFERER=http://127.0.0.1:9999/sports/admin/index.php?act=top
+---
+2024/01/25 23:46:16 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'sport.qmdd_administrators_receive_message' n'existe pas. The SQL statement executed was: SHOW FULL COLUMNS FROM `qmdd_administrators_receive_message`.
+2024/01/25 23:46:16 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "QmddAdministratorsReceiveMessage" 对应的 table "{{qmdd_administrators_receive_message}}".' in E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(QmddAdministratorsReceiveMessage))
+#1 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1611): CActiveRecord->getTableSchema()
+#3 E:\wamp\www\sports\admin\qmdd2018\admin\controllers\QmddAdministratorsReceiveMessageController.php(68): CActiveRecord->count('r_club_code=201...')
+#4 [internal function]: QmddAdministratorsReceiveMessageController->actionMessageCount('')
+#5 E:\wamp\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(QmddAdministratorsReceiveMessageController), Array)
+#6 E:\wamp\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(QmddAdministratorsReceiveMessageController), Object(ReflectionMethod), Array)
+#7 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('messageCount')
+#11 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('qmddAdministrat...')
+#12 E:\wamp\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 E:\wamp\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#14 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=qmddAdministratorsReceiveMessage/messageCount
+HTTP_REFERER=http://127.0.0.1:9999/sports/admin/index.php?act=top
+---
+2024/01/25 23:54:46 [error] [exception.CException] exception 'CException' with message '属性 "testStadium.comCode" 未被定义.' in E:\wamp\www\sports\admin\qmdd2018\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(145): CComponent->__get('comCode')
+#1 E:\wamp\www\sports\admin\qmdd2018\models\GfUserRole.php(141): CActiveRecord->__get('comCode')
+#2 E:\wamp\www\sports\admin\qmdd2018\admin\controllers\GfUser1Controller.php(721): GfUserRole->stadiumList()
+#3 E:\wamp\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(49): GfUser1Controller->actionGetStadiumList()
+#4 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetStadiumList')
+#8 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/GetStad...')
+#9 E:\wamp\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 E:\wamp\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#11 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=GfUser1/GetStadiumList
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/01/25 23:56:07 [error] [exception.CException] exception 'CException' with message '属性 "testStadium.comCode" 未被定义.' in E:\wamp\www\sports\admin\qmdd2018\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(145): CComponent->__get('comCode')
+#1 E:\wamp\www\sports\admin\qmdd2018\models\GfUserRole.php(141): CActiveRecord->__get('comCode')
+#2 E:\wamp\www\sports\admin\qmdd2018\admin\controllers\GfUser1Controller.php(721): GfUserRole->stadiumList()
+#3 E:\wamp\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(49): GfUser1Controller->actionGetStadiumList()
+#4 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetStadiumList')
+#8 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/GetStad...')
+#9 E:\wamp\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 E:\wamp\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#11 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=GfUser1/GetStadiumList
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/01/25 23:56:49 [error] [exception.CException] exception 'CException' with message '属性 "testStadium.comCode" 未被定义.' in E:\wamp\www\sports\admin\qmdd2018\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(145): CComponent->__get('comCode')
+#1 E:\wamp\www\sports\admin\qmdd2018\models\GfUserRole.php(141): CActiveRecord->__get('comCode')
+#2 E:\wamp\www\sports\admin\qmdd2018\admin\controllers\GfUser1Controller.php(721): GfUserRole->stadiumList()
+#3 E:\wamp\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(49): GfUser1Controller->actionGetStadiumList()
+#4 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetStadiumList')
+#8 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/GetStad...')
+#9 E:\wamp\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 E:\wamp\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#11 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=GfUser1/GetStadiumList
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/01/25 23:56:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'sport.gf_user_role' n'existe pas. The SQL statement executed was: SHOW FULL COLUMNS FROM `gf_user_role`.
+2024/01/25 23:56:51 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "GfUserRole" 对应的 table "{{gf_user_role}}".' in E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(GfUserRole))
+#1 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 E:\wamp\www\sports\admin\qmdd2018\models\GfUser1.php(530): CActiveRecord->findAll('openid="oovym64...')
+#5 E:\wamp\www\sports\admin\qmdd2018\models\GfUser1.php(405): GfUser1->getRoles()
+#6 E:\wamp\www\sports\admin\qmdd2018\admin\controllers\GfUser1Controller.php(648): GfUser1->getWxInfo()
+#7 [internal function]: GfUser1Controller->actionwxLogin('0e1Cer0w3f5z823...', 'fc29d370ab857ea...')
+#8 E:\wamp\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#9 E:\wamp\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#10 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('wxLogin')
+#14 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxLogin')
+#15 E:\wamp\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 E:\wamp\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#17 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=GfUser1/wxLogin&code=0e1Cer0w3f5z823iuH1w3RzZIf2Cer0d&phone_code=fc29d370ab857eaa1595f23aae8488c68bd0d11ef29a975577064451ee7035e0
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/01/25 23:56:52 [error] [exception.CException] exception 'CException' with message '属性 "testStadium.comCode" 未被定义.' in E:\wamp\www\sports\admin\qmdd2018\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(145): CComponent->__get('comCode')
+#1 E:\wamp\www\sports\admin\qmdd2018\models\GfUserRole.php(141): CActiveRecord->__get('comCode')
+#2 E:\wamp\www\sports\admin\qmdd2018\admin\controllers\GfUser1Controller.php(721): GfUserRole->stadiumList()
+#3 E:\wamp\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(49): GfUser1Controller->actionGetStadiumList()
+#4 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetStadiumList')
+#8 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/GetStad...')
+#9 E:\wamp\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 E:\wamp\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#11 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=GfUser1/GetStadiumList
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/01/25 23:58:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'sport.gf_user_role' n'existe pas. The SQL statement executed was: SHOW FULL COLUMNS FROM `gf_user_role`.
+2024/01/25 23:58:27 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "GfUserRole" 对应的 table "{{gf_user_role}}".' in E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(GfUserRole))
+#1 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 E:\wamp\www\sports\admin\qmdd2018\models\GfUser1.php(530): CActiveRecord->findAll('openid="oovym64...')
+#5 E:\wamp\www\sports\admin\qmdd2018\models\GfUser1.php(405): GfUser1->getRoles()
+#6 E:\wamp\www\sports\admin\qmdd2018\admin\controllers\GfUser1Controller.php(648): GfUser1->getWxInfo()
+#7 [internal function]: GfUser1Controller->actionwxLogin('0e1JnI0w3TEK723...', '')
+#8 E:\wamp\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#9 E:\wamp\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#10 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('wxLogin')
+#14 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxLogin')
+#15 E:\wamp\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 E:\wamp\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#17 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=GfUser1/wxLogin&code=0e1JnI0w3TEK723AaC0w3ojemj0JnI0w&phone_code=
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/01/25 23:58:28 [error] [exception.CException] exception 'CException' with message '属性 "testStadium.comName" 未被定义.' in E:\wamp\www\sports\admin\qmdd2018\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(145): CComponent->__get('comName')
+#1 E:\wamp\www\sports\admin\qmdd2018\models\GfUserRole.php(142): CActiveRecord->__get('comName')
+#2 E:\wamp\www\sports\admin\qmdd2018\admin\controllers\GfUser1Controller.php(721): GfUserRole->stadiumList()
+#3 E:\wamp\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(49): GfUser1Controller->actionGetStadiumList()
+#4 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetStadiumList')
+#8 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/GetStad...')
+#9 E:\wamp\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 E:\wamp\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#11 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=GfUser1/GetStadiumList
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/01/25 23:58:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'sport.gf_user_role' n'existe pas. The SQL statement executed was: SHOW FULL COLUMNS FROM `gf_user_role`.
+2024/01/25 23:58:51 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "GfUserRole" 对应的 table "{{gf_user_role}}".' in E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(GfUserRole))
+#1 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 E:\wamp\www\sports\admin\qmdd2018\models\GfUser1.php(530): CActiveRecord->findAll('openid="oovym64...')
+#5 E:\wamp\www\sports\admin\qmdd2018\models\GfUser1.php(405): GfUser1->getRoles()
+#6 E:\wamp\www\sports\admin\qmdd2018\admin\controllers\GfUser1Controller.php(648): GfUser1->getWxInfo()
+#7 [internal function]: GfUser1Controller->actionwxLogin('0b1Dsv000cwgtR1...', '')
+#8 E:\wamp\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#9 E:\wamp\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#10 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('wxLogin')
+#14 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxLogin')
+#15 E:\wamp\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 E:\wamp\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#17 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=GfUser1/wxLogin&code=0b1Dsv000cwgtR1e4a100MXTb10Dsv0O&phone_code=
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/01/25 23:59:02 [error] [exception.CException] exception 'CException' with message '属性 "testStadium.comName" 未被定义.' in E:\wamp\www\sports\admin\qmdd2018\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(145): CComponent->__get('comName')
+#1 E:\wamp\www\sports\admin\qmdd2018\models\GfUserRole.php(142): CActiveRecord->__get('comName')
+#2 E:\wamp\www\sports\admin\qmdd2018\admin\controllers\GfUser1Controller.php(721): GfUserRole->stadiumList()
+#3 E:\wamp\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(49): GfUser1Controller->actionGetStadiumList()
+#4 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetStadiumList')
+#8 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/GetStad...')
+#9 E:\wamp\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 E:\wamp\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#11 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=GfUser1/GetStadiumList
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/01/25 23:59:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'sport.gf_user_role' n'existe pas. The SQL statement executed was: SHOW FULL COLUMNS FROM `gf_user_role`.
+2024/01/25 23:59:05 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "GfUserRole" 对应的 table "{{gf_user_role}}".' in E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php:2403
+Stack trace:
+#0 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(GfUserRole))
+#1 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->getTableSchema()
+#3 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(1480): CActiveRecord->query(Object(CDbCriteria), true, true)
+#4 E:\wamp\www\sports\admin\qmdd2018\models\GfUser1.php(530): CActiveRecord->findAll('openid="oovym64...')
+#5 E:\wamp\www\sports\admin\qmdd2018\models\GfUser1.php(405): GfUser1->getRoles()
+#6 E:\wamp\www\sports\admin\qmdd2018\admin\controllers\GfUser1Controller.php(648): GfUser1->getWxInfo()
+#7 [internal function]: GfUser1Controller->actionwxLogin('0b1n1Rkl2e6CNc4...', '92e003021f02338...')
+#8 E:\wamp\www\sports\admin\qmdd2018\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GfUser1Controller), Array)
+#9 E:\wamp\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GfUser1Controller), Object(ReflectionMethod), Array)
+#10 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('wxLogin')
+#14 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/wxLogin')
+#15 E:\wamp\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 E:\wamp\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#17 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=GfUser1/wxLogin&code=0b1n1Rkl2e6CNc4mxcll2Q4IeJ2n1Rks&phone_code=92e003021f023389109c16a16df79c22f13644b683aec936687dd7e6423ad33d
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
+2024/01/25 23:59:16 [error] [exception.CException] exception 'CException' with message '属性 "testStadium.comName" 未被定义.' in E:\wamp\www\sports\admin\qmdd2018\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\wamp\www\sports\admin\qmdd2018\framework\db\ar\CActiveRecord.php(145): CComponent->__get('comName')
+#1 E:\wamp\www\sports\admin\qmdd2018\models\GfUserRole.php(142): CActiveRecord->__get('comName')
+#2 E:\wamp\www\sports\admin\qmdd2018\admin\controllers\GfUser1Controller.php(721): GfUserRole->stadiumList()
+#3 E:\wamp\www\sports\admin\qmdd2018\framework\web\actions\CInlineAction.php(49): GfUser1Controller->actionGetStadiumList()
+#4 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 E:\wamp\www\sports\admin\qmdd2018\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(282): CController->run('GetStadiumList')
+#8 E:\wamp\www\sports\admin\qmdd2018\framework\web\CWebApplication.php(141): CWebApplication->runController('GfUser1/GetStad...')
+#9 E:\wamp\www\sports\admin\qmdd2018\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 E:\wamp\www\sports\admin\qmdd2018\index.php(34): CApplication->run()
+#11 {main}
+REQUEST_URI=/sports/admin/qmdd2018/index.php?r=GfUser1/GetStadiumList
+HTTP_REFERER=https://servicewechat.com/wx8d045a8ae8b1ca29/devtools/page-frame.html
+---
